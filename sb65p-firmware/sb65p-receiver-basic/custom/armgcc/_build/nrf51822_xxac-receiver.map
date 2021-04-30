@@ -1,0 +1,2151 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (exit)
+/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (__libc_init_array)
+/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (memset)
+/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o) (_exit)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o)
+                              _build/main.o (nrf_gzll_enable)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o) (nrf_impl_disable)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_link_core.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o) (nrf_lcore_start_operation)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_notification_manager.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o) (nrf_nm_init)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o) (nrf_pm_init)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_state_machine.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o) (nrf_sm_init)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_assert_internal.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o) (NRF_ASSERT_INTERNAL_parse_and_forward)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_channel_manager.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o) (nrf_chm_init)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o) (nrf_fifo_init)
+/Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_flywheel.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o) (nrf_flw_init)
+/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o) (__gnu_thumb1_case_uqi)
+/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_channel_manager.o) (__aeabi_uidiv)
+/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o) (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+nrf_impl_status     0x1c              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+pm_status           0x94              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o)
+lcore_config        0x18              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+available_packet_count
+                    0x4               /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+nm_status           0x88              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_notification_manager.o)
+available_packets   0x18              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+sm_status           0x3               /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_state_machine.o)
+pipe_status         0x30              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+impl_async_state    0x1               /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+__stdin             0x68              _build/retarget.o
+c                   0x1               _build/main.o
+runstate            0x1               /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_flywheel.o)
+fifo_contents       0xc0              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+nrf_lcore_status    0x24              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_link_core.o)
+nrf_pm_ack_payload_pending
+                    0x8               /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o)
+nrf_gzll_error_code
+                    0x1               /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o)
+__stdout            0x68              _build/retarget.o
+impl_internal_params
+                    0x34              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+packet_pool         0xcc              /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/system_nrf51.o
+ .text          0x0000000000000000        0x0 _build/system_nrf51.o
+ .data          0x0000000000000000        0x0 _build/system_nrf51.o
+ .bss           0x0000000000000000        0x0 _build/system_nrf51.o
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0x10 _build/system_nrf51.o
+ .data.SystemCoreClock
+                0x0000000000000000        0x4 _build/system_nrf51.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .group         0x0000000000000000        0xc _build/main.o
+ .text          0x0000000000000000        0x0 _build/main.o
+ .data          0x0000000000000000        0x0 _build/main.o
+ .bss           0x0000000000000000        0x0 _build/main.o
+ .debug_macro   0x0000000000000000      0xa84 _build/main.o
+ .debug_macro   0x0000000000000000       0x22 _build/main.o
+ .debug_macro   0x0000000000000000       0x22 _build/main.o
+ .debug_macro   0x0000000000000000       0x8e _build/main.o
+ .debug_macro   0x0000000000000000       0x51 _build/main.o
+ .debug_macro   0x0000000000000000       0xef _build/main.o
+ .debug_macro   0x0000000000000000       0x6a _build/main.o
+ .debug_macro   0x0000000000000000      0x1df _build/main.o
+ .debug_macro   0x0000000000000000       0x1c _build/main.o
+ .debug_macro   0x0000000000000000       0x22 _build/main.o
+ .debug_macro   0x0000000000000000       0x3a _build/main.o
+ .debug_macro   0x0000000000000000       0x26 _build/main.o
+ .debug_macro   0x0000000000000000      0x30d _build/main.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/main.o
+ .debug_macro   0x0000000000000000     0x745a _build/main.o
+ .debug_macro   0x0000000000000000      0x976 _build/main.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error.o
+ .text          0x0000000000000000        0x0 _build/app_error.o
+ .data          0x0000000000000000        0x0 _build/app_error.o
+ .bss           0x0000000000000000        0x0 _build/app_error.o
+ .text.app_error_handler
+                0x0000000000000000       0x20 _build/app_error.o
+ .text.app_error_save_and_stop
+                0x0000000000000000       0x60 _build/app_error.o
+ .bss.m_error_data.5756
+                0x0000000000000000       0x20 _build/app_error.o
+ .debug_macro   0x0000000000000000      0xa84 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_error.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_error.o
+ .debug_macro   0x0000000000000000       0x51 _build/app_error.o
+ .debug_macro   0x0000000000000000       0xef _build/app_error.o
+ .debug_macro   0x0000000000000000       0x6a _build/app_error.o
+ .debug_macro   0x0000000000000000      0x1df _build/app_error.o
+ .debug_macro   0x0000000000000000       0x26 _build/app_error.o
+ .debug_macro   0x0000000000000000      0x30d _build/app_error.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/app_error.o
+ .debug_macro   0x0000000000000000     0x745a _build/app_error.o
+ .debug_macro   0x0000000000000000      0x976 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_error.o
+ .debug_macro   0x0000000000000000       0x5e _build/app_error.o
+ .debug_macro   0x0000000000000000       0x18 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x35 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x34 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x97 _build/app_error.o
+ .debug_macro   0x0000000000000000      0x35c _build/app_error.o
+ .debug_macro   0x0000000000000000       0xf6 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x58 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x1f _build/app_error.o
+ .debug_macro   0x0000000000000000       0x43 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x20 _build/app_error.o
+ .debug_macro   0x0000000000000000      0x18e _build/app_error.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_error.o
+ .debug_macro   0x0000000000000000       0x52 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x40 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x40 _build/app_error.o
+ .debug_macro   0x0000000000000000       0xd7 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_error.o
+ .debug_macro   0x0000000000000000       0x3d _build/app_error.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_error.o
+ .debug_macro   0x0000000000000000      0x16f _build/app_error.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_error.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_error.o
+ .debug_macro   0x0000000000000000       0x70 _build/app_error.o
+ .debug_macro   0x0000000000000000      0x11e _build/app_error.o
+ .debug_macro   0x0000000000000000       0x4c _build/app_error.o
+ .debug_macro   0x0000000000000000       0xbb _build/app_error.o
+ .debug_macro   0x0000000000000000       0x2b _build/app_error.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_error_weak.o
+ .text          0x0000000000000000        0x0 _build/app_error_weak.o
+ .data          0x0000000000000000        0x0 _build/app_error_weak.o
+ .bss           0x0000000000000000        0x0 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000      0xa84 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x51 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0xef _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x6a _build/app_error_weak.o
+ .debug_macro   0x0000000000000000      0x1df _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x5e _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x18 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x35 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x34 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x97 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000      0x35c _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0xf6 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x58 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x1f _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x43 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x20 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000      0x18e _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x52 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x40 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x40 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0xd7 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x3d _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000      0x16f _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x3a _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x26 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000      0x30d _build/app_error_weak.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000     0x745a _build/app_error_weak.o
+ .debug_macro   0x0000000000000000      0x976 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x70 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000      0x11e _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x4c _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x67 _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0xbb _build/app_error_weak.o
+ .debug_macro   0x0000000000000000       0x2b _build/app_error_weak.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_fifo.o
+ .text          0x0000000000000000        0x0 _build/app_fifo.o
+ .data          0x0000000000000000        0x0 _build/app_fifo.o
+ .bss           0x0000000000000000        0x0 _build/app_fifo.o
+ .text.app_fifo_peek
+                0x0000000000000000       0x24 _build/app_fifo.o
+ .text.app_fifo_flush
+                0x0000000000000000        0x8 _build/app_fifo.o
+ .text.app_fifo_read
+                0x0000000000000000       0x54 _build/app_fifo.o
+ .text.app_fifo_write
+                0x0000000000000000       0x5c _build/app_fifo.o
+ .debug_macro   0x0000000000000000      0xa84 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x51 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0xef _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x6a _build/app_fifo.o
+ .debug_macro   0x0000000000000000      0x1df _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x18 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x5e _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x35 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x34 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x58 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x1f _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x43 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x20 _build/app_fifo.o
+ .debug_macro   0x0000000000000000      0x18e _build/app_fifo.o
+ .debug_macro   0x0000000000000000      0x35c _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_fifo.o
+ .debug_macro   0x0000000000000000      0x11e _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x28 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x70 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x3a _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x26 _build/app_fifo.o
+ .debug_macro   0x0000000000000000      0x30d _build/app_fifo.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/app_fifo.o
+ .debug_macro   0x0000000000000000     0x745a _build/app_fifo.o
+ .debug_macro   0x0000000000000000      0x976 _build/app_fifo.o
+ .debug_macro   0x0000000000000000       0x67 _build/app_fifo.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/app_util_platform.o
+ .text          0x0000000000000000        0x0 _build/app_util_platform.o
+ .data          0x0000000000000000        0x0 _build/app_util_platform.o
+ .bss           0x0000000000000000        0x0 _build/app_util_platform.o
+ .text.app_util_disable_irq
+                0x0000000000000000       0x10 _build/app_util_platform.o
+ .text.app_util_enable_irq
+                0x0000000000000000       0x14 _build/app_util_platform.o
+ .text.app_util_critical_region_enter
+                0x0000000000000000       0x10 _build/app_util_platform.o
+ .text.app_util_critical_region_exit
+                0x0000000000000000       0x14 _build/app_util_platform.o
+ .bss.m_in_critical_region
+                0x0000000000000000        0x4 _build/app_util_platform.o
+ .debug_info    0x0000000000000000      0xa8c _build/app_util_platform.o
+ .debug_abbrev  0x0000000000000000      0x27c _build/app_util_platform.o
+ .debug_aranges
+                0x0000000000000000       0x38 _build/app_util_platform.o
+ .debug_ranges  0x0000000000000000       0x40 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0x2ae _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0xa84 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x51 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0xef _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x6a _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0x1df _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x28 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x3a _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x26 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0x30d _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000     0x745a _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0x976 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x5e _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x18 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x35 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x34 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x97 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0x35c _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0xf6 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x58 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x1f _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x43 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x20 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0x18e _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x52 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x40 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x40 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0xd7 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x3d _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0x16f _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x70 _build/app_util_platform.o
+ .debug_macro   0x0000000000000000      0x11e _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x4c _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x6d _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0xbb _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x2b _build/app_util_platform.o
+ .debug_macro   0x0000000000000000       0x5b _build/app_util_platform.o
+ .debug_line    0x0000000000000000      0x6ce _build/app_util_platform.o
+ .debug_str     0x0000000000000000    0x355eb _build/app_util_platform.o
+ .comment       0x0000000000000000       0x7a _build/app_util_platform.o
+ .debug_frame   0x0000000000000000       0x50 _build/app_util_platform.o
+ .ARM.attributes
+                0x0000000000000000       0x2c _build/app_util_platform.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/nrf_assert.o
+ .text          0x0000000000000000        0x0 _build/nrf_assert.o
+ .data          0x0000000000000000        0x0 _build/nrf_assert.o
+ .bss           0x0000000000000000        0x0 _build/nrf_assert.o
+ .debug_info    0x0000000000000000      0x946 _build/nrf_assert.o
+ .debug_abbrev  0x0000000000000000      0x1b4 _build/nrf_assert.o
+ .debug_aranges
+                0x0000000000000000       0x18 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0x2a5 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0xa84 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x8e _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x51 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0xef _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x6a _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0x1df _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x3a _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x26 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0x30d _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000     0x745a _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0x976 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x5e _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x18 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x35 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x34 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x16 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x97 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0x35c _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0xf6 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x58 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x1f _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x43 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x20 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0x18e _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x52 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x40 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x40 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0xd7 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x3d _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x16 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0x16f _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x8e _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x70 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000      0x11e _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x4c _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x67 _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0xbb _build/nrf_assert.o
+ .debug_macro   0x0000000000000000       0x2b _build/nrf_assert.o
+ .debug_line    0x0000000000000000      0x5c8 _build/nrf_assert.o
+ .debug_str     0x0000000000000000    0x353b3 _build/nrf_assert.o
+ .comment       0x0000000000000000       0x7a _build/nrf_assert.o
+ .ARM.attributes
+                0x0000000000000000       0x31 _build/nrf_assert.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .group         0x0000000000000000        0xc _build/retarget.o
+ .text          0x0000000000000000        0x0 _build/retarget.o
+ .data          0x0000000000000000        0x0 _build/retarget.o
+ .bss           0x0000000000000000        0x0 _build/retarget.o
+ .text._write   0x0000000000000000       0x1c _build/retarget.o
+ .text._read    0x0000000000000000       0x14 _build/retarget.o
+ .debug_info    0x0000000000000000      0xa8e _build/retarget.o
+ .debug_abbrev  0x0000000000000000      0x25a _build/retarget.o
+ .debug_loc     0x0000000000000000      0x14b _build/retarget.o
+ .debug_aranges
+                0x0000000000000000       0x28 _build/retarget.o
+ .debug_ranges  0x0000000000000000       0x18 _build/retarget.o
+ .debug_macro   0x0000000000000000      0x2bb _build/retarget.o
+ .debug_macro   0x0000000000000000      0xa84 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x22 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x58 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x18 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x94 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x35 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x34 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x16 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x57 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x97 _build/retarget.o
+ .debug_macro   0x0000000000000000      0x35c _build/retarget.o
+ .debug_macro   0x0000000000000000       0xf6 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x10 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x58 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x1f _build/retarget.o
+ .debug_macro   0x0000000000000000       0x43 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x20 _build/retarget.o
+ .debug_macro   0x0000000000000000      0x18e _build/retarget.o
+ .debug_macro   0x0000000000000000       0x10 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x6a _build/retarget.o
+ .debug_macro   0x0000000000000000       0x1c _build/retarget.o
+ .debug_macro   0x0000000000000000       0x52 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x40 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x10 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x40 _build/retarget.o
+ .debug_macro   0x0000000000000000       0xd7 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x1c _build/retarget.o
+ .debug_macro   0x0000000000000000       0x3d _build/retarget.o
+ .debug_macro   0x0000000000000000       0x16 _build/retarget.o
+ .debug_macro   0x0000000000000000      0x16f _build/retarget.o
+ .debug_macro   0x0000000000000000       0xef _build/retarget.o
+ .debug_macro   0x0000000000000000      0x1df _build/retarget.o
+ .debug_macro   0x0000000000000000       0x22 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x28 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x1c _build/retarget.o
+ .debug_macro   0x0000000000000000       0x22 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x3a _build/retarget.o
+ .debug_macro   0x0000000000000000       0x26 _build/retarget.o
+ .debug_macro   0x0000000000000000      0x30d _build/retarget.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/retarget.o
+ .debug_macro   0x0000000000000000     0x745a _build/retarget.o
+ .debug_macro   0x0000000000000000      0x976 _build/retarget.o
+ .debug_macro   0x0000000000000000       0x8e _build/retarget.o
+ .debug_macro   0x0000000000000000       0x70 _build/retarget.o
+ .debug_macro   0x0000000000000000      0x11e _build/retarget.o
+ .debug_macro   0x0000000000000000       0x4c _build/retarget.o
+ .debug_macro   0x0000000000000000       0x6d _build/retarget.o
+ .debug_macro   0x0000000000000000       0xbb _build/retarget.o
+ .debug_macro   0x0000000000000000       0x2b _build/retarget.o
+ .debug_macro   0x0000000000000000       0x5b _build/retarget.o
+ .debug_macro   0x0000000000000000       0x17 _build/retarget.o
+ .debug_line    0x0000000000000000      0x6c6 _build/retarget.o
+ .debug_str     0x0000000000000000    0x357d6 _build/retarget.o
+ .comment       0x0000000000000000       0x7a _build/retarget.o
+ .debug_frame   0x0000000000000000       0x44 _build/retarget.o
+ .ARM.attributes
+                0x0000000000000000       0x2c _build/retarget.o
+ COMMON         0x0000000000000000       0xd0 _build/retarget.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/app_uart_fifo.o
+ .text          0x0000000000000000        0x0 _build/app_uart_fifo.o
+ .data          0x0000000000000000        0x0 _build/app_uart_fifo.o
+ .bss           0x0000000000000000        0x0 _build/app_uart_fifo.o
+ .text.app_uart_flush
+                0x0000000000000000       0x1c _build/app_uart_fifo.o
+ .text.app_uart_close
+                0x0000000000000000        0xc _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0xa84 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x51 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0xef _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x6a _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0x1df _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x28 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x3a _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x26 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0x30d _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000     0x745a _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0x976 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x5e _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x18 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x35 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x34 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x97 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0x35c _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0xf6 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x58 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x1f _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x43 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x20 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0x18e _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x52 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x40 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x10 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x40 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0xd7 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x1c _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x3d _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0x16f _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x8e _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x70 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0x11e _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x4c _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x6d _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0xbb _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x2b _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x5b _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x17 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x35 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x29 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000      0x16a _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x16 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x22 _build/app_uart_fifo.o
+ .debug_macro   0x0000000000000000       0x37 _build/app_uart_fifo.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_delay.o
+ .text          0x0000000000000000        0x0 _build/nrf_delay.o
+ .data          0x0000000000000000        0x0 _build/nrf_delay.o
+ .bss           0x0000000000000000        0x0 _build/nrf_delay.o
+ .text.nrf_delay_ms
+                0x0000000000000000       0x3c _build/nrf_delay.o
+ .debug_info    0x0000000000000000      0x9b4 _build/nrf_delay.o
+ .debug_abbrev  0x0000000000000000      0x24e _build/nrf_delay.o
+ .debug_loc     0x0000000000000000       0x3d _build/nrf_delay.o
+ .debug_aranges
+                0x0000000000000000       0x20 _build/nrf_delay.o
+ .debug_ranges  0x0000000000000000       0x28 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000      0x235 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000      0xa84 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x58 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x18 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x94 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x35 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x34 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x16 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x57 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x97 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000      0x35c _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0xf6 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x58 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x1f _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x43 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x20 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000      0x18e _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x6a _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x52 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x40 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x40 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0xd7 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x3d _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x16 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000      0x16f _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x28 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0xef _build/nrf_delay.o
+ .debug_macro   0x0000000000000000      0x1df _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x34 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000       0x26 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000      0x30d _build/nrf_delay.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/nrf_delay.o
+ .debug_macro   0x0000000000000000     0x745a _build/nrf_delay.o
+ .debug_macro   0x0000000000000000      0x976 _build/nrf_delay.o
+ .debug_line    0x0000000000000000      0x555 _build/nrf_delay.o
+ .debug_str     0x0000000000000000    0x33d1d _build/nrf_delay.o
+ .comment       0x0000000000000000       0x7a _build/nrf_delay.o
+ .debug_frame   0x0000000000000000       0x24 _build/nrf_delay.o
+ .ARM.attributes
+                0x0000000000000000       0x2c _build/nrf_delay.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_common.o
+ .text          0x0000000000000000        0x0 _build/nrf_drv_common.o
+ .data          0x0000000000000000        0x0 _build/nrf_drv_common.o
+ .bss           0x0000000000000000        0x0 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0xa84 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x8e _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x51 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0xef _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x6a _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0x1df _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x3a _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x26 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0x30d _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000     0x745a _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0x976 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x8e _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x70 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0x16a _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x5e _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x18 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x35 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x34 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x16 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x35 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0x35c _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x58 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x1f _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x43 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x20 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0x18e _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x52 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x40 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x40 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0xd7 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x3d _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x16 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0x16f _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000      0x11e _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x4c _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x67 _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0xbb _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x2b _build/nrf_drv_common.o
+ .debug_macro   0x0000000000000000       0x5b _build/nrf_drv_common.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .group         0x0000000000000000        0xc _build/nrf_drv_uart.o
+ .text          0x0000000000000000        0x0 _build/nrf_drv_uart.o
+ .data          0x0000000000000000        0x0 _build/nrf_drv_uart.o
+ .bss           0x0000000000000000        0x0 _build/nrf_drv_uart.o
+ .text.nrf_drv_uart_uninit
+                0x0000000000000000       0xbc _build/nrf_drv_uart.o
+ .text.nrf_drv_uart_rx_disable
+                0x0000000000000000       0x18 _build/nrf_drv_uart.o
+ .text.nrf_drv_uart_errorsrc_get
+                0x0000000000000000       0x1c _build/nrf_drv_uart.o
+ .text.nrf_drv_uart_tx_abort
+                0x0000000000000000       0x3c _build/nrf_drv_uart.o
+ .text.nrf_drv_uart_rx_abort
+                0x0000000000000000       0x1c _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0xa84 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x8e _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x51 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0xef _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x6a _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x1df _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x34 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x26 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x30d _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x1d2 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000     0x745a _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x976 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x16d _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x22 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x8e _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x70 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x16a _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x5e _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x18 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x35 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x34 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x16 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x35 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x35c _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x58 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x1f _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x43 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x20 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x18e _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x52 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x40 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x10 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x40 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0xd7 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x1c _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x3d _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x16 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x16f _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000      0x11e _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x4c _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x67 _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0xbb _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x2b _build/nrf_drv_uart.o
+ .debug_macro   0x0000000000000000       0x5b _build/nrf_drv_uart.o
+ .data          0x0000000000000000        0x0 _build/gcc_startup_nrf51.o
+ .bss           0x0000000000000000        0x0 _build/gcc_startup_nrf51.o
+ .data          0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+ .data          0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_link_core.o)
+ .data          0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_notification_manager.o)
+ .bss           0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_notification_manager.o)
+ .data          0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o)
+ .bss           0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o)
+ .bss           0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_state_machine.o)
+ .data          0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_assert_internal.o)
+ .bss           0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_assert_internal.o)
+ .data          0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_channel_manager.o)
+ .data          0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+ .bss           0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+ .data          0x0000000000000000        0x0 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_flywheel.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000000000000 0x0000000000040000 xr
+RAM              0x0000000020000000 0x0000000000004000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x0000000000000000     0x3c64
+ *(.isr_vector)
+ .isr_vector    0x0000000000000000       0xc0 _build/gcc_startup_nrf51.o
+                0x0000000000000000                __isr_vector
+ *(.text*)
+ .text          0x00000000000000c0       0x48 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x0000000000000108       0x78 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+                0x0000000000000108                _mainCRTStartup
+                0x0000000000000108                _start
+ .text.exit     0x0000000000000180       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+                0x0000000000000180                exit
+ .text.__libc_init_array
+                0x00000000000001ac       0x48 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                0x00000000000001ac                __libc_init_array
+ .text.memset   0x00000000000001f4       0x10 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x00000000000001f4                memset
+ .text._exit    0x0000000000000204        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+                0x0000000000000204                _exit
+ .text.SystemInit
+                0x0000000000000208       0xe0 _build/system_nrf51.o
+                0x0000000000000208                SystemInit
+ .text.uart_error_handle
+                0x00000000000002e8       0x18 _build/main.o
+                0x00000000000002e8                uart_error_handle
+ .text.startup.main
+                0x0000000000000300      0x1a8 _build/main.o
+                0x0000000000000300                main
+ .text.nrf_gzll_device_tx_success
+                0x00000000000004a8        0x8 _build/main.o
+                0x00000000000004a8                nrf_gzll_device_tx_success
+ .text.nrf_gzll_device_tx_failed
+                0x00000000000004b0        0x8 _build/main.o
+                0x00000000000004b0                nrf_gzll_device_tx_failed
+ .text.nrf_gzll_disabled
+                0x00000000000004b8        0x4 _build/main.o
+                0x00000000000004b8                nrf_gzll_disabled
+ .text.nrf_gzll_host_rx_data_ready
+                0x00000000000004bc       0x74 _build/main.o
+                0x00000000000004bc                nrf_gzll_host_rx_data_ready
+ .text.app_error_handler_bare
+                0x0000000000000530       0x20 _build/app_error.o
+                0x0000000000000530                app_error_handler_bare
+ .text.app_error_fault_handler
+                0x0000000000000550       0x1c _build/app_error_weak.o
+                0x0000000000000550                app_error_fault_handler
+ .text.app_fifo_init
+                0x000000000000056c       0x28 _build/app_fifo.o
+                0x000000000000056c                app_fifo_init
+ .text.app_fifo_put
+                0x0000000000000594       0x24 _build/app_fifo.o
+                0x0000000000000594                app_fifo_put
+ .text.app_fifo_get
+                0x00000000000005b8       0x24 _build/app_fifo.o
+                0x00000000000005b8                app_fifo_get
+ .text.uart_event_handler
+                0x00000000000005dc       0xc4 _build/app_uart_fifo.o
+ .text.app_uart_init
+                0x00000000000006a0       0xa4 _build/app_uart_fifo.o
+                0x00000000000006a0                app_uart_init
+ .text.app_uart_get
+                0x0000000000000744       0x34 _build/app_uart_fifo.o
+                0x0000000000000744                app_uart_get
+ .text.app_uart_put
+                0x0000000000000778       0x40 _build/app_uart_fifo.o
+                0x0000000000000778                app_uart_put
+ .text.nrf_drv_common_irq_enable
+                0x00000000000007b8       0x7c _build/nrf_drv_common.o
+                0x00000000000007b8                nrf_drv_common_irq_enable
+ .text.nrf_drv_uart_init
+                0x0000000000000834      0x11c _build/nrf_drv_uart.o
+                0x0000000000000834                nrf_drv_uart_init
+ .text.nrf_drv_uart_tx
+                0x0000000000000950       0xb4 _build/nrf_drv_uart.o
+                0x0000000000000950                nrf_drv_uart_tx
+ .text.nrf_drv_uart_tx_in_progress
+                0x0000000000000a04       0x10 _build/nrf_drv_uart.o
+                0x0000000000000a04                nrf_drv_uart_tx_in_progress
+ .text.nrf_drv_uart_rx
+                0x0000000000000a14      0x110 _build/nrf_drv_uart.o
+                0x0000000000000a14                nrf_drv_uart_rx
+ .text.nrf_drv_uart_rx_enable
+                0x0000000000000b24       0x2c _build/nrf_drv_uart.o
+                0x0000000000000b24                nrf_drv_uart_rx_enable
+ .text.UART0_IRQHandler
+                0x0000000000000b50      0x19c _build/nrf_drv_uart.o
+                0x0000000000000b50                UART0_IRQHandler
+ .text          0x0000000000000cec       0x4c _build/gcc_startup_nrf51.o
+                0x0000000000000cec                Reset_Handler
+                0x0000000000000d2c                NMI_Handler
+                0x0000000000000d2e                HardFault_Handler
+                0x0000000000000d30                SVC_Handler
+                0x0000000000000d32                PendSV_Handler
+                0x0000000000000d34                SysTick_Handler
+                0x0000000000000d36                TEMP_IRQHandler
+                0x0000000000000d36                QDEC_IRQHandler
+                0x0000000000000d36                SWI5_IRQHandler
+                0x0000000000000d36                TIMER0_IRQHandler
+                0x0000000000000d36                TIMER1_IRQHandler
+                0x0000000000000d36                ECB_IRQHandler
+                0x0000000000000d36                Default_Handler
+                0x0000000000000d36                ADC_IRQHandler
+                0x0000000000000d36                SWI3_IRQHandler
+                0x0000000000000d36                CCM_AAR_IRQHandler
+                0x0000000000000d36                WDT_IRQHandler
+                0x0000000000000d36                SWI2_IRQHandler
+                0x0000000000000d36                RNG_IRQHandler
+                0x0000000000000d36                SPI1_TWI1_IRQHandler
+                0x0000000000000d36                RTC1_IRQHandler
+                0x0000000000000d36                SPI0_TWI0_IRQHandler
+                0x0000000000000d36                SWI1_IRQHandler
+                0x0000000000000d36                RTC0_IRQHandler
+                0x0000000000000d36                GPIOTE_IRQHandler
+                0x0000000000000d36                POWER_CLOCK_IRQHandler
+                0x0000000000000d36                LPCOMP_IRQHandler
+                0x0000000000000d36                SWI4_IRQHandler
+ .text          0x0000000000000d38      0x864 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o)
+                0x0000000000000d38                nrf_gzll_enable
+                0x0000000000000d5c                nrf_gzll_is_enabled
+                0x0000000000000d68                nrf_gzll_disable
+                0x0000000000000d7e                nrf_gzll_add_packet_to_tx_fifo
+                0x0000000000000e04                nrf_gzll_fetch_packet_from_rx_fifo
+                0x0000000000000e74                nrf_gzll_get_tx_fifo_packet_count
+                0x0000000000000e90                nrf_gzll_get_rx_fifo_packet_count
+                0x0000000000000eac                nrf_gzll_get_total_allocated_packet_count
+                0x0000000000000eb8                nrf_gzll_ok_to_add_packet_to_tx_fifo
+                0x0000000000000ef4                nrf_gzll_flush_tx_fifo
+                0x0000000000000f28                nrf_gzll_flush_rx_fifo
+                0x0000000000000f48                nrf_gzll_set_mode
+                0x0000000000000f78                nrf_gzll_get_mode
+                0x0000000000000fa4                nrf_gzll_set_channel_table
+                0x0000000000001000                nrf_gzll_get_channel_table
+                0x000000000000103c                nrf_gzll_get_channel_table_size
+                0x0000000000001048                nrf_gzll_set_base_address_0
+                0x0000000000001070                nrf_gzll_get_base_address_0
+                0x0000000000001078                nrf_gzll_set_base_address_1
+                0x00000000000010a0                nrf_gzll_get_base_address_1
+                0x00000000000010a8                nrf_gzll_set_address_prefix_byte
+                0x00000000000010dc                nrf_gzll_get_address_prefix_byte
+                0x0000000000001104                nrf_gzll_set_rx_pipes_enabled
+                0x000000000000112c                nrf_gzll_get_rx_pipes_enabled
+                0x0000000000001134                nrf_gzll_set_datarate
+                0x0000000000001178                nrf_gzll_get_datarate
+                0x0000000000001190                nrf_gzll_set_tx_power
+                0x00000000000011e8                nrf_gzll_get_tx_power
+                0x0000000000001226                nrf_gzll_set_timeslot_period
+                0x000000000000124c                nrf_gzll_get_timeslot_period
+                0x0000000000001254                nrf_gzll_set_sync_lifetime
+                0x000000000000127c                nrf_gzll_get_sync_lifetime
+                0x0000000000001284                nrf_gzll_set_timeslots_per_channel_when_device_out_of_sync
+                0x00000000000012ac                nrf_gzll_get_timeslots_per_channel_when_device_out_of_sync
+                0x00000000000012b4                nrf_gzll_set_timeslots_per_channel
+                0x00000000000012dc                nrf_gzll_get_timeslots_per_channel
+                0x00000000000012e4                nrf_gzll_set_max_tx_attempts
+                0x000000000000130c                nrf_gzll_get_max_tx_attempts
+                0x0000000000001314                nrf_gzll_set_device_channel_selection_policy
+                0x000000000000134c                nrf_gzll_get_device_channel_selection_policy
+                0x000000000000135a                nrf_gzll_set_xosc_ctl
+                0x0000000000001390                nrf_gzll_init
+                0x000000000000141c                nrf_gzll_get_xosc_ctl
+                0x000000000000142a                nrf_gzll_clear_tick_count
+                0x0000000000001438                nrf_gzll_get_tick_count
+                0x0000000000001444                nrf_gzll_set_auto_disable
+                0x000000000000145c                nrf_gzll_get_error_code
+                0x0000000000001468                nrf_gzll_reset_error_code
+                0x0000000000001474                nrf_gzll_get_internal_debug_code
+                0x0000000000001480                nrf_gzll_reset_internal_debug_code
+                0x000000000000148c                nrf_gzll_mode_changed
+                0x000000000000148e                notification_cb
+                0x0000000000001588                nrf_assert_internal_callback
+ .text          0x000000000000159c     0x119c /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+                0x0000000000001964                nrf_gpio_debug_pin_write
+                0x0000000000001966                nrf_impl_disable
+                0x0000000000001990                nrf_impl_is_disabled
+                0x00000000000019a0                nrf_impl_get_mode
+                0x00000000000019ac                nrf_impl_reserve_packet
+                0x00000000000019c0                nrf_impl_free_packet
+                0x00000000000019d4                nrf_impl_put_tx_fifo
+                0x0000000000001a0c                nrf_impl_pop_rx_fifo
+                0x0000000000001a20                nrf_impl_read_rx_fifo
+                0x0000000000001a28                nrf_impl_read_tx_fifo
+                0x0000000000001a3c                nrf_impl_get_tx_fifo_status
+                0x0000000000001a44                nrf_impl_get_rx_fifo_status
+                0x0000000000001a4c                nrf_impl_get_available_fifo_packets
+                0x0000000000001a54                nrf_impl_flush_tx_fifo
+                0x0000000000001a88                nrf_impl_flush_rx_fifo
+                0x0000000000001a9c                nrf_impl_set_pipe_0_base_address
+                0x0000000000001abc                nrf_impl_get_pipe_0_base_address
+                0x0000000000001ac8                nrf_impl_set_pipes_1_to_7_base_address
+                0x0000000000001ae4                nrf_impl_get_pipes_1_to_7_base_address
+                0x0000000000001af0                nrf_impl_set_prefix_byte
+                0x0000000000001b48                nrf_impl_get_prefix_byte
+                0x0000000000001b68                nrf_impl_set_channel_table
+                0x0000000000001b9c                nrf_impl_set_sync_lifetime
+                0x0000000000001ba8                nrf_impl_get_sync_lifetime
+                0x0000000000001bb4                nrf_impl_set_base_address_length
+                0x0000000000001bdc                nrf_impl_get_base_address_length
+                0x0000000000001be8                nrf_impl_set_rx_pipes_enabled
+                0x0000000000001bf4                nrf_impl_get_rx_pipes_enabled
+                0x0000000000001c00                nrf_impl_set_timeslot_period
+                0x0000000000001c0c                nrf_impl_get_timeslot_period
+                0x0000000000001c18                nrf_impl_set_timeslots_per_channel_when_in_sync
+                0x0000000000001c28                nrf_impl_get_timeslots_per_channel_when_in_sync
+                0x0000000000001c34                nrf_impl_set_timeslots_per_channel_when_out_of_sync
+                0x0000000000001c44                nrf_impl_get_timeslots_per_channel_when_out_of_sync
+                0x0000000000001c50                nrf_impl_set_max_allowed_tx_attempts
+                0x0000000000001c5c                nrf_impl_get_max_allowed_tx_attempts
+                0x0000000000001c68                nrf_impl_set_tx_power
+                0x0000000000001c84                nrf_impl_get_tx_power
+                0x0000000000001c90                nrf_impl_set_crc_length
+                0x0000000000001d18                nrf_impl_get_crc_length
+                0x0000000000001d24                nrf_impl_set_datarate
+                0x0000000000001fb0                nrf_impl_set_mode
+                0x0000000000001fe0                nrf_impl_enable
+                0x0000000000002040                nrf_impl_init
+                0x00000000000021c4                nrf_impl_get_datarate
+                0x00000000000021d0                nrf_impl_enable_rssi
+                0x00000000000021f4                nrf_impl_set_channel_selection_policy
+                0x0000000000002200                nrf_impl_get_channel_selection_policy
+                0x000000000000220c                nrf_impl_set_idle_activity_config
+                0x0000000000002218                nrf_impl_get_idle_activity_config
+                0x0000000000002224                nrf_impl_set_xosc_ctl
+                0x0000000000002230                nrf_impl_get_xosc_ctl
+                0x000000000000223c                nrf_impl_set_dyn_ack_enable
+                0x0000000000002244                nrf_impl_state_fun_device_send_packet
+                0x0000000000002288                async_state_rx_active
+                0x00000000000022bc                async_state_rx_enabling
+                0x0000000000002344                async_state_tx_ack_complete
+                0x0000000000002358                async_state_packet_received
+                0x00000000000024f8                nrf_impl_state_fun_timeslot_start
+ .text          0x0000000000002738      0x600 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_link_core.o)
+                0x000000000000290c                nrf_lcore_start_operation
+                0x00000000000029b4                nrf_lcore_rx_address_match
+                0x00000000000029c4                nrf_lcore_force_disable
+                0x0000000000002a34                nrf_lcore_init
+                0x0000000000002a8c                RADIO_IRQHandler
+                0x0000000000002c34                TESTONLY_current_state_is_legal
+                0x0000000000002c58                nrf_lcore_prepare_operation
+                0x0000000000002d34                print_lc_debug_info
+ .text          0x0000000000002d38      0x108 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_notification_manager.o)
+                0x0000000000002d38                nrf_nm_init
+                0x0000000000002d6c                nrf_nm_add
+                0x0000000000002dd0                nrf_nm_get_remaining_space_in_notification_queue
+                0x0000000000002de4                SWI0_IRQHandler
+ .text          0x0000000000002e40      0x4d4 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o)
+                0x0000000000002e74                nrf_pm_init
+                0x0000000000002ed0                nrf_pm_get_ack_payload_pending
+                0x0000000000002edc                nrf_pm_there_is_ptx_packet_to_be_serviced
+                0x0000000000002ee8                nrf_pm_get_current_ptx_pipe
+                0x0000000000002ef4                nrf_pm_get_current_ptx_packet
+                0x0000000000002f00                nrf_pm_get_current_ptx_ack_ptr
+                0x0000000000002f0c                nrf_pm_start_prx
+                0x0000000000002f58                nrf_pm_search_for_ptx_pipe_to_service
+                0x0000000000002fd8                nrf_pm_end_prx
+                0x0000000000003110                nrf_pm_end_ptx
+                0x00000000000031a8                nrf_pm_get_state
+                0x00000000000031b4                nrf_pm_put_tx_fifo
+                0x00000000000031da                nrf_pm_read_tx_fifo
+                0x00000000000031e2                nrf_pm_flush_tx_fifo
+                0x00000000000031f2                nrf_pm_get_tx_fifo_status
+                0x00000000000031fa                nrf_pm_read_rx_fifo
+                0x0000000000003204                nrf_pm_pop_rx_fifo
+                0x000000000000320e                nrf_pm_flush_rx_fifo
+                0x0000000000003218                nrf_pm_get_rx_fifo_status
+                0x0000000000003222                nrf_pm_start_ptx
+                0x00000000000032e0                nrf_pm_reserve_packet
+                0x00000000000032e8                nrf_pm_free_packet
+                0x00000000000032f0                nrf_pm_get_available_fifo_packets
+                0x00000000000032f8                nrf_pm_set_dyn_ack_status
+                0x0000000000003304                nrf_pm_get_dyn_ack_status
+                0x0000000000003310                pm_tx_pipe_to_nrf_fifo_pipe
+ .text          0x0000000000003314       0x70 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_state_machine.o)
+                0x0000000000003314                nrf_sm_init
+                0x0000000000003324                nrf_sm_set_next_state
+                0x0000000000003340                nrf_sm_get_current_state
+                0x000000000000334c                nrf_sm_get_prev_state
+                0x0000000000003358                nrf_sm_get_next_state
+                0x0000000000003364                nrf_sm_execute
+ .text          0x0000000000003384        0x8 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_assert_internal.o)
+                0x0000000000003384                NRF_ASSERT_INTERNAL_parse_and_forward
+ .text          0x000000000000338c      0x20c /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_channel_manager.o)
+                0x000000000000338c                nrf_chm_init
+                0x00000000000033ac                nrf_chm_execute_single_tick
+                0x00000000000033d8                nrf_chm_execute_ticks
+                0x000000000000343c                nrf_chm_ticks_until_channel_switch
+                0x000000000000344c                nrf_chm_ticks_until_desired_channel
+                0x000000000000348c                nrf_chm_ticks_until_current_timeslot_in_range
+                0x00000000000034d0                nrf_chm_ticks_until_current_timeslot_in_range_on_desired_channel
+                0x0000000000003510                nrf_chm_get_current_channel
+                0x0000000000003538                nrf_chm_set_current_channel_index
+                0x000000000000355c                nrf_chm_get_current_channel_index
+                0x0000000000003568                nrf_chm_set_current_timeslot
+                0x000000000000358c                nrf_chm_get_current_timeslot
+ .text          0x0000000000003598      0x294 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+                0x00000000000035e8                nrf_fifo_init
+                0x000000000000363c                nrf_fifo_reserve_packet
+                0x0000000000003678                nrf_fifo_free_packet
+                0x00000000000036d4                nrf_fifo_put_packet
+                0x0000000000003740                nrf_fifo_pop_packet
+                0x0000000000003790                nrf_fifo_read_packet
+                0x00000000000037c4                nrf_fifo_get_packet_count
+                0x00000000000037e4                nrf_fifo_get_available_packet_count
+                0x00000000000037f0                nrf_fifo_flush
+ .text          0x000000000000382c      0x258 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_flywheel.o)
+                0x000000000000382c                nrf_flw_init
+                0x00000000000038a4                nrf_flw_start
+                0x00000000000038bc                nrf_flw_stop
+                0x00000000000038f4                nrf_flw_get_runstate
+                0x0000000000003900                nrf_flw_task_is_delayed
+                0x000000000000390c                NRF_flw_prepare_call
+                0x0000000000003a08                nrf_flw_get_ext_capture_task
+                0x0000000000003a10                nrf_flw_get_flw_call_event
+                0x0000000000003a18                TIMER2_IRQHandler
+ .text          0x0000000000003a84       0x14 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                0x0000000000003a84                __gnu_thumb1_case_uqi
+ .text          0x0000000000003a98      0x114 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x0000000000003a98                __udivsi3
+                0x0000000000003a98                __aeabi_uidiv
+                0x0000000000003ba4                __aeabi_uidivmod
+ .text          0x0000000000003bac        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x0000000000003bac                __aeabi_ldiv0
+                0x0000000000003bac                __aeabi_idiv0
+ .text.memcpy   0x0000000000003bb0       0x12 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000000000003bb0                memcpy
+ *(.init)
+ *fill*         0x0000000000003bc2        0x2 
+ .init          0x0000000000003bc4        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+                0x0000000000003bc4                _init
+ .init          0x0000000000003bc8        0x8 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
+ *(.fini)
+ .fini          0x0000000000003bd0        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+                0x0000000000003bd0                _fini
+ .fini          0x0000000000003bd4        0x8 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata._global_impure_ptr
+                0x0000000000003bdc        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                0x0000000000003bdc                _global_impure_ptr
+ .rodata        0x0000000000003be0        0xc _build/main.o
+ .rodata        0x0000000000003bec       0x20 _build/app_uart_fifo.o
+ .rodata.m_default_config
+                0x0000000000003c0c       0x20 _build/nrf_drv_uart.o
+ .rodata        0x0000000000003c2c        0x2 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o)
+ *fill*         0x0000000000003c2e        0x2 
+ .rodata        0x0000000000003c30       0x30 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_link_core.o)
+ *(.eh_frame*)
+ .eh_frame      0x0000000000003c60        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .eh_frame      0x0000000000003c60        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+
+.glue_7         0x0000000000003c64        0x0
+ .glue_7        0x0000000000003c64        0x0 linker stubs
+
+.glue_7t        0x0000000000003c64        0x0
+ .glue_7t       0x0000000000003c64        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000003c64        0x0
+ .vfp11_veneer  0x0000000000003c64        0x0 linker stubs
+
+.v4_bx          0x0000000000003c64        0x0
+ .v4_bx         0x0000000000003c64        0x0 linker stubs
+
+.iplt           0x0000000000003c64        0x0
+ .iplt          0x0000000000003c64        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000000003c64                __exidx_start = .
+
+.ARM.exidx      0x0000000000003c64        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0000000000003c64        0x8 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+                0x0000000000003c6c                __exidx_end = .
+                0x0000000000003c6c                __etext = .
+
+.rel.dyn        0x0000000000003c6c        0x0
+ .rel.iplt      0x0000000000003c6c        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+
+.data           0x0000000020000000       0x8c load address 0x0000000000003c6c
+                0x0000000020000000                __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data.impure_data
+                0x0000000020000000       0x60 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data.channel_table
+                0x0000000020000060        0x6 _build/main.o
+ *fill*         0x0000000020000066        0x2 
+ .data          0x0000000020000068       0x14 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o)
+ .data          0x000000002000007c        0x8 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_state_machine.o)
+                0x000000002000007c                state_functions
+                0x0000000020000084                . = ALIGN (0x4)
+                0x0000000020000084                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x0000000020000084                PROVIDE (__preinit_array_end = .)
+                0x0000000020000084                . = ALIGN (0x4)
+                0x0000000020000084                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x0000000020000084        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000088                PROVIDE (__init_array_end = .)
+                0x0000000020000088                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x0000000020000088        0x4 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+ *(.jcr*)
+                0x000000002000008c                . = ALIGN (0x4)
+                0x000000002000008c                __data_end__ = .
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+LOAD _build/system_nrf51.o
+LOAD _build/main.o
+LOAD _build/app_error.o
+LOAD _build/app_error_weak.o
+LOAD _build/app_fifo.o
+LOAD _build/app_util_platform.o
+LOAD _build/nrf_assert.o
+LOAD _build/retarget.o
+LOAD _build/app_uart_fifo.o
+LOAD _build/nrf_delay.o
+LOAD _build/nrf_drv_common.o
+LOAD _build/nrf_drv_uart.o
+LOAD _build/gcc_startup_nrf51.o
+LOAD /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+END GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+
+.igot.plt       0x000000002000008c        0x0 load address 0x0000000000003cf8
+ .igot.plt      0x000000002000008c        0x0 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+
+.fs_data        0x000000002000008c        0x0
+                [!provide]                        PROVIDE (__start_fs_data = .)
+ *(.fs_data)
+                [!provide]                        PROVIDE (__stop_fs_data = .)
+
+.bss            0x000000002000008c      0x5a8 load address 0x0000000000003cf8
+                0x000000002000008c                . = ALIGN (0x4)
+                0x000000002000008c                __bss_start__ = .
+ *(.bss*)
+ .bss           0x000000002000008c       0x1c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .bss.ack_payload
+                0x00000000200000a8        0x5 _build/main.o
+ *fill*         0x00000000200000ad        0x3 
+ .bss.data_buffer
+                0x00000000200000b0       0x12 _build/main.o
+ *fill*         0x00000000200000c2        0x2 
+ .bss.data_payload_left
+                0x00000000200000c4       0x20 _build/main.o
+ .bss.data_payload_right
+                0x00000000200000e4       0x20 _build/main.o
+ .bss.left_active
+                0x0000000020000104        0x4 _build/main.o
+                0x0000000020000104                left_active
+ .bss.packet_received_left
+                0x0000000020000108        0x1 _build/main.o
+ .bss.packet_received_right
+                0x0000000020000109        0x1 _build/main.o
+ *fill*         0x000000002000010a        0x2 
+ .bss.right_active
+                0x000000002000010c        0x4 _build/main.o
+                0x000000002000010c                right_active
+ .bss.rx_buf.6284
+                0x0000000020000110        0x1 _build/main.o
+ *fill*         0x0000000020000111        0x3 
+ .bss.tx_buf.6285
+                0x0000000020000114      0x100 _build/main.o
+ .bss.m_event_handler
+                0x0000000020000214        0x4 _build/app_uart_fifo.o
+ .bss.m_rx_fifo
+                0x0000000020000218       0x10 _build/app_uart_fifo.o
+ .bss.m_tx_fifo
+                0x0000000020000228       0x10 _build/app_uart_fifo.o
+ .bss.rx_buffer
+                0x0000000020000238        0x1 _build/app_uart_fifo.o
+ *fill*         0x0000000020000239        0x3 
+ .bss.tx_buffer
+                0x000000002000023c        0x1 _build/app_uart_fifo.o
+ *fill*         0x000000002000023d        0x3 
+ .bss.m_cb      0x0000000020000240       0x1c _build/nrf_drv_uart.o
+ .bss           0x000000002000025c       0x18 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o)
+                0x0000000020000270                assert_count
+ .bss           0x0000000020000274       0x10 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+ .bss           0x0000000020000284        0x4 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_link_core.o)
+ .bss           0x0000000020000288        0xc /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_channel_manager.o)
+ .bss           0x0000000020000294        0x8 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_flywheel.o)
+ *(COMMON)
+ COMMON         0x000000002000029c        0x1 _build/main.o
+                0x000000002000029c                c
+ COMMON         0x000000002000029d        0x1 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o)
+                0x000000002000029d                nrf_gzll_error_code
+ *fill*         0x000000002000029e        0x2 
+ COMMON         0x00000000200002a0       0x6c /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+                0x00000000200002a0                nrf_impl_status
+                0x00000000200002bc                lcore_config
+                0x00000000200002d4                impl_async_state
+                0x00000000200002d8                impl_internal_params
+ COMMON         0x000000002000030c       0x24 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_link_core.o)
+                0x000000002000030c                nrf_lcore_status
+ COMMON         0x0000000020000330       0x88 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_notification_manager.o)
+                0x0000000020000330                nm_status
+ COMMON         0x00000000200003b8       0x9c /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o)
+                0x00000000200003b8                pm_status
+                0x000000002000044c                nrf_pm_ack_payload_pending
+ COMMON         0x0000000020000454        0x3 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_state_machine.o)
+                0x0000000020000454                sm_status
+ *fill*         0x0000000020000457        0x1 
+ COMMON         0x0000000020000458      0x1d8 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+                0x0000000020000458                available_packet_count
+                0x000000002000045c                available_packets
+                0x0000000020000474                pipe_status
+                0x00000000200004a4                fifo_contents
+                0x0000000020000564                packet_pool
+ COMMON         0x0000000020000630        0x1 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_flywheel.o)
+                0x0000000020000630                runstate
+                0x0000000020000634                . = ALIGN (0x4)
+ *fill*         0x0000000020000631        0x3 
+                0x0000000020000634                __bss_end__ = .
+
+.heap           0x0000000020000638      0x800
+                0x0000000020000638                __end__ = .
+                [!provide]                        PROVIDE (end = .)
+ *(.heap*)
+ .heap          0x0000000020000638      0x800 _build/gcc_startup_nrf51.o
+                0x0000000020000638                __HeapBase
+                0x0000000020000e38                __HeapLimit = .
+
+.stack_dummy    0x0000000020000638      0x800
+ *(.stack*)
+ .stack         0x0000000020000638      0x800 _build/gcc_startup_nrf51.o
+                0x0000000020004000                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
+                0x0000000020003800                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x0000000020004000                PROVIDE (__stack = __StackTop)
+                0x0000000000000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
+OUTPUT(_build/nrf51822_xxac-receiver.out elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x28
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x1b /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.attributes
+                0x0000000000000065       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000091       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000000000bd       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000000000000e9       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000115       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000141       0x2c _build/system_nrf51.o
+ .ARM.attributes
+                0x000000000000016d       0x2c _build/main.o
+ .ARM.attributes
+                0x0000000000000199       0x2c _build/app_error.o
+ .ARM.attributes
+                0x00000000000001c5       0x2c _build/app_error_weak.o
+ .ARM.attributes
+                0x00000000000001f1       0x2c _build/app_fifo.o
+ .ARM.attributes
+                0x000000000000021d       0x2c _build/app_uart_fifo.o
+ .ARM.attributes
+                0x0000000000000249       0x2c _build/nrf_drv_common.o
+ .ARM.attributes
+                0x0000000000000275       0x2c _build/nrf_drv_uart.o
+ .ARM.attributes
+                0x00000000000002a1       0x1b _build/gcc_startup_nrf51.o
+ .ARM.attributes
+                0x00000000000002bc       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o)
+ .ARM.attributes
+                0x00000000000002ed       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+ .ARM.attributes
+                0x000000000000031e       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_link_core.o)
+ .ARM.attributes
+                0x000000000000034f       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_notification_manager.o)
+ .ARM.attributes
+                0x0000000000000380       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o)
+ .ARM.attributes
+                0x00000000000003b1       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_state_machine.o)
+ .ARM.attributes
+                0x00000000000003e2       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_assert_internal.o)
+ .ARM.attributes
+                0x0000000000000413       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_channel_manager.o)
+ .ARM.attributes
+                0x0000000000000444       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+ .ARM.attributes
+                0x0000000000000475       0x31 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_flywheel.o)
+ .ARM.attributes
+                0x00000000000004a6       0x1e /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x00000000000004c4       0x1e /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000000000004e2       0x1e /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000500       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000000000000052c       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+ .ARM.attributes
+                0x0000000000000558       0x1e /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
+
+.comment        0x0000000000000000       0xe9
+ .comment       0x0000000000000000       0x79 _build/system_nrf51.o
+                                         0x7a (size before relaxing)
+ .comment       0x0000000000000079       0x7a _build/main.o
+ .comment       0x0000000000000079       0x7a _build/app_error.o
+ .comment       0x0000000000000079       0x7a _build/app_error_weak.o
+ .comment       0x0000000000000079       0x7a _build/app_fifo.o
+ .comment       0x0000000000000079       0x7a _build/app_uart_fifo.o
+ .comment       0x0000000000000079       0x7a _build/nrf_drv_common.o
+ .comment       0x0000000000000079       0x7a _build/nrf_drv_uart.o
+ .comment       0x0000000000000079       0x70 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_gzll.o)
+                                         0x71 (size before relaxing)
+ .comment       0x00000000000000e9       0x71 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_impala.o)
+ .comment       0x00000000000000e9       0x71 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_link_core.o)
+ .comment       0x00000000000000e9       0x71 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_notification_manager.o)
+ .comment       0x00000000000000e9       0x71 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_packet_manager.o)
+ .comment       0x00000000000000e9       0x71 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_state_machine.o)
+ .comment       0x00000000000000e9       0x71 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_assert_internal.o)
+ .comment       0x00000000000000e9       0x71 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_channel_manager.o)
+ .comment       0x00000000000000e9       0x71 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_fifo.o)
+ .comment       0x00000000000000e9       0x71 /Users/jasonren/Desktop/test/keyboard/nRF5_SDK_11/components/properitary_rf/gzll/gcc/gzll_gcc.a(nrf_flywheel.o)
+
+.debug_frame    0x0000000000000000      0x4f0
+ .debug_frame   0x0000000000000000       0x28 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000028       0x2c /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000054       0x20 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000074       0x20 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000094       0x30 _build/system_nrf51.o
+ .debug_frame   0x00000000000000c4       0xa8 _build/main.o
+ .debug_frame   0x000000000000016c       0x5c _build/app_error.o
+ .debug_frame   0x00000000000001c8       0x20 _build/app_error_weak.o
+ .debug_frame   0x00000000000001e8       0xb4 _build/app_fifo.o
+ .debug_frame   0x000000000000029c       0xb4 _build/app_uart_fifo.o
+ .debug_frame   0x0000000000000350       0x30 _build/nrf_drv_common.o
+ .debug_frame   0x0000000000000380      0x128 _build/nrf_drv_uart.o
+ .debug_frame   0x00000000000004a8       0x20 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000000000004c8       0x28 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+
+.debug_info     0x0000000000000000     0x905d
+ .debug_info    0x0000000000000000      0x1fb _build/system_nrf51.o
+ .debug_info    0x00000000000001fb     0x124b _build/main.o
+ .debug_info    0x0000000000001446      0xc18 _build/app_error.o
+ .debug_info    0x000000000000205e      0xabe _build/app_error_weak.o
+ .debug_info    0x0000000000002b1c      0xf9d _build/app_fifo.o
+ .debug_info    0x0000000000003ab9     0x13d8 _build/app_uart_fifo.o
+ .debug_info    0x0000000000004e91      0xd04 _build/nrf_drv_common.o
+ .debug_info    0x0000000000005b95     0x34c8 _build/nrf_drv_uart.o
+
+.debug_abbrev   0x0000000000000000     0x1791
+ .debug_abbrev  0x0000000000000000      0x124 _build/system_nrf51.o
+ .debug_abbrev  0x0000000000000124      0x3a9 _build/main.o
+ .debug_abbrev  0x00000000000004cd      0x276 _build/app_error.o
+ .debug_abbrev  0x0000000000000743      0x24e _build/app_error_weak.o
+ .debug_abbrev  0x0000000000000991      0x2d1 _build/app_fifo.o
+ .debug_abbrev  0x0000000000000c62      0x336 _build/app_uart_fifo.o
+ .debug_abbrev  0x0000000000000f98      0x2cd _build/nrf_drv_common.o
+ .debug_abbrev  0x0000000000001265      0x52c _build/nrf_drv_uart.o
+
+.debug_aranges  0x0000000000000000      0x1e0
+ .debug_aranges
+                0x0000000000000000       0x28 _build/system_nrf51.o
+ .debug_aranges
+                0x0000000000000028       0x40 _build/main.o
+ .debug_aranges
+                0x0000000000000068       0x30 _build/app_error.o
+ .debug_aranges
+                0x0000000000000098       0x20 _build/app_error_weak.o
+ .debug_aranges
+                0x00000000000000b8       0x50 _build/app_fifo.o
+ .debug_aranges
+                0x0000000000000108       0x48 _build/app_uart_fifo.o
+ .debug_aranges
+                0x0000000000000150       0x20 _build/nrf_drv_common.o
+ .debug_aranges
+                0x0000000000000170       0x70 _build/nrf_drv_uart.o
+
+.debug_ranges   0x0000000000000000      0x998
+ .debug_ranges  0x0000000000000000       0x68 _build/system_nrf51.o
+ .debug_ranges  0x0000000000000068       0x48 _build/main.o
+ .debug_ranges  0x00000000000000b0       0x20 _build/app_error.o
+ .debug_ranges  0x00000000000000d0       0x10 _build/app_error_weak.o
+ .debug_ranges  0x00000000000000e0       0xe8 _build/app_fifo.o
+ .debug_ranges  0x00000000000001c8       0x78 _build/app_uart_fifo.o
+ .debug_ranges  0x0000000000000240       0x48 _build/nrf_drv_common.o
+ .debug_ranges  0x0000000000000288      0x710 _build/nrf_drv_uart.o
+
+.debug_macro    0x0000000000000000     0xbf54
+ .debug_macro   0x0000000000000000       0xdf _build/system_nrf51.o
+ .debug_macro   0x00000000000000df      0xa84 _build/system_nrf51.o
+ .debug_macro   0x0000000000000b63       0x22 _build/system_nrf51.o
+ .debug_macro   0x0000000000000b85       0x8e _build/system_nrf51.o
+ .debug_macro   0x0000000000000c13       0x51 _build/system_nrf51.o
+ .debug_macro   0x0000000000000c64       0xef _build/system_nrf51.o
+ .debug_macro   0x0000000000000d53       0x6a _build/system_nrf51.o
+ .debug_macro   0x0000000000000dbd      0x1df _build/system_nrf51.o
+ .debug_macro   0x0000000000000f9c       0x22 _build/system_nrf51.o
+ .debug_macro   0x0000000000000fbe       0x1c _build/system_nrf51.o
+ .debug_macro   0x0000000000000fda       0x22 _build/system_nrf51.o
+ .debug_macro   0x0000000000000ffc       0x3a _build/system_nrf51.o
+ .debug_macro   0x0000000000001036       0x26 _build/system_nrf51.o
+ .debug_macro   0x000000000000105c      0x30d _build/system_nrf51.o
+ .debug_macro   0x0000000000001369      0x1d2 _build/system_nrf51.o
+ .debug_macro   0x000000000000153b     0x745a _build/system_nrf51.o
+ .debug_macro   0x0000000000008995      0x976 _build/system_nrf51.o
+ .debug_macro   0x000000000000930b       0x1c _build/system_nrf51.o
+ .debug_macro   0x0000000000009327      0x362 _build/main.o
+ .debug_macro   0x0000000000009689       0x5e _build/main.o
+ .debug_macro   0x00000000000096e7       0x18 _build/main.o
+ .debug_macro   0x00000000000096ff       0x35 _build/main.o
+ .debug_macro   0x0000000000009734       0x34 _build/main.o
+ .debug_macro   0x0000000000009768       0x16 _build/main.o
+ .debug_macro   0x000000000000977e       0x97 _build/main.o
+ .debug_macro   0x0000000000009815      0x35c _build/main.o
+ .debug_macro   0x0000000000009b71       0xf6 _build/main.o
+ .debug_macro   0x0000000000009c67       0x10 _build/main.o
+ .debug_macro   0x0000000000009c77       0x58 _build/main.o
+ .debug_macro   0x0000000000009ccf       0x1f _build/main.o
+ .debug_macro   0x0000000000009cee       0x43 _build/main.o
+ .debug_macro   0x0000000000009d31       0x20 _build/main.o
+ .debug_macro   0x0000000000009d51      0x18e _build/main.o
+ .debug_macro   0x0000000000009edf       0x10 _build/main.o
+ .debug_macro   0x0000000000009eef       0x1c _build/main.o
+ .debug_macro   0x0000000000009f0b       0x52 _build/main.o
+ .debug_macro   0x0000000000009f5d       0x40 _build/main.o
+ .debug_macro   0x0000000000009f9d       0x10 _build/main.o
+ .debug_macro   0x0000000000009fad       0x40 _build/main.o
+ .debug_macro   0x0000000000009fed       0xd7 _build/main.o
+ .debug_macro   0x000000000000a0c4       0x1c _build/main.o
+ .debug_macro   0x000000000000a0e0       0x3d _build/main.o
+ .debug_macro   0x000000000000a11d       0x16 _build/main.o
+ .debug_macro   0x000000000000a133      0x16f _build/main.o
+ .debug_macro   0x000000000000a2a2       0x28 _build/main.o
+ .debug_macro   0x000000000000a2ca       0x8e _build/main.o
+ .debug_macro   0x000000000000a358       0x70 _build/main.o
+ .debug_macro   0x000000000000a3c8      0x11e _build/main.o
+ .debug_macro   0x000000000000a4e6       0x4c _build/main.o
+ .debug_macro   0x000000000000a532       0x6d _build/main.o
+ .debug_macro   0x000000000000a59f       0xbb _build/main.o
+ .debug_macro   0x000000000000a65a       0x2b _build/main.o
+ .debug_macro   0x000000000000a685       0x5b _build/main.o
+ .debug_macro   0x000000000000a6e0       0x17 _build/main.o
+ .debug_macro   0x000000000000a6f7      0x16a _build/main.o
+ .debug_macro   0x000000000000a861      0x150 _build/main.o
+ .debug_macro   0x000000000000a9b1      0x29b _build/app_error.o
+ .debug_macro   0x000000000000ac4c       0x34 _build/app_error.o
+ .debug_macro   0x000000000000ac80       0x67 _build/app_error.o
+ .debug_macro   0x000000000000ace7      0x295 _build/app_error_weak.o
+ .debug_macro   0x000000000000af7c      0x224 _build/app_fifo.o
+ .debug_macro   0x000000000000b1a0       0x16 _build/app_fifo.o
+ .debug_macro   0x000000000000b1b6      0x10e _build/app_fifo.o
+ .debug_macro   0x000000000000b2c4       0x86 _build/app_fifo.o
+ .debug_macro   0x000000000000b34a       0x16 _build/app_fifo.o
+ .debug_macro   0x000000000000b360       0x29 _build/app_fifo.o
+ .debug_macro   0x000000000000b389       0x16 _build/app_fifo.o
+ .debug_macro   0x000000000000b39f       0x35 _build/app_fifo.o
+ .debug_macro   0x000000000000b3d4       0x22 _build/app_fifo.o
+ .debug_macro   0x000000000000b3f6       0x37 _build/app_fifo.o
+ .debug_macro   0x000000000000b42d      0x388 _build/app_uart_fifo.o
+ .debug_macro   0x000000000000b7b5      0x2e4 _build/nrf_drv_common.o
+ .debug_macro   0x000000000000ba99      0x16d _build/nrf_drv_common.o
+ .debug_macro   0x000000000000bc06      0x32e _build/nrf_drv_uart.o
+ .debug_macro   0x000000000000bf34       0x10 _build/nrf_drv_uart.o
+ .debug_macro   0x000000000000bf44       0x10 _build/nrf_drv_uart.o
+
+.debug_line     0x0000000000000000     0x54a7
+ .debug_line    0x0000000000000000      0x4af _build/system_nrf51.o
+ .debug_line    0x00000000000004af      0xbe0 _build/main.o
+ .debug_line    0x000000000000108f      0x6f8 _build/app_error.o
+ .debug_line    0x0000000000001787      0x614 _build/app_error_weak.o
+ .debug_line    0x0000000000001d9b      0x99c _build/app_fifo.o
+ .debug_line    0x0000000000002737      0xc66 _build/app_uart_fifo.o
+ .debug_line    0x000000000000339d      0x812 _build/nrf_drv_common.o
+ .debug_line    0x0000000000003baf     0x18f8 _build/nrf_drv_uart.o
+
+.debug_str      0x0000000000000000    0x38986
+ .debug_str     0x0000000000000000    0x2fae9 _build/system_nrf51.o
+                                      0x2fc61 (size before relaxing)
+ .debug_str     0x000000000002fae9     0x74f1 _build/main.o
+                                      0x371ba (size before relaxing)
+ .debug_str     0x0000000000036fda      0x126 _build/app_error.o
+                                      0x354ca (size before relaxing)
+ .debug_str     0x0000000000037100       0x9a _build/app_error_weak.o
+                                      0x35408 (size before relaxing)
+ .debug_str     0x000000000003719a      0x5a8 _build/app_fifo.o
+                                      0x3408f (size before relaxing)
+ .debug_str     0x0000000000037742      0x47f _build/app_uart_fifo.o
+                                      0x36a92 (size before relaxing)
+ .debug_str     0x0000000000037bc1      0x29a _build/nrf_drv_common.o
+                                      0x35d3a (size before relaxing)
+ .debug_str     0x0000000000037e5b      0xb2b _build/nrf_drv_uart.o
+                                      0x36e0e (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x2756
+ .debug_loc     0x0000000000000000      0x102 _build/main.o
+ .debug_loc     0x0000000000000102      0x158 _build/app_error.o
+ .debug_loc     0x000000000000025a       0x25 _build/app_error_weak.o
+ .debug_loc     0x000000000000027f      0x811 _build/app_fifo.o
+ .debug_loc     0x0000000000000a90      0x42e _build/app_uart_fifo.o
+ .debug_loc     0x0000000000000ebe       0xd2 _build/nrf_drv_common.o
+ .debug_loc     0x0000000000000f90     0x17c6 _build/nrf_drv_uart.o
