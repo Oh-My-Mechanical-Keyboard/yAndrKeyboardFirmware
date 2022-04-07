@@ -9,10 +9,10 @@
 #define L_C07 8
 #define L_C08 9 // fake
 
-#define L_R01 28
-#define L_R02 29
-#define L_R03 30
-#define L_R04 0
+#define L_R01 0
+#define L_R02 30
+#define L_R03 29
+#define L_R04 28
 #define L_R05 1
 
 // right hand pins
@@ -26,11 +26,11 @@
 #define R_C07 8
 #define R_C08 9
 
-#define R_R01 28
-#define R_R02 29
+#define R_R01 1
+#define R_R02 0
 #define R_R03 30
-#define R_R04 0
-#define R_R05 1
+#define R_R04 29
+#define R_R05 28
 
 #ifdef COMPILE_LEFT
 
