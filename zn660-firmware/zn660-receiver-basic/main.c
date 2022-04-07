@@ -10,12 +10,12 @@
 #include "nrf_gzll.h"
 
 #define MAX_TEST_DATA_BYTES     (15U)                /**< max number of test bytes to be used for tx and rx. */
-#define UART_TX_BUF_SIZE 256                         /**< UART TX buffer size. */
-#define UART_RX_BUF_SIZE 1                           /**< UART RX buffer size. */
+#define UART_TX_BUF_SIZE 128                         /**< UART TX buffer size. */
+#define UART_RX_BUF_SIZE 128                         /**< UART RX buffer size. */
 
 
-#define RX_PIN_NUMBER  25
-#define TX_PIN_NUMBER  24
+#define RX_PIN_NUMBER  20
+#define TX_PIN_NUMBER  19
 #define CTS_PIN_NUMBER 23
 #define RTS_PIN_NUMBER 22
 #define HWFC           false
@@ -69,7 +69,7 @@ int main(void)
           RTS_PIN_NUMBER,
           CTS_PIN_NUMBER,
           APP_UART_FLOW_CONTROL_DISABLED,
-          false,
+          HWFC,
           UART_BAUDRATE_BAUDRATE_Baud1M
       };
 
