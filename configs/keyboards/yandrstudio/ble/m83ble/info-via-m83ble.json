@@ -1,7 +1,7 @@
 {
     "name": "M83BLE_Y&R",
     "vendorId": "0xAA96",
-    "productId": "0xAA61",
+    "productId": "0xAA62",
     "lighting": "qmk_rgblight",
     "customKeycodes": [
         {
