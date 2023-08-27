@@ -44,6 +44,13 @@ $(abspath ../../../../components/drivers_nrf/clock/nrf_drv_clock.c) \
 $(abspath ../../../../components/libraries/util/app_util_platform.c) \
 $(abspath ../../../../components/drivers_nrf/common/nrf_drv_common.c) \
 $(abspath ../../../../components/drivers_nrf/rtc/nrf_drv_rtc.c) \
+$(abspath ../../../../components/drivers_nrf/hal/nrf_adc.c) \
+$(abspath ../../../../components/drivers_nrf/adc/nrf_drv_adc.c) \
+$(abspath ../../../../components/libraries/util/nrf_log.c) \
+$(abspath ../../../../external/segger_rtt/RTT_Syscalls_GCC.c) \
+$(abspath ../../../../external/segger_rtt/SEGGER_RTT.c) \
+$(abspath ../../../../external/segger_rtt/SEGGER_RTT_printf.c) \
+
 
 
 #assembly files common to all targets
@@ -60,7 +67,6 @@ INC_PATHS += -I$(abspath ../../../../components/properitary_rf/gzll)
 INC_PATHS += -I$(abspath ../../../../components/drivers_nrf/hal)
 INC_PATHS += -I$(abspath ../../../../components/toolchain/gcc)
 INC_PATHS += -I$(abspath ../../../../components/drivers_nrf/delay)
-INC_PATHS += -I$(abspath ../../../../examples/bsp)
 INC_PATHS += -I$(abspath ../../../../components/toolchain)
 INC_PATHS += -I$(abspath ../../../../components/drivers_nrf/nrf_soc_nosd)
 INC_PATHS += -I$(abspath ../../../../components/drivers_nrf/common)
@@ -68,6 +74,9 @@ INC_PATHS += -I$(abspath ../../../../components/drivers_nrf/clock)
 INC_PATHS += -I$(abspath ../../../../components/libraries/util)
 INC_PATHS += -I$(abspath ../../../../components/drivers_nrf/config)
 INC_PATHS += -I$(abspath ../../../../components/drivers_nrf/rtc)
+INC_PATHS += -I$(abspath ../../../../components/drivers_nrf/adc)
+INC_PATHS += -I$(abspath ../../../../external/segger_rtt)
+
 
 
 OBJECT_DIRECTORY = _build
@@ -101,7 +110,10 @@ CFLAGS += -DCOMPILE_RIGHT
 endif
 
 ifeq ("$(keyboard_side)","pad") 
-CFLAGS += -DCOMPILE_PAD 
+CFLAGS += -DCOMPILE_PAD
+CFLAGS += -DADC_ENABLED=1
+CFLAGS += -DNRF_LOG_USES_RTT=1
+ASMFLAGS += -DNRF_LOG_USES_RTT=1
 endif
 
 # keep every function in separate section. This will allow linker to dump unused functions

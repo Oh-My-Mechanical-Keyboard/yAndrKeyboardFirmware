@@ -71,15 +71,11 @@
 
 #define NRF_MAXIMUM_LATENCY_US 2000
 
-/* RNG */
-#define RNG_ENABLED 0
+#define ADC_ENABLED 1
 
-#if (RNG_ENABLED == 1)
-#define RNG_CONFIG_ERROR_CORRECTION true
-#define RNG_CONFIG_POOL_SIZE        8
-#define RNG_CONFIG_IRQ_PRIORITY     APP_IRQ_PRIORITY_LOW
+#if (ADC_ENABLED == 1)
+#define ADC_CONFIG_IRQ_PRIORITY APP_IRQ_PRIORITY_LOW
 #endif
-
 
 #include "nrf_drv_config_validation.h"
 

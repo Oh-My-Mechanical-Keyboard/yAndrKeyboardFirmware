@@ -45,8 +45,8 @@ static uint8_t data_payload_left[NRF_GZLL_CONST_MAX_PAYLOAD_LENGTH];  ///< Place
 static uint8_t data_payload_right[NRF_GZLL_CONST_MAX_PAYLOAD_LENGTH];  ///< Placeholder for data payload received from host.
 static uint8_t data_payload_pad[NRF_GZLL_CONST_MAX_PAYLOAD_LENGTH];  ///< Placeholder for data payload received from host.
 static uint8_t ack_payload[TX_PAYLOAD_LENGTH];                   ///< Payload to attach to ACK sent to device.
-// 发送给qmk芯片列的数据9+9+4
-static uint8_t data_buffer[27];
+// 发送给qmk芯片列的数据9+9+4+2
+static uint8_t data_buffer[29];
 
 // Debug helper variables
 extern nrf_gzll_error_code_t nrf_gzll_error_code;   ///< Error code
@@ -56,7 +56,7 @@ uint32_t right_active = 0;
 uint32_t pad_active = 0;
 uint8_t c;
 
-static uint8_t channel_table[6]={4, 25, 42, 63, 77, 33};
+static uint8_t channel_table[9]={4, 25, 42, 63, 77, 33, 11, 22, 44};
 
 void uart_error_handle(app_uart_evt_t * p_event)
 {
@@ -96,7 +96,7 @@ int main(void)
 
     // Initialize Gazell
     nrf_gzll_init(NRF_GZLL_MODE_HOST);
-    nrf_gzll_set_channel_table(channel_table,6);
+    nrf_gzll_set_channel_table(channel_table,9);
     nrf_gzll_set_datarate(NRF_GZLL_DATARATE_1MBIT);
     nrf_gzll_set_timeslot_period(900);
 
@@ -161,6 +161,8 @@ int main(void)
             data_buffer[24] =  data_payload_pad[6];
             data_buffer[25] =  data_payload_pad[7];
             data_buffer[26] =  data_payload_pad[8];
+            data_buffer[27] =  data_payload_pad[9];
+            data_buffer[28] =  data_payload_pad[10];
         }
 
         // checking for a poll request from QMK
@@ -168,7 +170,7 @@ int main(void)
         {
             // sending data to QMK, and an end byte
             // 把列数据发送出去
-            nrf_drv_uart_tx(data_buffer, 27);
+            nrf_drv_uart_tx(data_buffer, 29);
             // 把结束符号发送出去
             app_uart_put(0xE0);
 
@@ -235,6 +237,8 @@ int main(void)
             data_buffer[24] =  0;
             data_buffer[25] =  0;
             data_buffer[26] =  0;
+            data_buffer[27] =  0;
+            data_buffer[28] =  0;
             pad_active = 0;
         }
     }

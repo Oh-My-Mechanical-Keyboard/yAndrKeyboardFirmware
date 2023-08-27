@@ -10,6 +10,12 @@
 #include "nrf_drv_rtc.h"
 #include "nrf51_bitfields.h"
 #include "nrf51.h"
+#include "nrf_drv_adc.h"
+#include "nrf_log.h"
+#include "app_util_platform.h"
+
+
+
 
 
 /*****************************************************************************/
@@ -22,11 +28,25 @@ const nrf_drv_rtc_t rtc_deb = NRF_DRV_RTC_INSTANCE(1); /**< Declaring an instanc
 const uint32_t COL_PINS[COLUMNS] = { C01, C02, C03, C04, C05, C06, C07, C08, C09 };
 const unsigned short REMAINING_POSITIONS = 8 - ROWS;
 
+#define ADC_BUFFER_SIZE 10                                /**< Size of buffer for ADC samples.  */
+static nrf_adc_value_t       adc_buffer[ADC_BUFFER_SIZE]; /**< ADC buffer. */
+static nrf_drv_adc_channel_t m_channel_config =  {{{                                                       \
+    .resolution = NRF_ADC_CONFIG_RES_10BIT,                \
+    .input      = NRF_ADC_CONFIG_SCALING_INPUT_ONE_THIRD, \
+    .reference  = NRF_ADC_CONFIG_REF_SUPPLY_ONE_THIRD,                  \
+    .ain        = (NRF_ADC_CONFIG_INPUT_5)                           \
+ }}, NULL};
+
+
 // Define payload length
 #define TX_PAYLOAD_LENGTH COLUMNS ///< 5 byte payload length when transmitting
 
 // Data and acknowledgement payloads
+#ifdef COMPILE_PAD
+static uint8_t data_payload[TX_PAYLOAD_LENGTH+2];                ///< Payload to send to Host.
+#else
 static uint8_t data_payload[TX_PAYLOAD_LENGTH];                ///< Payload to send to Host.
+#endif
 static uint8_t ack_payload[NRF_GZLL_CONST_MAX_PAYLOAD_LENGTH]; ///< Placeholder for received ACK payloads from Host.
 
 // Debounce time (dependent on tick frequency)
@@ -46,6 +66,42 @@ static uint8_t channel_table[3]={4, 42, 77};
 #endif
 #ifdef COMPILE_RIGHT
 static uint8_t channel_table[3]={25, 63, 33};
+#endif
+#ifdef COMPILE_PAD
+static uint8_t channel_table[3]={11, 22, 44};
+#endif
+
+#ifdef COMPILE_PAD
+static int16_t adc_val = 0;
+/**
+ * @brief ADC interrupt handler.
+ */
+static void adc_event_handler(nrf_drv_adc_evt_t const * p_event)
+{
+    uint32_t t_sum_adc = 0;
+    if (p_event->type == NRF_DRV_ADC_EVT_DONE)
+    {
+        uint32_t i;
+        for (i = 0; i < p_event->data.done.size; i++)
+        {
+            t_sum_adc += p_event->data.done.p_buffer[i];
+            NRF_LOG_PRINTF("Current sample value: %d\r\n", p_event->data.done.p_buffer[i]);
+        }
+    }
+    adc_val = t_sum_adc/p_event->data.done.size;
+}
+
+/**
+ * @brief ADC initialization.
+ */
+static void adc_config(void)
+{
+    nrf_drv_adc_config_t config = NRF_DRV_ADC_DEFAULT_CONFIG;
+
+    nrf_drv_adc_init(&config, adc_event_handler);
+
+    nrf_drv_adc_channel_enable(&m_channel_config);
+}
 #endif
 
 // Setup switch pins with pullups
@@ -135,9 +191,14 @@ static void send_data(void)
     {
         data_payload[i] = keys[i];
     }
+#ifdef COMPILE_PAD
+    data_payload[COLUMNS] = (adc_val & 0x0f);
+    data_payload[COLUMNS+1] = (adc_val>>8) & 0x0f;
+    nrf_gzll_add_packet_to_tx_fifo(PIPE_NUMBER, data_payload, TX_PAYLOAD_LENGTH+2);
+#else
     nrf_gzll_add_packet_to_tx_fifo(PIPE_NUMBER, data_payload, TX_PAYLOAD_LENGTH);
+#endif
 }
-
 // 8Hz held key maintenance, keeping the reciever keystates valid
 static void handler_maintenance(nrf_drv_rtc_int_type_t int_type)
 {
@@ -147,7 +208,10 @@ static void handler_maintenance(nrf_drv_rtc_int_type_t int_type)
 // 1000Hz debounce sampling
 static void handler_debounce(nrf_drv_rtc_int_type_t int_type)
 {
-    // read_keys();
+#ifdef COMPILE_PAD
+    nrf_drv_adc_buffer_convert(adc_buffer,ADC_BUFFER_SIZE);
+    nrf_drv_adc_sample();
+#endif
     read_keys_by_col();
 
     // debouncing, waits until there have been no transitions in 5ms (assuming five 1ms ticks)
@@ -271,6 +335,10 @@ int main()
     NRF_GPIOTE->INTENSET = GPIOTE_INTENSET_PORT_Msk;
     NVIC_EnableIRQ(GPIOTE_IRQn);
 
+#ifdef COMPILE_PAD
+    adc_config();
+    // NRF_POWER->RESET = POWER_RESET_RESET_Enabled;
+#endif
 
     // Main loop, constantly sleep, waiting for RTC and gpio IRQs
     while(1)
