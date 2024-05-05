@@ -1,0 +1,314 @@
+C51 COMPILER V9.60.0.0   DEBUG                                                             05/06/2024 01:42:00 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE DEBUG
+OBJECT MODULE PLACED IN Debug.OBJ
+COMPILER INVOKED BY: D:\PrgEnv\MDK\core\C51\BIN\C51.EXE Debug.C LARGE OPTIMIZE(8,SPEED) BROWSE NOAREGS DEBUG OBJECTEXTEN
+                    -D TABS(2)
+
+line level    source
+
+   1          /********************************** (C) COPYRIGHT *******************************
+   2          * File Name          : Debug.C
+   3          * Author             : WCH
+   4          * Version            : V1.6
+   5          * Date               : 2021/12/15
+   6          * Description        : CH554 DEBUG Interface
+   7                               CH554主频修改、延时函数定义
+   8                               串口0和串口1初始化
+   9                               串口0和串口1的收发子函数
+  10                               看门狗初始化                    
+  11          *********************************************************************************
+  12          * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+  13          * Attention: This software (modified or not) and binary are used for 
+  14          * microcontroller manufactured by Nanjing Qinheng Microelectronics.
+  15          ********************************************************************************/
+  16          
+  17          #include "CH552.H"
+  18          #include "Debug.H"
+  19          
+  20          /*******************************************************************************
+  21          * Function Name  : CfgFsys( )
+  22          * Description    : CH554时钟选择和配置函数,默认使用Fsys 6MHz，FREQ_SYS可以通过
+  23                             CLOCK_CFG配置得到，公式如下：
+  24                             Fsys = (Fosc * 4/(CLOCK_CFG & MASK_SYS_CK_SEL);具体时钟需要自己配置 
+  25          * Input          : None
+  26          * Output         : None
+  27          * Return         : None
+  28          *******************************************************************************/ 
+  29          void  CfgFsys( )  
+  30          {
+  31   1      #if OSC_EN_XT 
+                  SAFE_MOD = 0x55;
+                  SAFE_MOD = 0xAA;
+                  CLOCK_CFG |= bOSC_EN_XT;                          //使能外部晶振
+                  mDelaymS(10);
+                  SAFE_MOD = 0x55;
+                  SAFE_MOD = 0xAA;
+                  CLOCK_CFG &= ~bOSC_EN_INT;                        //关闭内部晶振 
+                  SAFE_MOD = 0x00;
+              #endif  
+  41   1          SAFE_MOD = 0x55;
+  42   1          SAFE_MOD = 0xAA;
+  43   1      #if FREQ_SYS == 24000000  
+                  CLOCK_CFG = CLOCK_CFG & ~ MASK_SYS_CK_SEL | 0x06;  // 24MHz 
+              #endif  
+  46   1      #if FREQ_SYS == 16000000    
+                  CLOCK_CFG = CLOCK_CFG & ~ MASK_SYS_CK_SEL | 0x05;  // 16MHz 
+              #endif
+  49   1      #if FREQ_SYS == 12000000    
+  50   1          CLOCK_CFG = CLOCK_CFG & ~ MASK_SYS_CK_SEL | 0x04;  // 12MHz
+  51   1      #endif  
+  52   1      #if FREQ_SYS == 6000000   
+                  CLOCK_CFG = CLOCK_CFG & ~ MASK_SYS_CK_SEL | 0x03;  // 6MHz  
+              #endif  
+C51 COMPILER V9.60.0.0   DEBUG                                                             05/06/2024 01:42:00 PAGE 2   
+
+  55   1      #if FREQ_SYS == 3000000 
+                  CLOCK_CFG = CLOCK_CFG & ~ MASK_SYS_CK_SEL | 0x02;  // 3MHz  
+              #endif
+  58   1      #if FREQ_SYS == 750000  
+                  CLOCK_CFG = CLOCK_CFG & ~ MASK_SYS_CK_SEL | 0x01;  // 750KHz
+              #endif
+  61   1      #if FREQ_SYS == 187500  
+                  CLOCK_CFG = CLOCK_CFG & ~ MASK_SYS_CK_SEL | 0x00;  // 187.5KHz  
+              #endif
+  64   1          SAFE_MOD = 0x00;
+  65   1      }
+  66          
+  67          /*******************************************************************************
+  68          * Function Name  : mDelayus(UNIT16 n)
+  69          * Description    : us延时函数
+  70          * Input          : UNIT16 n
+  71          * Output         : None
+  72          * Return         : None
+  73          *******************************************************************************/ 
+  74          void  mDelayuS( UINT16 n )  // 以uS为单位延时
+  75          {
+  76   1      #ifdef  FREQ_SYS
+  77   1      #if   FREQ_SYS <= 6000000
+                  n >>= 2;
+              #endif
+  80   1      #if   FREQ_SYS <= 3000000
+                  n >>= 2;
+              #endif
+  83   1      #if   FREQ_SYS <= 750000
+                  n >>= 4;
+              #endif
+  86   1      #endif
+  87   1        while ( n ) {  // total = 12~13 Fsys cycles, 1uS @Fsys=12MHz
+  88   2          ++ SAFE_MOD;  // 2 Fsys cycles, for higher Fsys, add operation here
+  89   2      #ifdef  FREQ_SYS
+  90   2      #if   FREQ_SYS >= 14000000
+                  ++ SAFE_MOD;
+              #endif
+  93   2      #if   FREQ_SYS >= 16000000
+                  ++ SAFE_MOD;
+              #endif
+  96   2      #if   FREQ_SYS >= 18000000
+                  ++ SAFE_MOD;
+              #endif
+  99   2      #if   FREQ_SYS >= 20000000
+                  ++ SAFE_MOD;
+              #endif
+ 102   2      #if   FREQ_SYS >= 22000000
+                  ++ SAFE_MOD;
+              #endif
+ 105   2      #if   FREQ_SYS >= 24000000
+                  ++ SAFE_MOD;
+              #endif
+ 108   2      #endif
+ 109   2          -- n;
+ 110   2        }
+ 111   1      }
+ 112          
+ 113          /*******************************************************************************
+ 114          * Function Name  : mDelayms(UNIT16 n)
+ 115          * Description    : ms延时函数
+ 116          * Input          : UNIT16 n
+C51 COMPILER V9.60.0.0   DEBUG                                                             05/06/2024 01:42:00 PAGE 3   
+
+ 117          * Output         : None
+ 118          * Return         : None
+ 119          *******************************************************************************/
+ 120          void  mDelaymS( UINT16 n )                                                  // 以mS为单位延时
+ 121          {
+ 122   1        while ( n ) {
+ 123   2      #ifdef  DELAY_MS_HW
+                  while ( ( TKEY_CTRL & bTKC_IF ) == 0 );
+                  while ( TKEY_CTRL & bTKC_IF );
+              #else
+ 127   2          mDelayuS( 1000 );
+ 128   2      #endif
+ 129   2          -- n;
+ 130   2        }
+ 131   1      }                                         
+ 132          
+ 133          /*******************************************************************************
+ 134          * Function Name  : CH554UART0Alter()
+ 135          * Description    : CH554串口0引脚映射,串口映射到P1.2和P1.3
+ 136          * Input          : None
+ 137          * Output         : None
+ 138          * Return         : None
+ 139          *******************************************************************************/
+ 140          void CH554UART0Alter()
+ 141          {
+ 142   1          PIN_FUNC |= bUART0_PIN_X;                                                  //串口映射到P1.2和P1.
+             -3
+ 143   1      }
+ 144          
+ 145          /*******************************************************************************
+ 146          * Function Name  : mInitSTDIO()
+ 147          * Description    : CH554串口0初始化,默认使用T1作UART0的波特率发生器,也可以使用T2
+ 148                             作为波特率发生器
+ 149          * Input          : None
+ 150          * Output         : None
+ 151          * Return         : None
+ 152          *******************************************************************************/
+ 153          void  mInitSTDIO( )
+ 154          {
+ 155   1          UINT32 x;
+ 156   1          UINT8 x2; 
+ 157   1      
+ 158   1          SM0 = 0;
+ 159   1          SM1 = 1;
+ 160   1          SM2 = 0;                                                                   //串口0使用模式1
+ 161   1                                                                                     //使用Timer1作为波特�
+             -��发生器
+ 162   1          RCLK = 0;                                                                  //UART0接收时钟
+ 163   1          TCLK = 0;                                                                  //UART0发送时钟
+ 164   1          PCON |= SMOD;
+ 165   1          x = 10 * FREQ_SYS / UART0_BUAD / 16;                                       //如果更改主频，注�
+             -��x的值不要溢出                            
+ 166   1          x2 = x % 10;
+ 167   1          x /= 10;
+ 168   1          if ( x2 >= 5 ) x ++;                                                       //四舍五入
+ 169   1      
+ 170   1          TMOD = TMOD & ~ bT1_GATE & ~ bT1_CT & ~ MASK_T1_MOD | bT1_M1;              //0X20，Timer1作为8位�
+             -�动重载定时器
+ 171   1          T2MOD = T2MOD | bTMR_CLK | bT1_CLK;                                        //Timer1时钟选择
+ 172   1          TH1 = 0-x;                                                                 //12MHz晶振,buad/12为实
+             -际需设置波特率
+ 173   1          TR1 = 1;                                                                   //启动定时器1
+C51 COMPILER V9.60.0.0   DEBUG                                                             05/06/2024 01:42:00 PAGE 4   
+
+ 174   1          TI = 1;
+ 175   1          REN = 1;                                                                   //串口0接收使能
+ 176   1      }
+ 177          
+ 178          /*******************************************************************************
+ 179          * Function Name  : CH554UART0RcvByte()
+ 180          * Description    : CH554UART0接收一个字节
+ 181          * Input          : None
+ 182          * Output         : None
+ 183          * Return         : SBUF
+ 184          *******************************************************************************/
+ 185          UINT8  CH554UART0RcvByte( )
+ 186          {
+ 187   1          while(RI == 0);                                                            //查询接收，中断方�
+             -��可不用
+ 188   1          RI = 0;
+ 189   1          return SBUF;
+ 190   1      }
+ 191          
+ 192          /*******************************************************************************
+ 193          * Function Name  : CH554UART0SendByte(UINT8 SendDat)
+ 194          * Description    : CH554UART0发送一个字节
+ 195          * Input          : UINT8 SendDat；要发送的数据
+ 196          * Output         : None
+ 197          * Return         : None
+ 198          *******************************************************************************/
+ 199          void CH554UART0SendByte(UINT8 SendDat)
+ 200          {
+ 201   1        SBUF = SendDat;                                                              //查询发送，中断方�
+             -�可不用下面2条语句,但发送前需TI=0
+ 202   1        while(TI ==0);
+ 203   1        TI = 0;
+ 204   1      }
+ 205          
+ 206          /*******************************************************************************
+ 207          * Function Name  : CH554WDTModeSelect(UINT8 mode)
+ 208          * Description    : CH554看门狗模式选择
+ 209          * Input          : UINT8 mode 
+ 210                             0  timer
+ 211                             1  watchDog
+ 212          * Output         : None
+ 213          * Return         : None
+ 214          *******************************************************************************/
+ 215          void CH554WDTModeSelect(UINT8 mode)
+ 216          {
+ 217   1         SAFE_MOD = 0x55;
+ 218   1         SAFE_MOD = 0xaa;                                                             //进入安全模式
+ 219   1         if(mode){
+ 220   2           GLOBAL_CFG |= bWDOG_EN;                                                    //启动看门狗复位
+ 221   2         }
+ 222   1         else GLOBAL_CFG &= ~bWDOG_EN;                                              //启动看门狗仅仅作为
+             -定时器
+ 223   1         SAFE_MOD = 0x00;                                                             //退出安全模式
+ 224   1         WDOG_COUNT = 0;                                                              //看门狗赋初值
+ 225   1      }
+ 226          
+ 227          /*******************************************************************************
+ 228          * Function Name  : CH554WDTFeed(UINT8 tim)
+ 229          * Description    : CH554看门狗定时时间设置
+ 230          * Input          : UINT8 tim 看门狗复位时间设置
+ 231                             00H(6MHz)=2.8s
+ 232                             80H(6MHz)=1.4s
+C51 COMPILER V9.60.0.0   DEBUG                                                             05/06/2024 01:42:00 PAGE 5   
+
+ 233          * Output         : None
+ 234          * Return         : None
+ 235          *******************************************************************************/
+ 236          void CH554WDTFeed(UINT8 tim)
+ 237          {
+ 238   1         WDOG_COUNT = tim;                                                             //看门狗计数器赋�
+             -�  
+ 239   1      }
+ 240          
+ 241          // /*******************************************************************************
+ 242          // * Function Name  : CH554SoftReset()
+ 243          // * Description    : CH554软复位
+ 244          // * Input          : None
+ 245          // * Output         : None
+ 246          // * Return         : None
+ 247          // *******************************************************************************/
+ 248          // void CH554SoftReset( )
+ 249          // {
+ 250          //     SAFE_MOD = 0x55;
+ 251          //     SAFE_MOD = 0xAA;
+ 252          //     GLOBAL_CFG |=bSW_RESET;
+ 253          // }
+ 254          
+ 255          // /*******************************************************************************
+ 256          // * Function Name  : CH554USBDevWakeup()
+ 257          // * Description    : CH554设备模式唤醒主机，发送K信号
+ 258          // * Input          : None
+ 259          // * Output         : None
+ 260          // * Return         : None
+ 261          // *******************************************************************************/
+ 262          // void CH554USBDevWakeup( )
+ 263          // {
+ 264          //#ifdef Fullspeed
+ 265          //  UDEV_CTRL |= bUD_LOW_SPEED;
+ 266          //  mDelaymS(2);
+ 267          //  UDEV_CTRL &= ~bUD_LOW_SPEED;    
+ 268          //#else
+ 269          //  UDEV_CTRL &= ~bUD_LOW_SPEED;
+ 270          //  mDelaymS(2);
+ 271          //  UDEV_CTRL |= bUD_LOW_SPEED; 
+ 272          //#endif  
+ 273          // }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    268    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----       5
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
