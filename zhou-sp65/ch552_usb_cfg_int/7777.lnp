@@ -1,5 +1,0 @@
-"UART1.obj",
-"Debug.obj",
-"CompatibilityHID.obj" 
-TO "7777" 
-RAMSIZE(256) 
