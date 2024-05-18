@@ -13,8 +13,12 @@
   <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112"/>
   <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;Application"/>
   <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;Board Definition"/>
+  <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;None"/>
+  <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;nRF_Drivers"/>
   <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;nRF_Libraries"/>
+  <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;nRF_Log"/>
   <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;nRF_Properitary_RF"/>
+  <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;nRF_Segger_RTT"/>
   <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;User"/>
   <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;UserSrc"/>
   <ProjectSessionItem path="ble_app_hids_keyboard_pca10040e_s112;ble_app_hids_keyboard_pca10040e_s112;UTF8/UTF16 converter"/>
@@ -42,23 +46,12 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="62" useTextEdit="1" path="../../../main.c" left="0" top="56" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="182" useTextEdit="1" path="../../../UserSrc/uart_distributor.c" left="0" selected="1" top="53" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="102" useTextEdit="1" path="../../../UserSrc/u_esb_recv.c" left="0" top="89" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="129" useTextEdit="1" path="../../../UserSrc/fds_my.c" left="0" top="145" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="4" useTextEdit="1" path="../../../User/uart_distributor.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="11" useTextEdit="1" path="../../../User/fds_my.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="7" useTextEdit="1" path="../../../User/common_cfg.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../User/u_esb_recv.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="1002" useTextEdit="1" path="../../../../../../components/proprietary_rf/esb/nrf_esb.c" left="0" top="967" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="52" y="104" useTextEdit="1" path="../../../../../../components/proprietary_rf/esb/nrf_esb.h" left="0" top="75" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="102" useTextEdit="1" path="../../../../../../modules/nrfx/hal/nrf_uart.h" left="0" top="74" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="56" y="167" useTextEdit="1" path="../../../../../../components/libraries/log/src/nrf_log_internal.h" left="0" top="135" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="5913" useTextEdit="1" path="../config/sdk_config.h" left="0" top="5887" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="1551" useTextEdit="1" path="../../../../../../components/libraries/fds/fds.c" left="0" top="1533" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="86" useTextEdit="1" path="../../../../../../components/libraries/fds/fds.h" left="0" top="55" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="95" useTextEdit="1" path="../../../../../../components/libraries/util/sdk_errors.h" left="0" top="63" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="67" useTextEdit="1" path="../../../../../../components/boards/custom_board_810.h" left="0" top="26" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="14" y="10" useTextEdit="1" path="../../../User/common_cfg.h" left="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="1" useTextEdit="1" path="../../../User/sp_matrix.h" left="0" selected="1" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="42" y="49" useTextEdit="1" path="../../../UserSrc/u_esb_recv.c" left="0" top="16" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="44" y="104" useTextEdit="1" path="../../../UserSrc/sp_matrix.c" left="0" top="89" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="1139" useTextEdit="1" openedFrom="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_kb/UserSrc/sp_matrix.c" path="../../../../../../components/proprietary_rf/esb/nrf_esb.c" left="0" top="1139" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="159" useTextEdit="1" openedFrom="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_kb/UserSrc/u_esb_recv.c" path="../../../../../../components/proprietary_rf/esb/nrf_esb.h" left="0" top="142" codecName="UTF-8"/>
  </Files>
- <EMStudioWindow activeProject="ble_app_hids_keyboard_pca10040e_s112" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_kb/UserSrc" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="ble_app_hids_keyboard_pca10040e_s112" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/modules/nrfx/drivers/src" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

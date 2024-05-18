@@ -78,6 +78,7 @@
 #include "u_esb_recv.h"
 #include "fds_my.h"
 #include "uart_distributor.h"
+#include "sp_matrix.h"
 
 /**@brief Function for initializing the nrf log module.
  */
@@ -143,13 +144,13 @@ int main(void) {
     fds_init_my();
     NRF_LOG_INFO("FDS INIT\n");
 
-    esb_init_rx();
-    NRF_LOG_INFO("Enhanced ShockBurst Receiver INIT.\n");
+    esb_init_tx();
+    NRF_LOG_INFO("Enhanced ShockBurst Transmitter INIT.\n");
 
-    // Module Enable or Start
-    esb_enable();
-    NRF_LOG_INFO("ESB Start\n");
 
+    sp_matrix_init();
+    NRF_LOG_INFO("Split Matrix INIT.\n");
+    
     // Enter main loop.
     for (;;) {
         // module task

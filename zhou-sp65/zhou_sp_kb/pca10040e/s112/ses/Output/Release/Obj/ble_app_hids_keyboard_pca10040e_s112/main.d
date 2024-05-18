@@ -1,12 +1,12 @@
 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o: \
  D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\examples\proprietary_rf\zhou_sp_kb\main.c \
  ../../../../../../components/libraries/util/app_error.h \
- D:/PrgEnv/SES/bin/include/stdint.h \
- D:/PrgEnv/SES/bin/include/__SEGGER_RTL.h \
- D:/PrgEnv/SES/bin/include/__SEGGER_RTL_ConfDefaults.h \
- D:/PrgEnv/SES/bin/include/__SEGGER_RTL_Conf.h \
- D:/PrgEnv/SES/bin/include/__SEGGER_RTL_Arm_Conf.h \
- D:/PrgEnv/SES/bin/include/stdio.h D:/PrgEnv/SES/bin/include/stdbool.h \
+ D:/PrgEnv/sesarm/include/stdint.h \
+ D:/PrgEnv/sesarm/include/__SEGGER_RTL.h \
+ D:/PrgEnv/sesarm/include/__SEGGER_RTL_ConfDefaults.h \
+ D:/PrgEnv/sesarm/include/__SEGGER_RTL_Conf.h \
+ D:/PrgEnv/sesarm/include/__SEGGER_RTL_Arm_Conf.h \
+ D:/PrgEnv/sesarm/include/stdio.h D:/PrgEnv/sesarm/include/stdbool.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52810.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
@@ -27,7 +27,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o: \
  ../../../../../../components/libraries/scheduler/app_scheduler.h \
  ../config/sdk_config.h \
  ../../../../../../components/libraries/util/app_util.h \
- D:/PrgEnv/SES/bin/include/stddef.h \
+ D:/PrgEnv/sesarm/include/stddef.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/timer/app_timer.h \
  ../../../../../../components/libraries/util/nordic_common.h \
@@ -64,7 +64,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o: \
  ../../../../../../modules/nrfx/hal/nrf_clock.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_power_clock.h \
  ../../../../../../components/softdevice/common/nrf_sdh.h \
- D:/PrgEnv/SES/bin/include/string.h \
+ D:/PrgEnv/sesarm/include/string.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  ../../../../../../components/libraries/util/sdk_os.h \
@@ -77,8 +77,10 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o: \
  ../../../../../../components/libraries/log/src/nrf_log_ctrl_internal.h \
  ../../../../../../components/libraries/log/nrf_log_backend_interface.h \
  ../../../../../../components/libraries/memobj/nrf_memobj.h \
- D:/PrgEnv/SES/bin/include/stdlib.h \
+ D:/PrgEnv/sesarm/include/stdlib.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../../../../../../components/libraries/log/nrf_log_default_backends.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h ../../../User/u_esb_recv.h \
- ../../../User/fds_my.h ../../../User/uart_distributor.h
+ ../../../User/fds_my.h ../../../User/uart_distributor.h \
+ ../../../User/sp_matrix.h \
+ ../../../../../../components/proprietary_rf/esb/nrf_esb.h

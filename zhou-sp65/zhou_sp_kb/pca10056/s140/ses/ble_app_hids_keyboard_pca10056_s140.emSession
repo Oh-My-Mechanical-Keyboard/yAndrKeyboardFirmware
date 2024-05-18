@@ -44,18 +44,13 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="41" y="3047" useTextEdit="1" path="../config/sdk_config.h" left="0" top="3042" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="3" useTextEdit="1" path="../../../User/common_cfg.h" left="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="10669" useTextEdit="1" path="../config/sdk_config.h" left="0" selected="1" top="10662" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="3" useTextEdit="1" path="../../../User/common_cfg.h" left="0" top="0" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="5" useTextEdit="1" path="../../../User/product_cfg_yr.h" left="0" top="0" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="114" useTextEdit="1" openedFrom="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/biu_ble_keyboard_v5_3mode_recv/UserSrc/u_usbd_kb.c" path="../../../UserSrc/u_usbd_hid_kb.c" left="0" top="54" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="34" y="23" useTextEdit="1" path="../../../UserSrc/u_esb_recv.c" left="0" top="23" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="84" useTextEdit="1" path="../../../UserSrc/u_usbd_kb.c" left="0" top="32" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="221" useTextEdit="1" path="../../../main.c" left="0" top="195" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../User/HIDReportData.h" left="0" top="0" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../User/hid_desc.h" left="0" top="0" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="7" useTextEdit="1" path="../../../User/u_usbd_kb.h" left="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="30" y="23" useTextEdit="1" path="../../../UserSrc/u_esb_recv.c" left="0" top="23" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="163" useTextEdit="1" path="../../../main.c" left="0" top="128" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../../../../integration/nrfx/legacy/nrf_drv_power.c" left="0" top="87" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../../../../components/proprietary_rf/esb/nrf_esb.c" left="0" selected="1" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="8" useTextEdit="1" path="../../../../../../components/proprietary_rf/esb/nrf_esb.c" left="0" top="0" codecName="UTF-8"/>
  </Files>
  <EMStudioWindow activeProject="kb_dog" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

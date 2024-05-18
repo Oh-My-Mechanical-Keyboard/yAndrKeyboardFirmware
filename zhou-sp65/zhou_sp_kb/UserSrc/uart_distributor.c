@@ -1,5 +1,6 @@
 #include "common_cfg.h"
 #include "fds_my.h"
+#include "sp_matrix.h"
 
 #include "uart_distributor.h"
 #include "app_fifo.h"
@@ -304,10 +305,8 @@ void uart_init(void) {
     uint32_t err_code;
     app_uart_comm_params_t const comm_params =
         {
-            .rx_pin_no = RX_PIN_NUMBER,
-            .tx_pin_no = TX_PIN_NUMBER,
-            .rts_pin_no = RTS_PIN_NUMBER,
-            .cts_pin_no = CTS_PIN_NUMBER,
+            .rx_pin_no = SPZ_RX_PIN,
+            .tx_pin_no = SPZ_TX_PIN,
             .flow_control = APP_UART_FLOW_CONTROL_DISABLED,
             .use_parity = false,
             .baud_rate = NRF_UART_BAUDRATE_38400};
@@ -317,7 +316,7 @@ void uart_init(void) {
         uart_event_handle_by_header_buffer,
         APP_IRQ_PRIORITY_LOWEST,
         err_code);
-    nrf_gpio_cfg_input(RX_PIN_NUMBER, NRF_GPIO_PIN_PULLUP);
-    nrf_gpio_cfg_input(TX_PIN_NUMBER, NRF_GPIO_PIN_PULLUP);
+    nrf_gpio_cfg_input(SPZ_RX_PIN, NRF_GPIO_PIN_PULLUP);
+    nrf_gpio_cfg_input(SPZ_TX_PIN, NRF_GPIO_PIN_PULLUP);
     APP_ERROR_CHECK(err_code);
 }
