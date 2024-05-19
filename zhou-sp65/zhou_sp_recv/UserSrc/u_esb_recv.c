@@ -32,7 +32,7 @@ static void nrf_esb_event_handler_rx(nrf_esb_evt_t const *p_event) {
             (void)nrf_esb_flush_tx();
             break;
         case NRF_ESB_EVENT_RX_RECEIVED:
-            NRF_LOG_DEBUG("RX RECEIVED EVENT");
+            //NRF_LOG_DEBUG("RX RECEIVED EVENT");
             while (nrf_esb_read_rx_payload(&rx_payload) == NRF_SUCCESS) {
                 //NRF_LOG_INFO("TX count %d", return_esb_tx_fifo_count());
                 //// 处理键盘发过来的数据

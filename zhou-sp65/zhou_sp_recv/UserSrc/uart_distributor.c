@@ -36,7 +36,7 @@ cmd_i  name               cmd_len
 5      set prefix         8
 6      get channel        0
 7      set channel        1
-8      test               0
+8      qmk_ready          1
 */
 
 #define CMD_MAX_I 8
@@ -224,13 +224,14 @@ static void uart_event_handle_by_header_buffer(app_uart_evt_t *p_event) {
     switch (p_event->evt_type) {
     case APP_UART_DATA_READY:
         UNUSED_VARIABLE(app_uart_get(&temp_buff));
+        NRF_LOG_INFO("app_uart_get %d\n", temp_buff);
         if (rx_pkg_s == 0) {
             if (temp_buff == 0xff) {
                 rx_pkg_s = 1;
                 rx_pkg_i = 0;
                 rx_pkg_len = 0;
                 memset(rx_data, 0, sizeof(rx_data));
-                NRF_LOG_INFO("Star Catch CMD");
+                // NRF_LOG_INFO("Star Catch CMD");
             } else {
                 rx_pkg_i = 0;
                 rx_pkg_len = 0;
@@ -313,7 +314,7 @@ void uart_init(void) {
             .cts_pin_no = CTS_PIN_NUMBER,
             .flow_control = APP_UART_FLOW_CONTROL_DISABLED,
             .use_parity = false,
-            .baud_rate = NRF_UART_BAUDRATE_38400};
+            .baud_rate = NRF_UART_BAUDRATE_115200};
     APP_UART_FIFO_INIT(&comm_params,
         UART_RX_BUF_SIZE,
         UART_TX_BUF_SIZE,

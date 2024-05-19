@@ -4,11 +4,13 @@
 #include "nrf_log.h"
 #include "app_error.h"
 #include "nrf_delay.h"
-
+#include "app_timer.h"
 #include "app_fifo.h"
 #include "app_uart.h"
 #include "nrf_assert.h"
 #include "nrf_uart.h"
+
+APP_TIMER_DEF(m_report_timer_id); /**< Report timer. */
 
 // Data and acknowledgement payloads
 static uint8_t data_payload_left[ESB_MAX_PAYLOAD_LENGTH];  ///< Placeholder for data payload received from host.
@@ -22,7 +24,7 @@ uint32_t left_active = 0;
 uint32_t right_active = 0;
 
 void process_esb_matirx_data(nrf_esb_payload_t rxd) {
-    NRF_LOG_INFO("RXD: len=%d, pipe=%d, rssi=%d, noack=%d, pid=%d", rxd.length, rxd.pipe, rxd.rssi, rxd.noack, rxd.pid);
+    //NRF_LOG_INFO("RXD: len=%d, pipe=%d, rssi=%d, noack=%d, pid=%d", rxd.length, rxd.pipe, rxd.rssi, rxd.noack, rxd.pid);
     switch (rxd.pipe) {
         case 0:
             packet_received_left = true;
@@ -76,10 +78,11 @@ void sp_matrix_task(void) {
     if (qmk_poll_ok)
     {
         qmk_poll_ok = false;
+        NRF_LOG_INFO("qmk_poll_ok\n");
         send_mx_data();
 
         // allowing UART buffers to clear
-        // nrf_delay_us(10);
+        nrf_delay_us(10);
     }
 
     // if no packets recieved from keyboards in a few seconds, assume either
@@ -108,4 +111,18 @@ void qmk_poll_data_ready(uint8_t flag) {
     } else {
         qmk_poll_ok = false;
     }
+}
+
+/* 记录超时的次数 */
+static void keyboard_report_timeout_handler(void *p_context) {
+    UNUSED_PARAMETER(p_context);
+    sp_matrix_task();
+}
+
+void sp_matrix_init(void) {
+    // init report timer
+    ret_code_t err_code = app_timer_create(&m_report_timer_id, APP_TIMER_MODE_REPEATED, keyboard_report_timeout_handler);
+    APP_ERROR_CHECK(err_code);
+    err_code = app_timer_start(m_report_timer_id, KEYBOARD_REPORT_INTERVAL, NULL);
+    APP_ERROR_CHECK(err_code);
 }

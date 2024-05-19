@@ -62,6 +62,8 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o: \
  ../../../../../../components/libraries/util/sdk_resources.h \
  ../../../../../../components/proprietary_rf/esb/nrf_esb_resources.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
+ ../../../../../../components/libraries/timer/app_timer.h \
+ ../../../../../../components/libraries/sortlist/nrf_sortlist.h \
  ../../../../../../components/libraries/fifo/app_fifo.h \
  D:/PrgEnv/sesarm/include/stdlib.h \
  ../../../../../../components/libraries/uart/app_uart.h \

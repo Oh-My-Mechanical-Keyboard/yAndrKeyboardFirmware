@@ -151,11 +151,11 @@ int main(void) {
     esb_enable();
     NRF_LOG_INFO("ESB Start\n");
 
+    // mx init
+    sp_matrix_init();
+
     // Enter main loop.
     for (;;) {
-        // matrix task
-        sp_matrix_task();
-        // module task
         idle_state_handle();
     }
 }
