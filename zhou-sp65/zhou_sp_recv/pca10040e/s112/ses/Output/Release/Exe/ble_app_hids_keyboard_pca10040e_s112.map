@@ -3696,7 +3696,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .init_rodata is too large to fit in FLASH memory segment)
                 0x0000000000000400                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x0000000000000400     0x54f8
+.text           0x0000000000000400     0x554c
                 0x0000000000000400                __text_start__ = .
  *(.text .text.* .gnu.linkonce.t.* .glue_7t .glue_7 .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x0000000000000400        0x0 linker stubs
@@ -4288,83 +4288,83 @@ Linker script and memory map
                 0x0000000000005010       0x64 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
                 0x0000000000005010                process_esb_matirx_data
  .text.send_mx_data
-                0x0000000000005074       0x3c Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+                0x0000000000005074       0x64 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
                 0x0000000000005074                send_mx_data
  .text.sp_matrix_task
-                0x00000000000050b0       0xd0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
-                0x00000000000050b0                sp_matrix_task
+                0x00000000000050d8       0xd0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+                0x00000000000050d8                sp_matrix_task
  .text.keyboard_report_timeout_handler
-                0x0000000000005180        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+                0x00000000000051a8        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
  .text.qmk_poll_data_ready
-                0x0000000000005184       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
-                0x0000000000005184                qmk_poll_data_ready
+                0x00000000000051ac       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+                0x00000000000051ac                qmk_poll_data_ready
  .text.sp_matrix_init
-                0x0000000000005198       0x34 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
-                0x0000000000005198                sp_matrix_init
+                0x00000000000051c0       0x34 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+                0x00000000000051c0                sp_matrix_init
  .text.nrf_esb_event_handler_rx
-                0x00000000000051cc       0xa8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
+                0x00000000000051f4       0xa8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
  .text.esb_init_rx
-                0x0000000000005274       0x78 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
-                0x0000000000005274                esb_init_rx
+                0x000000000000529c       0x78 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
+                0x000000000000529c                esb_init_rx
  .text.esb_enable
-                0x00000000000052ec       0x12 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
-                0x00000000000052ec                esb_enable
- *fill*         0x00000000000052fe        0x2 
+                0x0000000000005314       0x12 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
+                0x0000000000005314                esb_enable
+ *fill*         0x0000000000005326        0x2 
  .text.uart_event_handle_by_header_buffer
-                0x0000000000005300      0x38c Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
+                0x0000000000005328      0x3b8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
  .text.uart_init
-                0x000000000000568c       0x5c Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
-                0x000000000000568c                uart_init
+                0x00000000000056e0       0x5c Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
+                0x00000000000056e0                uart_init
  .text.libc.__SEGGER_RTL_ascii_mbtowc
-                0x00000000000056e8       0x34 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x00000000000056e8                __SEGGER_RTL_ascii_mbtowc
+                0x000000000000573c       0x34 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x000000000000573c                __SEGGER_RTL_ascii_mbtowc
  .text.libc.__SEGGER_RTL_ascii_wctomb
-                0x000000000000571c        0xe D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x000000000000571c                __SEGGER_RTL_ascii_wctomb
+                0x0000000000005770        0xe D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000005770                __SEGGER_RTL_ascii_wctomb
  .text.libc.__SEGGER_RTL_isctype
-                0x000000000000572a       0x20 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x000000000000577e       0x20 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .text.libc.isprint
-                0x000000000000574a        0x6 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x000000000000574a                isprint
+                0x000000000000579e        0x6 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x000000000000579e                isprint
  .text.libc.__SEGGER_RTL_ascii_isctype
-                0x0000000000005750       0x20 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x00000000000057a4       0x20 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .text.libc.__SEGGER_RTL_ascii_toupper
-                0x0000000000005770        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x00000000000057c4        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .text.libc.__SEGGER_RTL_ascii_tolower
-                0x000000000000577c        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x00000000000057d0        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .text.libc.__SEGGER_RTL_ascii_iswctype
-                0x0000000000005788       0x20 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x00000000000057dc       0x20 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .text.libc.__SEGGER_RTL_ascii_towupper
-                0x00000000000057a8        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x00000000000057fc        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .text.libc.__SEGGER_RTL_ascii_towlower
-                0x00000000000057b4        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000005808        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .text.libc.__SEGGER_RTL_init_heap
-                0x00000000000057c0       0x18 D:/PrgEnv/sesarm/lib/heapops_basic_v7em_t_le_eabi_balanced.a(heapops_basic.o)
-                0x00000000000057c0                __SEGGER_RTL_init_heap
+                0x0000000000005814       0x18 D:/PrgEnv/sesarm/lib/heapops_basic_v7em_t_le_eabi_balanced.a(heapops_basic.o)
+                0x0000000000005814                __SEGGER_RTL_init_heap
  .text.libc.strlen
-                0x00000000000057d8       0x2c D:/PrgEnv/sesarm/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strops.o)
-                0x00000000000057d8                strlen
+                0x000000000000582c       0x2c D:/PrgEnv/sesarm/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strops.o)
+                0x000000000000582c                strlen
  .text.libc.strcpy
-                0x0000000000005804       0x30 D:/PrgEnv/sesarm/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
-                0x0000000000005804                strcpy
+                0x0000000000005858       0x30 D:/PrgEnv/sesarm/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
+                0x0000000000005858                strcpy
  .text.libc.memcpy
-                0x0000000000005834       0x5c D:/PrgEnv/sesarm/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
-                0x0000000000005834                __aeabi_memcpy
-                0x0000000000005834                memcpy
-                0x0000000000005852                __aeabi_memcpy8
-                0x0000000000005852                __aeabi_memcpy4
+                0x0000000000005888       0x5c D:/PrgEnv/sesarm/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
+                0x0000000000005888                __aeabi_memcpy
+                0x0000000000005888                memcpy
+                0x00000000000058a6                __aeabi_memcpy8
+                0x00000000000058a6                __aeabi_memcpy4
  .text.libc.__aeabi_memclr
-                0x0000000000005890       0x68 D:/PrgEnv/sesarm/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
-                0x0000000000005890                __aeabi_memclr8
-                0x0000000000005890                __aeabi_memclr
-                0x0000000000005890                __aeabi_memclr4
-                0x0000000000005892                __aeabi_memset4
-                0x0000000000005892                __aeabi_memset8
-                0x0000000000005892                __aeabi_memset
-                0x0000000000005898                memset
-                0x00000000000058f8                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x00000000000054f8                __text_size__ = SIZEOF (.text)
-                0x00000000000058f8                __text_load_end__ = __text_end__
+                0x00000000000058e4       0x68 D:/PrgEnv/sesarm/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
+                0x00000000000058e4                __aeabi_memclr8
+                0x00000000000058e4                __aeabi_memclr
+                0x00000000000058e4                __aeabi_memclr4
+                0x00000000000058e6                __aeabi_memset4
+                0x00000000000058e6                __aeabi_memset8
+                0x00000000000058e6                __aeabi_memset
+                0x00000000000058ec                memset
+                0x000000000000594c                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x000000000000554c                __text_size__ = SIZEOF (.text)
+                0x000000000000594c                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -4375,199 +4375,199 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .text is too large to fit in FLASH memory segment)
-                0x00000000000058f8                __sdh_soc_observers_load_start__ = ALIGN (__text_end__, 0x4)
+                0x000000000000594c                __sdh_soc_observers_load_start__ = ALIGN (__text_end__, 0x4)
 
 .sdh_soc_observers
-                0x00000000000058f8        0x0
-                0x00000000000058f8                __sdh_soc_observers_start__ = .
-                0x00000000000058f8                __start_sdh_soc_observers = __sdh_soc_observers_start__
+                0x000000000000594c        0x0
+                0x000000000000594c                __sdh_soc_observers_start__ = .
+                0x000000000000594c                __start_sdh_soc_observers = __sdh_soc_observers_start__
  *(SORT_BY_NAME(.sdh_soc_observers*))
-                0x00000000000058f8                __sdh_soc_observers_end__ = (__sdh_soc_observers_start__ + SIZEOF (.sdh_soc_observers))
+                0x000000000000594c                __sdh_soc_observers_end__ = (__sdh_soc_observers_start__ + SIZEOF (.sdh_soc_observers))
                 0x0000000000000000                __sdh_soc_observers_size__ = SIZEOF (.sdh_soc_observers)
-                0x00000000000058f8                __stop_sdh_soc_observers = __sdh_soc_observers_end__
-                0x00000000000058f8                __sdh_soc_observers_load_end__ = __sdh_soc_observers_end__
+                0x000000000000594c                __stop_sdh_soc_observers = __sdh_soc_observers_end__
+                0x000000000000594c                __sdh_soc_observers_load_end__ = __sdh_soc_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_soc_observers_start__ == __sdh_soc_observers_end__) || ((__sdh_soc_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_soc_observers is too large to fit in FLASH memory segment)
-                0x00000000000058f8                __sdh_ble_observers_load_start__ = ALIGN (__sdh_soc_observers_end__, 0x4)
+                0x000000000000594c                __sdh_ble_observers_load_start__ = ALIGN (__sdh_soc_observers_end__, 0x4)
 
 .sdh_ble_observers
-                0x00000000000058f8        0x0
-                0x00000000000058f8                __sdh_ble_observers_start__ = .
-                0x00000000000058f8                __start_sdh_ble_observers = __sdh_ble_observers_start__
+                0x000000000000594c        0x0
+                0x000000000000594c                __sdh_ble_observers_start__ = .
+                0x000000000000594c                __start_sdh_ble_observers = __sdh_ble_observers_start__
  *(SORT_BY_NAME(.sdh_ble_observers*))
-                0x00000000000058f8                __sdh_ble_observers_end__ = (__sdh_ble_observers_start__ + SIZEOF (.sdh_ble_observers))
+                0x000000000000594c                __sdh_ble_observers_end__ = (__sdh_ble_observers_start__ + SIZEOF (.sdh_ble_observers))
                 0x0000000000000000                __sdh_ble_observers_size__ = SIZEOF (.sdh_ble_observers)
-                0x00000000000058f8                __stop_sdh_ble_observers = __sdh_ble_observers_end__
-                0x00000000000058f8                __sdh_ble_observers_load_end__ = __sdh_ble_observers_end__
+                0x000000000000594c                __stop_sdh_ble_observers = __sdh_ble_observers_end__
+                0x000000000000594c                __sdh_ble_observers_load_end__ = __sdh_ble_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_ble_observers_start__ == __sdh_ble_observers_end__) || ((__sdh_ble_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_ble_observers is too large to fit in FLASH memory segment)
-                0x00000000000058f8                __pwr_mgmt_data_load_start__ = ALIGN (__sdh_ble_observers_end__, 0x4)
+                0x000000000000594c                __pwr_mgmt_data_load_start__ = ALIGN (__sdh_ble_observers_end__, 0x4)
 
-.pwr_mgmt_data  0x00000000000058f8        0x0
-                0x00000000000058f8                __pwr_mgmt_data_start__ = .
-                0x00000000000058f8                __start_pwr_mgmt_data = __pwr_mgmt_data_start__
+.pwr_mgmt_data  0x000000000000594c        0x0
+                0x000000000000594c                __pwr_mgmt_data_start__ = .
+                0x000000000000594c                __start_pwr_mgmt_data = __pwr_mgmt_data_start__
  *(SORT_BY_NAME(.pwr_mgmt_data*))
-                0x00000000000058f8                __pwr_mgmt_data_end__ = (__pwr_mgmt_data_start__ + SIZEOF (.pwr_mgmt_data))
+                0x000000000000594c                __pwr_mgmt_data_end__ = (__pwr_mgmt_data_start__ + SIZEOF (.pwr_mgmt_data))
                 0x0000000000000000                __pwr_mgmt_data_size__ = SIZEOF (.pwr_mgmt_data)
-                0x00000000000058f8                __stop_pwr_mgmt_data = __pwr_mgmt_data_end__
-                0x00000000000058f8                __pwr_mgmt_data_load_end__ = __pwr_mgmt_data_end__
+                0x000000000000594c                __stop_pwr_mgmt_data = __pwr_mgmt_data_end__
+                0x000000000000594c                __pwr_mgmt_data_load_end__ = __pwr_mgmt_data_end__
                 0x0000000000000001                . = ASSERT (((__pwr_mgmt_data_start__ == __pwr_mgmt_data_end__) || ((__pwr_mgmt_data_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .pwr_mgmt_data is too large to fit in FLASH memory segment)
-                0x00000000000058f8                __sdh_req_observers_load_start__ = ALIGN (__pwr_mgmt_data_end__, 0x4)
+                0x000000000000594c                __sdh_req_observers_load_start__ = ALIGN (__pwr_mgmt_data_end__, 0x4)
 
 .sdh_req_observers
-                0x00000000000058f8        0x0
-                0x00000000000058f8                __sdh_req_observers_start__ = .
-                0x00000000000058f8                __start_sdh_req_observers = __sdh_req_observers_start__
+                0x000000000000594c        0x0
+                0x000000000000594c                __sdh_req_observers_start__ = .
+                0x000000000000594c                __start_sdh_req_observers = __sdh_req_observers_start__
  *(SORT_BY_NAME(.sdh_req_observers*))
-                0x00000000000058f8                __sdh_req_observers_end__ = (__sdh_req_observers_start__ + SIZEOF (.sdh_req_observers))
+                0x000000000000594c                __sdh_req_observers_end__ = (__sdh_req_observers_start__ + SIZEOF (.sdh_req_observers))
                 0x0000000000000000                __sdh_req_observers_size__ = SIZEOF (.sdh_req_observers)
-                0x00000000000058f8                __stop_sdh_req_observers = __sdh_req_observers_end__
-                0x00000000000058f8                __sdh_req_observers_load_end__ = __sdh_req_observers_end__
+                0x000000000000594c                __stop_sdh_req_observers = __sdh_req_observers_end__
+                0x000000000000594c                __sdh_req_observers_load_end__ = __sdh_req_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_req_observers_start__ == __sdh_req_observers_end__) || ((__sdh_req_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_req_observers is too large to fit in FLASH memory segment)
-                0x00000000000058f8                __sdh_state_observers_load_start__ = ALIGN (__sdh_req_observers_end__, 0x4)
+                0x000000000000594c                __sdh_state_observers_load_start__ = ALIGN (__sdh_req_observers_end__, 0x4)
 
 .sdh_state_observers
-                0x00000000000058f8        0x0
-                0x00000000000058f8                __sdh_state_observers_start__ = .
-                0x00000000000058f8                __start_sdh_state_observers = __sdh_state_observers_start__
+                0x000000000000594c        0x0
+                0x000000000000594c                __sdh_state_observers_start__ = .
+                0x000000000000594c                __start_sdh_state_observers = __sdh_state_observers_start__
  *(SORT_BY_NAME(.sdh_state_observers*))
-                0x00000000000058f8                __sdh_state_observers_end__ = (__sdh_state_observers_start__ + SIZEOF (.sdh_state_observers))
+                0x000000000000594c                __sdh_state_observers_end__ = (__sdh_state_observers_start__ + SIZEOF (.sdh_state_observers))
                 0x0000000000000000                __sdh_state_observers_size__ = SIZEOF (.sdh_state_observers)
-                0x00000000000058f8                __stop_sdh_state_observers = __sdh_state_observers_end__
-                0x00000000000058f8                __sdh_state_observers_load_end__ = __sdh_state_observers_end__
+                0x000000000000594c                __stop_sdh_state_observers = __sdh_state_observers_end__
+                0x000000000000594c                __sdh_state_observers_load_end__ = __sdh_state_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_state_observers_start__ == __sdh_state_observers_end__) || ((__sdh_state_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_state_observers is too large to fit in FLASH memory segment)
-                0x00000000000058f8                __sdh_stack_observers_load_start__ = ALIGN (__sdh_state_observers_end__, 0x4)
+                0x000000000000594c                __sdh_stack_observers_load_start__ = ALIGN (__sdh_state_observers_end__, 0x4)
 
 .sdh_stack_observers
-                0x00000000000058f8        0x0
-                0x00000000000058f8                __sdh_stack_observers_start__ = .
-                0x00000000000058f8                __start_sdh_stack_observers = __sdh_stack_observers_start__
+                0x000000000000594c        0x0
+                0x000000000000594c                __sdh_stack_observers_start__ = .
+                0x000000000000594c                __start_sdh_stack_observers = __sdh_stack_observers_start__
  *(SORT_BY_NAME(.sdh_stack_observers*))
-                0x00000000000058f8                __sdh_stack_observers_end__ = (__sdh_stack_observers_start__ + SIZEOF (.sdh_stack_observers))
+                0x000000000000594c                __sdh_stack_observers_end__ = (__sdh_stack_observers_start__ + SIZEOF (.sdh_stack_observers))
                 0x0000000000000000                __sdh_stack_observers_size__ = SIZEOF (.sdh_stack_observers)
-                0x00000000000058f8                __stop_sdh_stack_observers = __sdh_stack_observers_end__
-                0x00000000000058f8                __sdh_stack_observers_load_end__ = __sdh_stack_observers_end__
+                0x000000000000594c                __stop_sdh_stack_observers = __sdh_stack_observers_end__
+                0x000000000000594c                __sdh_stack_observers_load_end__ = __sdh_stack_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_stack_observers_start__ == __sdh_stack_observers_end__) || ((__sdh_stack_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_stack_observers is too large to fit in FLASH memory segment)
-                0x00000000000058f8                __nrf_queue_load_start__ = ALIGN (__sdh_stack_observers_end__, 0x4)
+                0x000000000000594c                __nrf_queue_load_start__ = ALIGN (__sdh_stack_observers_end__, 0x4)
 
-.nrf_queue      0x00000000000058f8        0x0
-                0x00000000000058f8                __nrf_queue_start__ = .
-                0x00000000000058f8                __start_nrf_queue = __nrf_queue_start__
+.nrf_queue      0x000000000000594c        0x0
+                0x000000000000594c                __nrf_queue_start__ = .
+                0x000000000000594c                __start_nrf_queue = __nrf_queue_start__
  *(.nrf_queue*)
-                0x00000000000058f8                __nrf_queue_end__ = (__nrf_queue_start__ + SIZEOF (.nrf_queue))
+                0x000000000000594c                __nrf_queue_end__ = (__nrf_queue_start__ + SIZEOF (.nrf_queue))
                 0x0000000000000000                __nrf_queue_size__ = SIZEOF (.nrf_queue)
-                0x00000000000058f8                __stop_nrf_queue = __nrf_queue_end__
-                0x00000000000058f8                __nrf_queue_load_end__ = __nrf_queue_end__
+                0x000000000000594c                __stop_nrf_queue = __nrf_queue_end__
+                0x000000000000594c                __nrf_queue_load_end__ = __nrf_queue_end__
                 0x0000000000000001                . = ASSERT (((__nrf_queue_start__ == __nrf_queue_end__) || ((__nrf_queue_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .nrf_queue is too large to fit in FLASH memory segment)
-                0x00000000000058f8                __nrf_balloc_load_start__ = ALIGN (__nrf_queue_end__, 0x4)
+                0x000000000000594c                __nrf_balloc_load_start__ = ALIGN (__nrf_queue_end__, 0x4)
 
-.nrf_balloc     0x00000000000058f8       0x14
-                0x00000000000058f8                __nrf_balloc_start__ = .
-                0x00000000000058f8                __start_nrf_balloc = __nrf_balloc_start__
+.nrf_balloc     0x000000000000594c       0x14
+                0x000000000000594c                __nrf_balloc_start__ = .
+                0x000000000000594c                __start_nrf_balloc = __nrf_balloc_start__
  *(.nrf_balloc*)
- .nrf_balloc    0x00000000000058f8       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
-                0x00000000000058f8                log_mempool
-                0x000000000000590c                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
+ .nrf_balloc    0x000000000000594c       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
+                0x000000000000594c                log_mempool
+                0x0000000000005960                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
                 0x0000000000000014                __nrf_balloc_size__ = SIZEOF (.nrf_balloc)
-                0x000000000000590c                __stop_nrf_balloc = __nrf_balloc_end__
-                0x000000000000590c                __nrf_balloc_load_end__ = __nrf_balloc_end__
+                0x0000000000005960                __stop_nrf_balloc = __nrf_balloc_end__
+                0x0000000000005960                __nrf_balloc_load_end__ = __nrf_balloc_end__
                 0x0000000000000001                . = ASSERT (((__nrf_balloc_start__ == __nrf_balloc_end__) || ((__nrf_balloc_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .nrf_balloc is too large to fit in FLASH memory segment)
-                0x000000000000590c                __cli_command_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
+                0x0000000000005960                __cli_command_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
 
-.cli_command    0x000000000000590c        0x0
-                0x000000000000590c                __cli_command_start__ = .
-                0x000000000000590c                __start_cli_command = __cli_command_start__
+.cli_command    0x0000000000005960        0x0
+                0x0000000000005960                __cli_command_start__ = .
+                0x0000000000005960                __start_cli_command = __cli_command_start__
  *(.cli_command*)
-                0x000000000000590c                __cli_command_end__ = (__cli_command_start__ + SIZEOF (.cli_command))
+                0x0000000000005960                __cli_command_end__ = (__cli_command_start__ + SIZEOF (.cli_command))
                 0x0000000000000000                __cli_command_size__ = SIZEOF (.cli_command)
-                0x000000000000590c                __stop_cli_command = __cli_command_end__
-                0x000000000000590c                __cli_command_load_end__ = __cli_command_end__
+                0x0000000000005960                __stop_cli_command = __cli_command_end__
+                0x0000000000005960                __cli_command_load_end__ = __cli_command_end__
                 0x0000000000000001                . = ASSERT (((__cli_command_start__ == __cli_command_end__) || ((__cli_command_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .cli_command is too large to fit in FLASH memory segment)
-                0x000000000000590c                __crypto_data_load_start__ = ALIGN (__cli_command_end__, 0x4)
+                0x0000000000005960                __crypto_data_load_start__ = ALIGN (__cli_command_end__, 0x4)
 
-.crypto_data    0x000000000000590c        0x0
-                0x000000000000590c                __crypto_data_start__ = .
-                0x000000000000590c                __start_crypto_data = __crypto_data_start__
+.crypto_data    0x0000000000005960        0x0
+                0x0000000000005960                __crypto_data_start__ = .
+                0x0000000000005960                __start_crypto_data = __crypto_data_start__
  *(SORT_BY_NAME(.crypto_data*))
-                0x000000000000590c                __crypto_data_end__ = (__crypto_data_start__ + SIZEOF (.crypto_data))
+                0x0000000000005960                __crypto_data_end__ = (__crypto_data_start__ + SIZEOF (.crypto_data))
                 0x0000000000000000                __crypto_data_size__ = SIZEOF (.crypto_data)
-                0x000000000000590c                __stop_crypto_data = __crypto_data_end__
-                0x000000000000590c                __crypto_data_load_end__ = __crypto_data_end__
+                0x0000000000005960                __stop_crypto_data = __crypto_data_end__
+                0x0000000000005960                __crypto_data_load_end__ = __crypto_data_end__
                 0x0000000000000001                . = ASSERT (((__crypto_data_start__ == __crypto_data_end__) || ((__crypto_data_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .crypto_data is too large to fit in FLASH memory segment)
-                0x000000000000590c                __log_const_data_load_start__ = ALIGN (__crypto_data_end__, 0x4)
+                0x0000000000005960                __log_const_data_load_start__ = ALIGN (__crypto_data_end__, 0x4)
 
 .log_const_data
-                0x000000000000590c       0x58
-                0x000000000000590c                __log_const_data_start__ = .
-                0x000000000000590c                __start_log_const_data = __log_const_data_start__
+                0x0000000000005960       0x58
+                0x0000000000005960                __log_const_data_start__ = .
+                0x0000000000005960                __start_log_const_data = __log_const_data_start__
  *(SORT_BY_NAME(.log_const_data*))
  .log_const_data_CLOCK
-                0x000000000000590c        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_clock.o
-                0x000000000000590c                m_nrf_log_CLOCK_logs_data_const
+                0x0000000000005960        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_clock.o
+                0x0000000000005960                m_nrf_log_CLOCK_logs_data_const
  .log_const_data_GPIOTE
-                0x0000000000005914        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_gpiote.o
-                0x0000000000005914                m_nrf_log_GPIOTE_logs_data_const
+                0x0000000000005968        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_gpiote.o
+                0x0000000000005968                m_nrf_log_GPIOTE_logs_data_const
  .log_const_data_PRS
-                0x000000000000591c        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_prs.o
-                0x000000000000591c                m_nrf_log_PRS_logs_data_const
+                0x0000000000005970        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_prs.o
+                0x0000000000005970                m_nrf_log_PRS_logs_data_const
  .log_const_data_UART
-                0x0000000000005924        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_uart.o
-                0x0000000000005924                m_nrf_log_UART_logs_data_const
+                0x0000000000005978        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_uart.o
+                0x0000000000005978                m_nrf_log_UART_logs_data_const
  .log_const_data_UARTE
-                0x000000000000592c        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_uarte.o
-                0x000000000000592c                m_nrf_log_UARTE_logs_data_const
+                0x0000000000005980        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_uarte.o
+                0x0000000000005980                m_nrf_log_UARTE_logs_data_const
  .log_const_data_app
-                0x0000000000005934        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
-                0x0000000000005934                m_nrf_log_app_logs_data_const
+                0x0000000000005988        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
+                0x0000000000005988                m_nrf_log_app_logs_data_const
  .log_const_data_app_timer
-                0x000000000000593c        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
-                0x000000000000593c                m_nrf_log_app_timer_logs_data_const
+                0x0000000000005990        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
+                0x0000000000005990                m_nrf_log_app_timer_logs_data_const
  .log_const_data_clock
-                0x0000000000005944        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_drv_clock.o
-                0x0000000000005944                m_nrf_log_clock_logs_data_const
+                0x0000000000005998        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_drv_clock.o
+                0x0000000000005998                m_nrf_log_clock_logs_data_const
  .log_const_data_nrf_fstorage
-                0x000000000000594c        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
-                0x000000000000594c                m_nrf_log_nrf_fstorage_logs_data_const
+                0x00000000000059a0        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+                0x00000000000059a0                m_nrf_log_nrf_fstorage_logs_data_const
  .log_const_data_pwr_mgmt
-                0x0000000000005954        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_pwr_mgmt.o
-                0x0000000000005954                m_nrf_log_pwr_mgmt_logs_data_const
+                0x00000000000059a8        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_pwr_mgmt.o
+                0x00000000000059a8                m_nrf_log_pwr_mgmt_logs_data_const
  .log_const_data_sortlist
-                0x000000000000595c        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_sortlist.o
-                0x000000000000595c                m_nrf_log_sortlist_logs_data_const
-                0x0000000000005964                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
+                0x00000000000059b0        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_sortlist.o
+                0x00000000000059b0                m_nrf_log_sortlist_logs_data_const
+                0x00000000000059b8                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
                 0x0000000000000058                __log_const_data_size__ = SIZEOF (.log_const_data)
-                0x0000000000005964                __stop_log_const_data = __log_const_data_end__
-                0x0000000000005964                __log_const_data_load_end__ = __log_const_data_end__
+                0x00000000000059b8                __stop_log_const_data = __log_const_data_end__
+                0x00000000000059b8                __log_const_data_load_end__ = __log_const_data_end__
                 0x0000000000000001                . = ASSERT (((__log_const_data_start__ == __log_const_data_end__) || ((__log_const_data_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_const_data is too large to fit in FLASH memory segment)
-                0x0000000000005964                __log_backends_load_start__ = ALIGN (__log_const_data_end__, 0x4)
+                0x00000000000059b8                __log_backends_load_start__ = ALIGN (__log_const_data_end__, 0x4)
 
-.log_backends   0x0000000000005964       0x10
-                0x0000000000005964                __log_backends_start__ = .
-                0x0000000000005964                __start_log_backends = __log_backends_start__
+.log_backends   0x00000000000059b8       0x10
+                0x00000000000059b8                __log_backends_start__ = .
+                0x00000000000059b8                __start_log_backends = __log_backends_start__
  *(SORT_BY_NAME(.log_backends*))
- .log_backends  0x0000000000005964       0x10 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_default_backends.o
-                0x0000000000005974                __log_backends_end__ = (__log_backends_start__ + SIZEOF (.log_backends))
+ .log_backends  0x00000000000059b8       0x10 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_default_backends.o
+                0x00000000000059c8                __log_backends_end__ = (__log_backends_start__ + SIZEOF (.log_backends))
                 0x0000000000000010                __log_backends_size__ = SIZEOF (.log_backends)
-                0x0000000000005974                __stop_log_backends = __log_backends_end__
-                0x0000000000005974                __log_backends_load_end__ = __log_backends_end__
+                0x00000000000059c8                __stop_log_backends = __log_backends_end__
+                0x00000000000059c8                __log_backends_load_end__ = __log_backends_end__
                 0x0000000000000001                . = ASSERT (((__log_backends_start__ == __log_backends_end__) || ((__log_backends_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_backends is too large to fit in FLASH memory segment)
-                0x0000000000005974                __nrf_sections_load_start__ = ALIGN (__log_backends_end__, 0x4)
+                0x00000000000059c8                __nrf_sections_load_start__ = ALIGN (__log_backends_end__, 0x4)
 
-.nrf_sections   0x0000000000005974        0x0
-                0x0000000000005974                __nrf_sections_start__ = .
-                0x0000000000005974                __start_nrf_sections = __nrf_sections_start__
+.nrf_sections   0x00000000000059c8        0x0
+                0x00000000000059c8                __nrf_sections_start__ = .
+                0x00000000000059c8                __start_nrf_sections = __nrf_sections_start__
  *(.nrf_sections .nrf_sections.*)
-                0x0000000000005974                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
+                0x00000000000059c8                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
                 0x0000000000000000                __nrf_sections_size__ = SIZEOF (.nrf_sections)
-                0x0000000000005974                __nrf_sections_load_end__ = __nrf_sections_end__
+                0x00000000000059c8                __nrf_sections_load_end__ = __nrf_sections_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_start__ == __nrf_sections_end__) || ((__nrf_sections_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .nrf_sections is too large to fit in FLASH memory segment)
-                0x0000000000005974                __cli_sorted_cmd_ptrs_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
+                0x00000000000059c8                __cli_sorted_cmd_ptrs_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
 
 .cli_sorted_cmd_ptrs
-                0x0000000020000000        0x0 load address 0x0000000000005974
+                0x0000000020000000        0x0 load address 0x00000000000059c8
                 0x0000000020000000                __cli_sorted_cmd_ptrs_start__ = .
  *(.cli_sorted_cmd_ptrs*)
                 0x0000000020000000                __cli_sorted_cmd_ptrs_end__ = (__cli_sorted_cmd_ptrs_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
                 0x0000000000000000                __cli_sorted_cmd_ptrs_size__ = SIZEOF (.cli_sorted_cmd_ptrs)
-                0x0000000000005974                __cli_sorted_cmd_ptrs_load_end__ = (__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
+                0x00000000000059c8                __cli_sorted_cmd_ptrs_load_end__ = (__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
                 0x0000000000000001                . = ASSERT (((__cli_sorted_cmd_ptrs_load_start__ == __cli_sorted_cmd_ptrs_load_end__) || ((__cli_sorted_cmd_ptrs_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .cli_sorted_cmd_ptrs is too large to fit in FLASH memory segment)
 
 .cli_sorted_cmd_ptrs_run
@@ -4579,16 +4579,16 @@ Linker script and memory map
                 0x0000000020000000                __stop_cli_sorted_cmd_ptrs = __cli_sorted_cmd_ptrs_run_end__
                 0x0000000020000000                __cli_sorted_cmd_ptrs_run_load_end__ = __cli_sorted_cmd_ptrs_run_end__
                 0x0000000000000001                . = ASSERT (((__cli_sorted_cmd_ptrs_run_start__ == __cli_sorted_cmd_ptrs_run_end__) || ((__cli_sorted_cmd_ptrs_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .cli_sorted_cmd_ptrs_run is too large to fit in RAM1 memory segment)
-                0x0000000000005974                __fs_data_load_start__ = ALIGN ((__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs)), 0x4)
+                0x00000000000059c8                __fs_data_load_start__ = ALIGN ((__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs)), 0x4)
 
-.fs_data        0x0000000020000000       0x14 load address 0x0000000000005974
+.fs_data        0x0000000020000000       0x14 load address 0x00000000000059c8
                 0x0000000020000000                __fs_data_start__ = .
  *(.fs_data*)
  .fs_data       0x0000000020000000       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
                 0x0000000020000000                m_fs
                 0x0000000020000014                __fs_data_end__ = (__fs_data_start__ + SIZEOF (.fs_data))
                 0x0000000000000014                __fs_data_size__ = SIZEOF (.fs_data)
-                0x0000000000005988                __fs_data_load_end__ = (__fs_data_load_start__ + SIZEOF (.fs_data))
+                0x00000000000059dc                __fs_data_load_end__ = (__fs_data_load_start__ + SIZEOF (.fs_data))
                 0x0000000000000001                . = ASSERT (((__fs_data_load_start__ == __fs_data_load_end__) || ((__fs_data_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .fs_data is too large to fit in FLASH memory segment)
 
 .fs_data_run    0x0000000020000000        0x0
@@ -4599,15 +4599,15 @@ Linker script and memory map
                 0x0000000020000014                __stop_fs_data = __fs_data_run_end__
                 0x0000000020000014                __fs_data_run_load_end__ = __fs_data_run_end__
                 0x0000000000000001                . = ASSERT (((__fs_data_run_start__ == __fs_data_run_end__) || ((__fs_data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .fs_data_run is too large to fit in RAM1 memory segment)
-                0x0000000000005988                __log_dynamic_data_load_start__ = ALIGN ((__fs_data_load_start__ + SIZEOF (.fs_data)), 0x4)
+                0x00000000000059dc                __log_dynamic_data_load_start__ = ALIGN ((__fs_data_load_start__ + SIZEOF (.fs_data)), 0x4)
 
 .log_dynamic_data
-                0x0000000020000014        0x0 load address 0x0000000000005988
+                0x0000000020000014        0x0 load address 0x00000000000059dc
                 0x0000000020000014                __log_dynamic_data_start__ = .
  *(SORT_BY_NAME(.log_dynamic_data*))
                 0x0000000020000014                __log_dynamic_data_end__ = (__log_dynamic_data_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000000                __log_dynamic_data_size__ = SIZEOF (.log_dynamic_data)
-                0x0000000000005988                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
+                0x00000000000059dc                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_load_start__ == __log_dynamic_data_load_end__) || ((__log_dynamic_data_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_dynamic_data is too large to fit in FLASH memory segment)
 
 .log_dynamic_data_run
@@ -4619,15 +4619,15 @@ Linker script and memory map
                 0x0000000020000014                __stop_log_dynamic_data = __log_dynamic_data_run_end__
                 0x0000000020000014                __log_dynamic_data_run_load_end__ = __log_dynamic_data_run_end__
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_run_start__ == __log_dynamic_data_run_end__) || ((__log_dynamic_data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .log_dynamic_data_run is too large to fit in RAM1 memory segment)
-                0x0000000000005988                __log_filter_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
+                0x00000000000059dc                __log_filter_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
 
 .log_filter_data
-                0x0000000020000014        0x0 load address 0x0000000000005988
+                0x0000000020000014        0x0 load address 0x00000000000059dc
                 0x0000000020000014                __log_filter_data_start__ = .
  *(SORT_BY_NAME(.log_filter_data*))
                 0x0000000020000014                __log_filter_data_end__ = (__log_filter_data_start__ + SIZEOF (.log_filter_data))
                 0x0000000000000000                __log_filter_data_size__ = SIZEOF (.log_filter_data)
-                0x0000000000005988                __log_filter_data_load_end__ = (__log_filter_data_load_start__ + SIZEOF (.log_filter_data))
+                0x00000000000059dc                __log_filter_data_load_end__ = (__log_filter_data_load_start__ + SIZEOF (.log_filter_data))
                 0x0000000000000001                . = ASSERT (((__log_filter_data_load_start__ == __log_filter_data_load_end__) || ((__log_filter_data_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_filter_data is too large to fit in FLASH memory segment)
 
 .log_filter_data_run
@@ -4650,234 +4650,236 @@ Linker script and memory map
                 0x0000000000000000                __nrf_sections_run_end_size__ = SIZEOF (.nrf_sections_run_end)
                 0x0000000020000014                __nrf_sections_run_end_load_end__ = __nrf_sections_run_end_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_run_end_start__ == __nrf_sections_run_end_end__) || ((__nrf_sections_run_end_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .nrf_sections_run_end is too large to fit in RAM1 memory segment)
-                0x0000000000005988                __dtors_load_start__ = ALIGN ((__log_filter_data_load_start__ + SIZEOF (.log_filter_data)), 0x4)
+                0x00000000000059dc                __dtors_load_start__ = ALIGN ((__log_filter_data_load_start__ + SIZEOF (.log_filter_data)), 0x4)
 
-.dtors          0x0000000000005988        0x0
-                0x0000000000005988                __dtors_start__ = .
+.dtors          0x00000000000059dc        0x0
+                0x00000000000059dc                __dtors_start__ = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x0000000000005988                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x00000000000059dc                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x0000000000005988                __dtors_load_end__ = __dtors_end__
+                0x00000000000059dc                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .dtors is too large to fit in FLASH memory segment)
-                0x0000000000005988                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x00000000000059dc                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x0000000000005988        0x0
-                0x0000000000005988                __ctors_start__ = .
+.ctors          0x00000000000059dc        0x0
+                0x00000000000059dc                __ctors_start__ = .
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT_BY_NAME(.init_array.*))
-                0x0000000000005988                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x00000000000059dc                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x0000000000005988                __ctors_load_end__ = __ctors_end__
+                0x00000000000059dc                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ctors is too large to fit in FLASH memory segment)
-                0x0000000000005988                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x00000000000059dc                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x0000000000005988      0xc2d
-                0x0000000000005988                __rodata_start__ = .
+.rodata         0x00000000000059dc      0xc4d
+                0x00000000000059dc                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.main.str1.1
-                0x0000000000005988       0x44 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
+                0x00000000000059dc       0x44 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
  .rodata.str1.1
-                0x00000000000059cc        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_drv_clock.o
+                0x0000000000005a20        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_drv_clock.o
  .rodata.str1.1
-                0x00000000000059d2        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_clock.o
+                0x0000000000005a26        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_clock.o
  .rodata.str1.1
-                0x00000000000059d8        0x7 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_gpiote.o
+                0x0000000000005a2c        0x7 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_gpiote.o
  .rodata.str1.1
-                0x00000000000059df        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_prs.o
+                0x0000000000005a33        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_prs.o
  .rodata.str1.1
-                0x00000000000059e3        0x5 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_uart.o
+                0x0000000000005a37        0x5 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_uart.o
  .rodata.str1.1
-                0x00000000000059e8        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_uarte.o
+                0x0000000000005a3c        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_uarte.o
  .rodata.app_error_fault_handler.str1.1
-                0x00000000000059ee       0x19 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_error_weak.o
- *fill*         0x0000000000005a07        0x1 
+                0x0000000000005a42       0x19 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_error_weak.o
+ *fill*         0x0000000000005a5b        0x1 
  .rodata.m_app_timer_sortlist
-                0x0000000000005a08        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
+                0x0000000000005a5c        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
  .rodata.str1.1
-                0x0000000000005a14        0xa Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
- .rodata        0x0000000000005a1e        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
- *fill*         0x0000000000005a22        0x2 
- .rodata        0x0000000000005a24       0x20 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_uart_fifo.o
+                0x0000000000005a68        0xa Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
+ .rodata        0x0000000000005a72        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
+ *fill*         0x0000000000005a76        0x2 
+ .rodata        0x0000000000005a78       0x20 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_uart_fifo.o
  .rodata.drv_rtc_init.str1.1
-                0x0000000000005a44       0x34 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/drv_rtc.o
- *fill*         0x0000000000005a78        0x8 
+                0x0000000000005a98       0x34 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/drv_rtc.o
+ *fill*         0x0000000000005acc        0x4 
  .rodata.delay_machine_code.0
-                0x0000000000005a80        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/drv_rtc.o
- *fill*         0x0000000000005a86        0x2 
+                0x0000000000005ad0        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/drv_rtc.o
+ *fill*         0x0000000000005ad6        0x2 
  .rodata.dirty_header.1
-                0x0000000000005a88        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
+                0x0000000000005ad8        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
  .rodata.page_tag_data.4
-                0x0000000000005a8c        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
+                0x0000000000005adc        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
  .rodata.page_tag_swap.5
-                0x0000000000005a94        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
+                0x0000000000005ae4        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
  .rodata._aV2C.0
-                0x0000000000005a9c       0x10 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fprintf_format.o
+                0x0000000000005aec       0x10 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fprintf_format.o
  .rodata.nrf_fstorage_init.str1.1
-                0x0000000000005aac       0x2e Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+                0x0000000000005afc       0x2e Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
                                          0x34 (size before relaxing)
  .rodata.nrf_fstorage_uninit.str1.1
-                0x0000000000005ada        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+                0x0000000000005b2a        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
  .rodata.nrf_fstorage_read.str1.1
-                0x0000000000005ae6       0x48 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+                0x0000000000005b36       0x48 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
  .rodata.nrf_fstorage_write.str1.1
-                0x0000000000005b2e       0x92 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+                0x0000000000005b7e       0x92 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
  .rodata.nrf_fstorage_erase.str1.1
-                0x0000000000005bc0       0x75 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+                0x0000000000005c10       0x75 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
  .rodata.__func__.0
-                0x0000000000005c35       0x13 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+                0x0000000000005c85       0x13 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
  .rodata.__func__.1
-                0x0000000000005c48       0x13 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+                0x0000000000005c98       0x13 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
  .rodata.__func__.4
-                0x0000000000005c5b       0x12 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+                0x0000000000005cab       0x12 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
  .rodata.str1.1
-                0x0000000000005c6d        0xd Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
- *fill*         0x0000000000005c7a        0x2 
+                0x0000000000005cbd        0xd Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage.o
+ *fill*         0x0000000000005cca        0x2 
  .rodata.nrf_fstorage_nvmc
-                0x0000000000005c7c       0x20 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage_nvmc.o
-                0x0000000000005c7c                nrf_fstorage_nvmc
+                0x0000000000005ccc       0x20 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage_nvmc.o
+                0x0000000000005ccc                nrf_fstorage_nvmc
  .rodata.m_flash_info
-                0x0000000000005c9c        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage_nvmc.o
+                0x0000000000005cec        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage_nvmc.o
  .rodata.str1.1
-                0x0000000000005ca8        0x9 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_pwr_mgmt.o
+                0x0000000000005cf8        0x9 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_pwr_mgmt.o
  .rodata.str1.1
-                0x0000000000005cb1        0x9 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_sortlist.o
- *fill*         0x0000000000005cba        0x6 
+                0x0000000000005d01        0x9 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_sortlist.o
+ *fill*         0x0000000000005d0a        0x6 
  .rodata.delay_machine_code.0
-                0x0000000000005cc0        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_backend_rtt.o
- *fill*         0x0000000000005cc6        0x2 
+                0x0000000000005d10        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_backend_rtt.o
+ *fill*         0x0000000000005d16        0x2 
  .rodata.nrf_log_backend_rtt_api
-                0x0000000000005cc8        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_backend_rtt.o
-                0x0000000000005cc8                nrf_log_backend_rtt_api
+                0x0000000000005d18        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_backend_rtt.o
+                0x0000000000005d18                nrf_log_backend_rtt_api
  .rodata.str1.1
-                0x0000000000005cd4       0x10 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_default_backends.o
+                0x0000000000005d24       0x10 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_default_backends.o
  .rodata.nrf_log_frontend_dequeue.str1.1
-                0x0000000000005ce4       0x11 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
+                0x0000000000005d34       0x11 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
  .rodata.str1.1
-                0x0000000000005cf5        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
- *fill*         0x0000000000005cf9        0x3 
+                0x0000000000005d45        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
+ *fill*         0x0000000000005d49        0x3 
  .rodata.m_log_push_ringbuf
-                0x0000000000005cfc        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
+                0x0000000000005d4c        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_frontend.o
  .rodata.postfix_process.str1.1
-                0x0000000000005d08        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
+                0x0000000000005d58        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
                                           0xb (size before relaxing)
  .rodata.prefix_process.constprop.0.str1.1
-                0x0000000000005d10       0x2a Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
+                0x0000000000005d60       0x2a Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
  .rodata.nrf_log_hexdump_entry_process.str1.1
-                0x0000000000005d3a        0x9 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
+                0x0000000000005d8a        0x9 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
                                          0x11 (size before relaxing)
  .rodata.str1.1
-                0x0000000000005d43       0x4b Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
+                0x0000000000005d93       0x4b Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
                                          0x51 (size before relaxing)
- *fill*         0x0000000000005d8e        0x2 
+ *fill*         0x0000000000005dde        0x2 
  .rodata.m_colors
-                0x0000000000005d90       0x24 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
+                0x0000000000005de0       0x24 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
  .rodata.severity_names
-                0x0000000000005db4       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
+                0x0000000000005e04       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_str_formatter.o
  .rodata._DoInit.str1.1
-                0x0000000000005dc8       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/SEGGER_RTT.o
+                0x0000000000005e18       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/SEGGER_RTT.o
  .rodata.fds_evt_handler.str1.1
-                0x0000000000005ddc       0x7c Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
+                0x0000000000005e2c       0x7c Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
  .rodata.fds_update_esb_data.str1.1
-                0x0000000000005e58       0x63 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
+                0x0000000000005ea8       0x63 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
  .rodata.fds_init_my.str1.1
-                0x0000000000005ebb      0x16d Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
+                0x0000000000005f0b      0x16d Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
  .rodata.str1.1
-                0x0000000000006028      0x1a2 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
- *fill*         0x00000000000061ca        0x2 
+                0x0000000000006078      0x1a2 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
+ *fill*         0x000000000000621a        0x2 
  .rodata.err_str.0
-                0x00000000000061cc       0x3c Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
+                0x000000000000621c       0x3c Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
  .rodata.fds_evt_str
-                0x0000000000006208       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
+                0x0000000000006258       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
  .rodata.m_dummy_record
-                0x0000000000006220        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
+                0x0000000000006270        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
+ .rodata.send_mx_data.str1.1
+                0x000000000000627c       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
  .rodata.sp_matrix_task.str1.1
-                0x000000000000622c        0xd Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
- *fill*         0x0000000000006239        0x7 
+                0x0000000000006290        0xd Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+ *fill*         0x000000000000629d        0x3 
  .rodata.delay_machine_code.0
-                0x0000000000006240        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
- *fill*         0x0000000000006246        0x2 
+                0x00000000000062a0        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+ *fill*         0x00000000000062a6        0x2 
  .rodata.m_report_timer_id
-                0x0000000000006248        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+                0x00000000000062a8        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
  .rodata.nrf_esb_event_handler_rx.str1.1
-                0x000000000000624c       0x36 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
- *fill*         0x0000000000006282        0x2 
- .rodata        0x0000000000006284       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
+                0x00000000000062ac       0x36 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
+ *fill*         0x00000000000062e2        0x2 
+ .rodata        0x00000000000062e4       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
  .rodata.uart_event_handle_by_header_buffer.str1.1
-                0x000000000000629c       0xde Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
- *fill*         0x000000000000637a        0x2 
- .rodata        0x000000000000637c       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
+                0x00000000000062fc       0xf2 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
+ *fill*         0x00000000000063ee        0x2 
+ .rodata        0x00000000000063f0       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
  .rodata.libc.__SEGGER_RTL_c_locale
-                0x0000000000006394        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x0000000000006394                __SEGGER_RTL_c_locale
+                0x0000000000006408        0xc D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006408                __SEGGER_RTL_c_locale
  .rodata.libc..L.str
-                0x00000000000063a0        0x2 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
- *fill*         0x00000000000063a2        0x2 
+                0x0000000000006414        0x2 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+ *fill*         0x0000000000006416        0x2 
  .rodata.libc.__SEGGER_RTL_codeset_ascii
-                0x00000000000063a4       0x20 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x00000000000063a4                __SEGGER_RTL_codeset_ascii
+                0x0000000000006418       0x20 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006418                __SEGGER_RTL_codeset_ascii
  .rodata.libc.__SEGGER_RTL_c_locale_abbrev_day_names
-                0x00000000000063c4       0x1d D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x00000000000063c4                __SEGGER_RTL_c_locale_abbrev_day_names
+                0x0000000000006438       0x1d D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006438                __SEGGER_RTL_c_locale_abbrev_day_names
  .rodata.libc.__SEGGER_RTL_c_locale_abbrev_month_names
-                0x00000000000063e1       0x31 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x00000000000063e1                __SEGGER_RTL_c_locale_abbrev_month_names
+                0x0000000000006455       0x31 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006455                __SEGGER_RTL_c_locale_abbrev_month_names
  .rodata.libc.__SEGGER_RTL_data_utf8_period
-                0x0000000000006412        0x2 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x0000000000006412                __SEGGER_RTL_data_utf8_period
+                0x0000000000006486        0x2 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006486                __SEGGER_RTL_data_utf8_period
  .rodata.libc.__SEGGER_RTL_data_empty_string
-                0x0000000000006414        0x1 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x0000000000006414                __SEGGER_RTL_data_empty_string
+                0x0000000000006488        0x1 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006488                __SEGGER_RTL_data_empty_string
  .rodata.libc.__SEGGER_RTL_c_locale_day_names
-                0x0000000000006415       0x3a D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006489       0x3a D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .rodata.libc.__SEGGER_RTL_c_locale_month_names
-                0x000000000000644f       0x57 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x00000000000064c3       0x57 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .rodata.libc.__SEGGER_RTL_c_locale_am_pm_indicator
-                0x00000000000064a6        0x7 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x000000000000651a        0x7 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .rodata.libc.__SEGGER_RTL_c_locale_date_format
-                0x00000000000064ad        0x9 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006521        0x9 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .rodata.libc.__SEGGER_RTL_c_locale_time_format
-                0x00000000000064b6        0x9 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x000000000000652a        0x9 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .rodata.libc.__SEGGER_RTL_c_locale_date_time_format
-                0x00000000000064bf        0xf D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
- *fill*         0x00000000000064ce        0x2 
+                0x0000000000006533        0xf D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+ *fill*         0x0000000000006542        0x2 
  .rodata.libc.__SEGGER_RTL_c_locale_data
-                0x00000000000064d0       0x58 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x00000000000064d0                __SEGGER_RTL_c_locale_data
+                0x0000000000006544       0x58 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006544                __SEGGER_RTL_c_locale_data
  .rodata.libc.__SEGGER_RTL_ascii_ctype_map
-                0x0000000000006528       0x80 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x000000000000659c       0x80 D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
  .rodata.libc.__SEGGER_RTL_ascii_ctype_mask
-                0x00000000000065a8        0xd D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
-                0x00000000000065b5                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x0000000000000c2d                __rodata_size__ = SIZEOF (.rodata)
-                0x00000000000065b5                __rodata_load_end__ = __rodata_end__
+                0x000000000000661c        0xd D:/PrgEnv/sesarm/lib/libc_v7em_t_le_eabi_balanced.a(mbops.o)
+                0x0000000000006629                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x0000000000000c4d                __rodata_size__ = SIZEOF (.rodata)
+                0x0000000000006629                __rodata_load_end__ = __rodata_end__
 
-.rel.dyn        0x00000000000065b8        0x0
- .rel.iplt      0x00000000000065b8        0x0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
+.rel.dyn        0x000000000000662c        0x0
+ .rel.iplt      0x000000000000662c        0x0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
                 0x0000000000000001                . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .rodata is too large to fit in FLASH memory segment)
-                0x00000000000065b8                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x000000000000662c                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x00000000000065b8        0x0
-                0x00000000000065b8                __ARM.exidx_start__ = .
-                0x00000000000065b8                __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x000000000000662c        0x0
+                0x000000000000662c                __ARM.exidx_start__ = .
+                0x000000000000662c                __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x00000000000065b8                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x000000000000662c                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x0000000000000000                __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x00000000000065b8                __exidx_end = __ARM.exidx_end__
-                0x00000000000065b8                __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x000000000000662c                __exidx_end = __ARM.exidx_end__
+                0x000000000000662c                __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x0000000000000001                . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ARM.exidx is too large to fit in FLASH memory segment)
-                0x00000000000065b8                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x000000000000662c                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x0000000020000014        0x0 load address 0x00000000000065b8
+.fast           0x0000000020000014        0x0 load address 0x000000000000662c
                 0x0000000020000014                __fast_start__ = .
  *(.fast .fast.*)
                 0x0000000020000014                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x0000000000000000                __fast_size__ = SIZEOF (.fast)
-                0x00000000000065b8                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x000000000000662c                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x0000000000000001                . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .fast is too large to fit in FLASH memory segment)
 
 .fast_run       0x0000000020000014        0x0
@@ -4886,9 +4888,9 @@ Linker script and memory map
                 0x0000000000000000                __fast_run_size__ = (__fast_run_end__ - __fast_run_start__)
                 0x0000000020000014                __fast_run_load_end__ = __fast_run_end__
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .fast_run is too large to fit in RAM1 memory segment)
-                0x00000000000065b8                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x000000000000662c                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x0000000020000014       0xb8 load address 0x00000000000065b8
+.data           0x0000000020000014       0xb8 load address 0x000000000000662c
                 0x0000000020000014                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.SystemCoreClock
@@ -4923,7 +4925,7 @@ Linker script and memory map
                 0x00000000200000b8                __RAL_global_locale
                 0x00000000200000cc                __data_end__ = (__data_start__ + SIZEOF (.data))
                 0x00000000000000b8                __data_size__ = SIZEOF (.data)
-                0x0000000000006670                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x00000000000066e4                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
@@ -4935,16 +4937,16 @@ Linker script and memory map
                 0x00000000000000b8                __data_run_size__ = (__data_run_end__ - __data_run_start__)
                 0x00000000200000cc                __data_run_load_end__ = __data_run_end__
                 0x0000000000000001                . = ASSERT (((__data_run_start__ == __data_run_end__) || ((__data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .data_run is too large to fit in RAM1 memory segment)
-                0x0000000000006670                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x00000000000066e4                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x00000000200000cc        0x0 load address 0x0000000000006670
+.tdata          0x00000000200000cc        0x0 load address 0x00000000000066e4
                 0x00000000200000cc                __tdata_start__ = .
  *(.tdata .tdata.*)
                 0x00000000200000cc                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x0000000000006670                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x0000000000006670                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x0000000000006670                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
+                0x00000000000066e4                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x00000000000066e4                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x00000000000066e4                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .tdata is too large to fit in FLASH memory segment)
 
 .tdata_run      0x00000000200000cc        0x0

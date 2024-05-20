@@ -23,7 +23,7 @@ static void nrf_esb_event_handler_tx(nrf_esb_evt_t const *p_event) {
     uint32_t err_code;
     switch (p_event->evt_id) {
         case NRF_ESB_EVENT_TX_SUCCESS:
-            NRF_LOG_INFO("TXD: len=%d, pipe=%d, rssi=%d, noack=%d, pid=%d", tx_payload.length, tx_payload.pipe, tx_payload.rssi, tx_payload.noack, tx_payload.pid);
+            // NRF_LOG_INFO("TXD: len=%d, pipe=%d, rssi=%d, noack=%d, pid=%d", tx_payload.length, tx_payload.pipe, tx_payload.rssi, tx_payload.noack, tx_payload.pid);
             break;
         case NRF_ESB_EVENT_TX_FAILED:
             NRF_LOG_DEBUG("TX FAILED EVENT");

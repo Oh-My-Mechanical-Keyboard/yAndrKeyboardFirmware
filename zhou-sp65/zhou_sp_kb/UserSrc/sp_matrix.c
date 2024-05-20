@@ -42,6 +42,17 @@ static void shift_out_single(uint8_t value) {
     }
 }
 
+static void select_all_col(void) {
+#ifdef COMPILE_RIGHT
+        nrf_gpio_pin_set(R_COL8_PIN);
+#endif
+    nrf_gpio_pin_clear(HC595_RCK);
+    for (uint8_t i = 0; i < NUM_OF_74HC595; ++i) {
+        shift_out_single(0xff);
+    }
+    nrf_gpio_pin_set(HC595_RCK);
+
+}
 
 
 static void select_col(uint8_t col) {
@@ -131,15 +142,12 @@ static void sp_matrix_scan_task(void) {
     if (empty_keys()) {
         activity_ticks++;
         if (activity_ticks > ACTIVITY) {
-            NRF_LOG_INFO("sp_matrix_scan_task %d\n", activity_ticks);
             activity_ticks = 0;
             // 休眠
              app_timer_stop(m_scan_timer_id);
              app_timer_stop(m_keep_timer_id);
             // 和二极管方向有关，配置输出引脚，用来进行触发唤醒
-            for (uint8_t i = 0; i < COLUMNS; ++i) {
-                select_col(i);
-            }
+            select_all_col();
             nrfx_gpiote_in_config_t in_config = NRFX_GPIOTE_CONFIG_IN_SENSE_LOTOHI(false);
             in_config.pull = NRF_GPIO_PIN_PULLDOWN;
             for (uint8_t i = 0; i < ROWS; ++i) {

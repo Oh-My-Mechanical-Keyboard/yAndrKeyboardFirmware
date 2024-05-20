@@ -14,7 +14,7 @@
 #define TX_PAYLOAD_LENGTH COLUMNS
 #define ESB_MAX_PAYLOAD_LENGTH 32
 
-#define ACTIVITY 2000 // 降频扫描 2000ms
+#define ACTIVITY 8000 // 降频扫描 8000ms
 
 #define NUM_OF_74HC595 1
 
