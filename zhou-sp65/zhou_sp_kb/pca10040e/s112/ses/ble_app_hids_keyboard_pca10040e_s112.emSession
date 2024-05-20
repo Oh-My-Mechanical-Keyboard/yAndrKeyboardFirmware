@@ -47,11 +47,11 @@
  </Watch4>
  <Files>
   <SessionOpenFile windowGroup="DockEditLeft" x="14" y="10" useTextEdit="1" path="../../../User/common_cfg.h" left="0" top="0" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="4" useTextEdit="1" path="../../../User/sp_matrix.h" left="0" selected="1" top="0" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="25" useTextEdit="1" path="../../../UserSrc/u_esb_recv.c" left="0" top="32" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="4" useTextEdit="1" path="../../../User/sp_matrix.h" left="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="29" useTextEdit="1" path="../../../UserSrc/u_esb_recv.c" left="0" top="0" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="9" y="1139" useTextEdit="1" openedFrom="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_kb/UserSrc/sp_matrix.c" path="../../../../../../components/proprietary_rf/esb/nrf_esb.c" left="0" top="1139" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="8" y="159" useTextEdit="1" openedFrom="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_kb/UserSrc/u_esb_recv.c" path="../../../../../../components/proprietary_rf/esb/nrf_esb.h" left="0" top="142" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="149" useTextEdit="1" path="../../../UserSrc/sp_matrix.c" left="0" top="138" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="39" y="28" useTextEdit="1" path="../../../UserSrc/sp_matrix.c" left="0" selected="1" top="99" codecName="UTF-8"/>
  </Files>
- <EMStudioWindow activeProject="ble_app_hids_keyboard_pca10040e_s112" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/modules/nrfx/drivers/src" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="ble_app_hids_keyboard_pca10040e_s112" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/modules/nrfx/drivers/src" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

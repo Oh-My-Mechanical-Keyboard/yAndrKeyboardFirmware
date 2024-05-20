@@ -6899,12 +6899,12 @@
 // <i> longer one will be fragmented.
 
 #ifndef NRF_LOG_BACKEND_RTT_TEMP_BUFFER_SIZE
-#define NRF_LOG_BACKEND_RTT_TEMP_BUFFER_SIZE 64
+#define NRF_LOG_BACKEND_RTT_TEMP_BUFFER_SIZE 256
 #endif
 
 // <o> NRF_LOG_BACKEND_RTT_TX_RETRY_DELAY_MS - Period before retrying writing to RTT 
 #ifndef NRF_LOG_BACKEND_RTT_TX_RETRY_DELAY_MS
-#define NRF_LOG_BACKEND_RTT_TX_RETRY_DELAY_MS 1
+#define NRF_LOG_BACKEND_RTT_TX_RETRY_DELAY_MS 2
 #endif
 
 // <o> NRF_LOG_BACKEND_RTT_TX_RETRY_CNT - Writing to RTT retries. 
@@ -6968,7 +6968,7 @@
 // <e> NRF_LOG_ENABLED - nrf_log - Logger
 //==========================================================
 #ifndef NRF_LOG_ENABLED
-#define NRF_LOG_ENABLED 1
+#define NRF_LOG_ENABLED 0
 #endif
 // <h> Log message pool - Configuration of log message pool
 

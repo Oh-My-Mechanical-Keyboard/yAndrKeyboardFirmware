@@ -1,31 +1,31 @@
 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/system_nrf52810.o: \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52810.c \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52.c \
- D:/PrgEnv/sesarm/include/stdint.h \
- D:/PrgEnv/sesarm/include/__SEGGER_RTL.h \
- D:/PrgEnv/sesarm/include/__SEGGER_RTL_ConfDefaults.h \
- D:/PrgEnv/sesarm/include/__SEGGER_RTL_Conf.h \
- D:/PrgEnv/sesarm/include/__SEGGER_RTL_Arm_Conf.h \
- D:/PrgEnv/sesarm/include/stdbool.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf52810.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52810.c \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52.c \
+ D:/software/segger/ses/include/stdint.h \
+ D:/software/segger/ses/include/__SEGGER_RTL.h \
+ D:/software/segger/ses/include/__SEGGER_RTL_ConfDefaults.h \
+ D:/software/segger/ses/include/__SEGGER_RTL_Conf.h \
+ D:/software/segger/ses/include/__SEGGER_RTL_Arm_Conf.h \
+ D:/software/segger/ses/include/stdbool.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf52810.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
  ../../../../../../components/toolchain/cmsis/include/cmsis_version.h \
  ../../../../../../components/toolchain/cmsis/include/cmsis_compiler.h \
  ../../../../../../components/toolchain/cmsis/include/cmsis_gcc.h \
  ../../../../../../components/toolchain/cmsis/include/mpu_armv7.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52810.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf52810_bitfields.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf51_to_nrf52810.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf52_to_nrf52810.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf52810_name_change.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\compiler_abstraction.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf_peripherals.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf52810_peripherals.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf_erratas.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf51_erratas.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf52_erratas.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf53_erratas.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\nrf91_erratas.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52_approtect.h
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52810.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf52810_bitfields.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf51_to_nrf52810.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf52_to_nrf52810.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf52810_name_change.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\compiler_abstraction.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf_peripherals.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf52810_peripherals.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf_erratas.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf51_erratas.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf52_erratas.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf53_erratas.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\nrf91_erratas.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\mdk\system_nrf52_approtect.h

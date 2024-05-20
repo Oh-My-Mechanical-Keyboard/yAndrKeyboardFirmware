@@ -50,10 +50,7 @@ void send_mx_data(void) {
     // 把列数据发送出去
     for (uint8_t i = 0; i < DOBCOLUMNS; ++i) {
         app_uart_put(data_buffer[i]); // data:i
-        if(data_buffer[i] != 0)
-          NRF_LOG_INFO("data_buffer[%d]=%d\n", i, data_buffer[i]);
     }
-
     app_uart_put(0xfe);  // tail
 }
 
@@ -81,10 +78,11 @@ void sp_matrix_task(void) {
     {
         qmk_poll_ok = false;
         NRF_LOG_INFO("qmk_poll_ok\n");
+        nrf_delay_us(10);
         send_mx_data();
-
         // allowing UART buffers to clear
         nrf_delay_us(10);
+
     }
 
     // if no packets recieved from keyboards in a few seconds, assume either

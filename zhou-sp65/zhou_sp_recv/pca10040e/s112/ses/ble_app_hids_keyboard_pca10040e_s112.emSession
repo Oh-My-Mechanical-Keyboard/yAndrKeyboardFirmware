@@ -41,15 +41,17 @@
  </Watch4>
  <Files>
   <SessionOpenFile windowGroup="DockEditLeft" x="25" y="18" useTextEdit="1" path="../../../User/common_cfg.h" left="0" top="0" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="38" useTextEdit="1" path="../../../UserSrc/u_esb_recv.c" left="0" top="0" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="284" useTextEdit="1" path="../../../UserSrc/uart_distributor.c" left="0" selected="1" top="268" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="67" useTextEdit="1" openedFrom="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_recv/UserSrc/u_esb_recv.c" path="../../../UserSrc/sp_matrix.c" left="0" top="63" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="6" useTextEdit="1" openedFrom="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_recv/UserSrc/sp_matrix.c" path="../../../User/sp_matrix.h" left="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="52" y="38" useTextEdit="1" path="../../../UserSrc/u_esb_recv.c" left="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="36" y="324" useTextEdit="1" path="../../../UserSrc/uart_distributor.c" left="0" top="300" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="43" useTextEdit="1" openedFrom="D:/PRJ/KB/dev/nRF5_SDK_17.1.0_ddde560/nRF5_SDK_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_recv/UserSrc/u_esb_recv.c" path="../../../UserSrc/sp_matrix.c" left="0" top="31" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="11" useTextEdit="1" openedFrom="D:/PRJ/KB/dev/nRF5_SDK_17.1.0_ddde560/nRF5_SDK_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_recv/UserSrc/sp_matrix.c" path="../../../User/sp_matrix.h" left="0" selected="1" top="0" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="16" y="305" useTextEdit="1" openedFrom="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_recv/UserSrc/sp_matrix.c" path="../../../../../../components/proprietary_rf/esb/nrf_esb.h" left="0" top="293" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="34" y="5518" useTextEdit="1" path="../config/sdk_config.h" left="0" top="5488" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="6970" useTextEdit="1" path="../config/sdk_config.h" left="0" top="6952" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="57" useTextEdit="1" path="../../../main.c" left="0" top="57" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="106" useTextEdit="1" openedFrom="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_recv/UserSrc/uart_distributor.c" path="../../../../../../modules/nrfx/hal/nrf_uart.h" left="0" top="85" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="107" useTextEdit="1" openedFrom="D:/PRJ/KB/dev/nRF5_SDK_17.1.0_ddde560/nRF5_SDK_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_recv/UserSrc/uart_distributor.c" path="../../../../../../modules/nrfx/hal/nrf_uart.h" left="0" top="85" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../User/uart_distributor.h" left="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="49" y="737" useTextEdit="1" openedFrom="D:/PRJ/KB/dev/nRF5_SDK_17.1.0_ddde560/nRF5_SDK_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_recv/UserSrc/uart_distributor.c" path="../../../../../../modules/nrfx/hal/nrf_gpio.h" left="0" top="788" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="54" useTextEdit="1" openedFrom="D:/PRJ/KB/dev/nRF5_SDK_17.1.0_ddde560/nRF5_SDK_17.1.0_ddde560/examples/proprietary_rf/zhou_sp_recv/UserSrc/sp_matrix.c" path="../../../../../../components/libraries/delay/nrf_delay.h" left="0" top="0" codecName="Default"/>
  </Files>
  <EMStudioWindow activeProject="ble_app_hids_keyboard_pca10040e_s112" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/PRJ/KBs/DEV/nrf5_sdk_17.1.0_ddde560/modules/nrfx/hal" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

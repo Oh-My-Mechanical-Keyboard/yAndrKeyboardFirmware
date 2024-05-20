@@ -224,7 +224,7 @@ static void uart_event_handle_by_header_buffer(app_uart_evt_t *p_event) {
     switch (p_event->evt_type) {
     case APP_UART_DATA_READY:
         UNUSED_VARIABLE(app_uart_get(&temp_buff));
-        // NRF_LOG_INFO("app_uart_get %d\n", temp_buff);
+        NRF_LOG_INFO("app_uart_get %d\n", temp_buff);
         if (rx_pkg_s == 0) {
             if (temp_buff == 0xff) {
                 rx_pkg_s = 1;
@@ -244,11 +244,11 @@ static void uart_event_handle_by_header_buffer(app_uart_evt_t *p_event) {
                     rx_pkg_i = 0;
                 }
                 rx_pkg_len = cmd_lens[cmd_i];
-                NRF_LOG_INFO("Catch CMD %d, len %d", cmd_i, rx_pkg_len);
+                //NRF_LOG_INFO("Catch CMD %d, len %d", cmd_i, rx_pkg_len);
             } else if (rx_pkg_i-1 >= rx_pkg_len) {
                 if (temp_buff == 0xfe) {
                     // 执行命令
-                    NRF_LOG_INFO("RUN CMD %d", cmd_i);
+                    //NRF_LOG_INFO("RUN CMD %d", cmd_i);
                     switch (cmd_i) {
                         case 0:
                             return_add0_to_ch552();
@@ -282,7 +282,7 @@ static void uart_event_handle_by_header_buffer(app_uart_evt_t *p_event) {
                 rx_pkg_s = 0;
                 rx_pkg_i = 0;
             } else {
-                NRF_LOG_INFO("rx_data[rx_pkg_i-1=%d]=temp_buff=%d\n", rx_pkg_i-1, temp_buff);
+                // NRF_LOG_INFO("rx_data[rx_pkg_i-1=%d]=temp_buff=%d\n", rx_pkg_i-1, temp_buff);
                 rx_data[rx_pkg_i-1] = temp_buff;
             }
             rx_pkg_i++;
@@ -315,7 +315,7 @@ void uart_init(void) {
             .cts_pin_no = CTS_PIN_NUMBER,
             .flow_control = APP_UART_FLOW_CONTROL_DISABLED,
             .use_parity = false,
-            .baud_rate = NRF_UART_BAUDRATE_115200};
+            .baud_rate = NRF_UART_BAUDRATE_230400};
     APP_UART_FIFO_INIT(&comm_params,
         UART_RX_BUF_SIZE,
         UART_TX_BUF_SIZE,
@@ -323,6 +323,5 @@ void uart_init(void) {
         APP_IRQ_PRIORITY_LOWEST,
         err_code);
     nrf_gpio_cfg_input(RX_PIN_NUMBER, NRF_GPIO_PIN_PULLUP);
-    nrf_gpio_cfg_input(TX_PIN_NUMBER, NRF_GPIO_PIN_PULLUP);
     APP_ERROR_CHECK(err_code);
 }
