@@ -77,7 +77,7 @@ void sp_matrix_task(void) {
     if (qmk_poll_ok)
     {
         qmk_poll_ok = false;
-        NRF_LOG_INFO("qmk_poll_ok\n");
+        // NRF_LOG_INFO("qmk_poll_ok\n");
         nrf_delay_us(10);
         send_mx_data();
         // allowing UART buffers to clear

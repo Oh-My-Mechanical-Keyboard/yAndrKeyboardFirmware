@@ -164,10 +164,10 @@ static void return_perfix_to_ch552(void) {
     app_uart_put(esb_fds.addr_perfix[1]);  // data:1
     app_uart_put(esb_fds.addr_perfix[2]);  // data:2
     app_uart_put(esb_fds.addr_perfix[3]);  // data:3
-    app_uart_put(esb_fds.addr_perfix[4]);  // data:3
-    app_uart_put(esb_fds.addr_perfix[5]);  // data:3
-    app_uart_put(esb_fds.addr_perfix[6]);  // data:3
-    app_uart_put(esb_fds.addr_perfix[7]);  // data:3
+    app_uart_put(esb_fds.addr_perfix[4]);  // data:4
+    app_uart_put(esb_fds.addr_perfix[5]);  // data:5
+    app_uart_put(esb_fds.addr_perfix[6]);  // data:6
+    app_uart_put(esb_fds.addr_perfix[7]);  // data:7
 
     app_uart_put(0xfe);  // tail
 }
@@ -243,7 +243,7 @@ static void uart_event_handle_by_header_buffer(app_uart_evt_t *p_event) {
     switch (p_event->evt_type) {
     case APP_UART_DATA_READY:
         UNUSED_VARIABLE(app_uart_get(&temp_buff));
-        NRF_LOG_INFO("app_uart_get %d\n", temp_buff);
+        // NRF_LOG_INFO("app_uart_get %d\n", temp_buff);
         if (rx_pkg_s == 0) {
             if (temp_buff == 0xff) {
                 rx_pkg_s = 1;
@@ -267,7 +267,7 @@ static void uart_event_handle_by_header_buffer(app_uart_evt_t *p_event) {
             } else if (rx_pkg_i-1 >= rx_pkg_len) {
                 if (temp_buff == 0xfe) {
                     // 执行命令
-                    //NRF_LOG_INFO("RUN CMD %d", cmd_i);
+                    // NRF_LOG_INFO("RUN CMD %d", cmd_i);
                     switch (cmd_i) {
                         case 0:
                             return_add0_to_ch552();
