@@ -1,8 +1,8 @@
 #pragma once
 #include "nrf_esb.h"
 
-//#define COMPILE_LEFT
-#define COMPILE_RIGHT
+#define COMPILE_LEFT
+// #define COMPILE_RIGHT
 
 #define COLUMNS 9
 #define DOBCOLUMNS 18

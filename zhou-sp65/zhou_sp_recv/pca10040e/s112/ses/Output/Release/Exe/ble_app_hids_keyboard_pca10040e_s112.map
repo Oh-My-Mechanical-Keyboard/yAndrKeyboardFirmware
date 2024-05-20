@@ -3043,7 +3043,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .init_rodata is too large to fit in FLASH memory segment)
                 0x0000000000000400                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x0000000000000400     0x3d6c
+.text           0x0000000000000400     0x3de4
                 0x0000000000000400                __text_start__ = .
  *(.text .text.* .gnu.linkonce.t.* .glue_7t .glue_7 .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x0000000000000400        0x0 linker stubs
@@ -3503,32 +3503,35 @@ Linker script and memory map
                 0x0000000000003d8c       0x12 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
                 0x0000000000003d8c                esb_enable
  *fill*         0x0000000000003d9e        0x2 
+ .text.esb_reinit
+                0x0000000000003da0       0x68 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
+                0x0000000000003da0                esb_reinit
  .text.uart_event_handle_by_header_buffer
-                0x0000000000003da0      0x29c Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
+                0x0000000000003e08      0x2ac Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
  .text.uart_init
-                0x000000000000403c       0x58 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
-                0x000000000000403c                uart_init
+                0x00000000000040b4       0x58 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
+                0x00000000000040b4                uart_init
  .text.libc.__SEGGER_RTL_init_heap
-                0x0000000000004094       0x14 D:/software/segger/ses/lib/heapops_basic_v7em_t_le_eabi_balanced.a(heapops_basic.o)
-                0x0000000000004094                __SEGGER_RTL_init_heap
+                0x000000000000410c       0x14 D:/software/segger/ses/lib/heapops_basic_v7em_t_le_eabi_balanced.a(heapops_basic.o)
+                0x000000000000410c                __SEGGER_RTL_init_heap
  .text.libc.memcpy
-                0x00000000000040a8       0x5c D:/software/segger/ses/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
-                0x00000000000040a8                __aeabi_memcpy
-                0x00000000000040a8                memcpy
-                0x00000000000040c6                __aeabi_memcpy8
-                0x00000000000040c6                __aeabi_memcpy4
+                0x0000000000004120       0x5c D:/software/segger/ses/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
+                0x0000000000004120                __aeabi_memcpy
+                0x0000000000004120                memcpy
+                0x000000000000413e                __aeabi_memcpy8
+                0x000000000000413e                __aeabi_memcpy4
  .text.libc.__aeabi_memclr
-                0x0000000000004104       0x68 D:/software/segger/ses/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
-                0x0000000000004104                __aeabi_memclr8
-                0x0000000000004104                __aeabi_memclr
-                0x0000000000004104                __aeabi_memclr4
-                0x0000000000004106                __aeabi_memset4
-                0x0000000000004106                __aeabi_memset8
-                0x0000000000004106                __aeabi_memset
-                0x000000000000410c                memset
-                0x000000000000416c                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x0000000000003d6c                __text_size__ = SIZEOF (.text)
-                0x000000000000416c                __text_load_end__ = __text_end__
+                0x000000000000417c       0x68 D:/software/segger/ses/lib/strops_unaligned_v7em_t_le_eabi_balanced.a(strasmops_arm.o)
+                0x000000000000417c                __aeabi_memclr8
+                0x000000000000417c                __aeabi_memclr
+                0x000000000000417c                __aeabi_memclr4
+                0x000000000000417e                __aeabi_memset4
+                0x000000000000417e                __aeabi_memset8
+                0x000000000000417e                __aeabi_memset
+                0x0000000000004184                memset
+                0x00000000000041e4                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x0000000000003de4                __text_size__ = SIZEOF (.text)
+                0x00000000000041e4                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -3539,163 +3542,163 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .text is too large to fit in FLASH memory segment)
-                0x000000000000416c                __sdh_soc_observers_load_start__ = ALIGN (__text_end__, 0x4)
+                0x00000000000041e4                __sdh_soc_observers_load_start__ = ALIGN (__text_end__, 0x4)
 
 .sdh_soc_observers
-                0x000000000000416c        0x0
-                0x000000000000416c                __sdh_soc_observers_start__ = .
-                0x000000000000416c                __start_sdh_soc_observers = __sdh_soc_observers_start__
+                0x00000000000041e4        0x0
+                0x00000000000041e4                __sdh_soc_observers_start__ = .
+                0x00000000000041e4                __start_sdh_soc_observers = __sdh_soc_observers_start__
  *(SORT_BY_NAME(.sdh_soc_observers*))
-                0x000000000000416c                __sdh_soc_observers_end__ = (__sdh_soc_observers_start__ + SIZEOF (.sdh_soc_observers))
+                0x00000000000041e4                __sdh_soc_observers_end__ = (__sdh_soc_observers_start__ + SIZEOF (.sdh_soc_observers))
                 0x0000000000000000                __sdh_soc_observers_size__ = SIZEOF (.sdh_soc_observers)
-                0x000000000000416c                __stop_sdh_soc_observers = __sdh_soc_observers_end__
-                0x000000000000416c                __sdh_soc_observers_load_end__ = __sdh_soc_observers_end__
+                0x00000000000041e4                __stop_sdh_soc_observers = __sdh_soc_observers_end__
+                0x00000000000041e4                __sdh_soc_observers_load_end__ = __sdh_soc_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_soc_observers_start__ == __sdh_soc_observers_end__) || ((__sdh_soc_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_soc_observers is too large to fit in FLASH memory segment)
-                0x000000000000416c                __sdh_ble_observers_load_start__ = ALIGN (__sdh_soc_observers_end__, 0x4)
+                0x00000000000041e4                __sdh_ble_observers_load_start__ = ALIGN (__sdh_soc_observers_end__, 0x4)
 
 .sdh_ble_observers
-                0x000000000000416c        0x0
-                0x000000000000416c                __sdh_ble_observers_start__ = .
-                0x000000000000416c                __start_sdh_ble_observers = __sdh_ble_observers_start__
+                0x00000000000041e4        0x0
+                0x00000000000041e4                __sdh_ble_observers_start__ = .
+                0x00000000000041e4                __start_sdh_ble_observers = __sdh_ble_observers_start__
  *(SORT_BY_NAME(.sdh_ble_observers*))
-                0x000000000000416c                __sdh_ble_observers_end__ = (__sdh_ble_observers_start__ + SIZEOF (.sdh_ble_observers))
+                0x00000000000041e4                __sdh_ble_observers_end__ = (__sdh_ble_observers_start__ + SIZEOF (.sdh_ble_observers))
                 0x0000000000000000                __sdh_ble_observers_size__ = SIZEOF (.sdh_ble_observers)
-                0x000000000000416c                __stop_sdh_ble_observers = __sdh_ble_observers_end__
-                0x000000000000416c                __sdh_ble_observers_load_end__ = __sdh_ble_observers_end__
+                0x00000000000041e4                __stop_sdh_ble_observers = __sdh_ble_observers_end__
+                0x00000000000041e4                __sdh_ble_observers_load_end__ = __sdh_ble_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_ble_observers_start__ == __sdh_ble_observers_end__) || ((__sdh_ble_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_ble_observers is too large to fit in FLASH memory segment)
-                0x000000000000416c                __pwr_mgmt_data_load_start__ = ALIGN (__sdh_ble_observers_end__, 0x4)
+                0x00000000000041e4                __pwr_mgmt_data_load_start__ = ALIGN (__sdh_ble_observers_end__, 0x4)
 
-.pwr_mgmt_data  0x000000000000416c        0x0
-                0x000000000000416c                __pwr_mgmt_data_start__ = .
-                0x000000000000416c                __start_pwr_mgmt_data = __pwr_mgmt_data_start__
+.pwr_mgmt_data  0x00000000000041e4        0x0
+                0x00000000000041e4                __pwr_mgmt_data_start__ = .
+                0x00000000000041e4                __start_pwr_mgmt_data = __pwr_mgmt_data_start__
  *(SORT_BY_NAME(.pwr_mgmt_data*))
-                0x000000000000416c                __pwr_mgmt_data_end__ = (__pwr_mgmt_data_start__ + SIZEOF (.pwr_mgmt_data))
+                0x00000000000041e4                __pwr_mgmt_data_end__ = (__pwr_mgmt_data_start__ + SIZEOF (.pwr_mgmt_data))
                 0x0000000000000000                __pwr_mgmt_data_size__ = SIZEOF (.pwr_mgmt_data)
-                0x000000000000416c                __stop_pwr_mgmt_data = __pwr_mgmt_data_end__
-                0x000000000000416c                __pwr_mgmt_data_load_end__ = __pwr_mgmt_data_end__
+                0x00000000000041e4                __stop_pwr_mgmt_data = __pwr_mgmt_data_end__
+                0x00000000000041e4                __pwr_mgmt_data_load_end__ = __pwr_mgmt_data_end__
                 0x0000000000000001                . = ASSERT (((__pwr_mgmt_data_start__ == __pwr_mgmt_data_end__) || ((__pwr_mgmt_data_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .pwr_mgmt_data is too large to fit in FLASH memory segment)
-                0x000000000000416c                __sdh_req_observers_load_start__ = ALIGN (__pwr_mgmt_data_end__, 0x4)
+                0x00000000000041e4                __sdh_req_observers_load_start__ = ALIGN (__pwr_mgmt_data_end__, 0x4)
 
 .sdh_req_observers
-                0x000000000000416c        0x0
-                0x000000000000416c                __sdh_req_observers_start__ = .
-                0x000000000000416c                __start_sdh_req_observers = __sdh_req_observers_start__
+                0x00000000000041e4        0x0
+                0x00000000000041e4                __sdh_req_observers_start__ = .
+                0x00000000000041e4                __start_sdh_req_observers = __sdh_req_observers_start__
  *(SORT_BY_NAME(.sdh_req_observers*))
-                0x000000000000416c                __sdh_req_observers_end__ = (__sdh_req_observers_start__ + SIZEOF (.sdh_req_observers))
+                0x00000000000041e4                __sdh_req_observers_end__ = (__sdh_req_observers_start__ + SIZEOF (.sdh_req_observers))
                 0x0000000000000000                __sdh_req_observers_size__ = SIZEOF (.sdh_req_observers)
-                0x000000000000416c                __stop_sdh_req_observers = __sdh_req_observers_end__
-                0x000000000000416c                __sdh_req_observers_load_end__ = __sdh_req_observers_end__
+                0x00000000000041e4                __stop_sdh_req_observers = __sdh_req_observers_end__
+                0x00000000000041e4                __sdh_req_observers_load_end__ = __sdh_req_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_req_observers_start__ == __sdh_req_observers_end__) || ((__sdh_req_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_req_observers is too large to fit in FLASH memory segment)
-                0x000000000000416c                __sdh_state_observers_load_start__ = ALIGN (__sdh_req_observers_end__, 0x4)
+                0x00000000000041e4                __sdh_state_observers_load_start__ = ALIGN (__sdh_req_observers_end__, 0x4)
 
 .sdh_state_observers
-                0x000000000000416c        0x0
-                0x000000000000416c                __sdh_state_observers_start__ = .
-                0x000000000000416c                __start_sdh_state_observers = __sdh_state_observers_start__
+                0x00000000000041e4        0x0
+                0x00000000000041e4                __sdh_state_observers_start__ = .
+                0x00000000000041e4                __start_sdh_state_observers = __sdh_state_observers_start__
  *(SORT_BY_NAME(.sdh_state_observers*))
-                0x000000000000416c                __sdh_state_observers_end__ = (__sdh_state_observers_start__ + SIZEOF (.sdh_state_observers))
+                0x00000000000041e4                __sdh_state_observers_end__ = (__sdh_state_observers_start__ + SIZEOF (.sdh_state_observers))
                 0x0000000000000000                __sdh_state_observers_size__ = SIZEOF (.sdh_state_observers)
-                0x000000000000416c                __stop_sdh_state_observers = __sdh_state_observers_end__
-                0x000000000000416c                __sdh_state_observers_load_end__ = __sdh_state_observers_end__
+                0x00000000000041e4                __stop_sdh_state_observers = __sdh_state_observers_end__
+                0x00000000000041e4                __sdh_state_observers_load_end__ = __sdh_state_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_state_observers_start__ == __sdh_state_observers_end__) || ((__sdh_state_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_state_observers is too large to fit in FLASH memory segment)
-                0x000000000000416c                __sdh_stack_observers_load_start__ = ALIGN (__sdh_state_observers_end__, 0x4)
+                0x00000000000041e4                __sdh_stack_observers_load_start__ = ALIGN (__sdh_state_observers_end__, 0x4)
 
 .sdh_stack_observers
-                0x000000000000416c        0x0
-                0x000000000000416c                __sdh_stack_observers_start__ = .
-                0x000000000000416c                __start_sdh_stack_observers = __sdh_stack_observers_start__
+                0x00000000000041e4        0x0
+                0x00000000000041e4                __sdh_stack_observers_start__ = .
+                0x00000000000041e4                __start_sdh_stack_observers = __sdh_stack_observers_start__
  *(SORT_BY_NAME(.sdh_stack_observers*))
-                0x000000000000416c                __sdh_stack_observers_end__ = (__sdh_stack_observers_start__ + SIZEOF (.sdh_stack_observers))
+                0x00000000000041e4                __sdh_stack_observers_end__ = (__sdh_stack_observers_start__ + SIZEOF (.sdh_stack_observers))
                 0x0000000000000000                __sdh_stack_observers_size__ = SIZEOF (.sdh_stack_observers)
-                0x000000000000416c                __stop_sdh_stack_observers = __sdh_stack_observers_end__
-                0x000000000000416c                __sdh_stack_observers_load_end__ = __sdh_stack_observers_end__
+                0x00000000000041e4                __stop_sdh_stack_observers = __sdh_stack_observers_end__
+                0x00000000000041e4                __sdh_stack_observers_load_end__ = __sdh_stack_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_stack_observers_start__ == __sdh_stack_observers_end__) || ((__sdh_stack_observers_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .sdh_stack_observers is too large to fit in FLASH memory segment)
-                0x000000000000416c                __nrf_queue_load_start__ = ALIGN (__sdh_stack_observers_end__, 0x4)
+                0x00000000000041e4                __nrf_queue_load_start__ = ALIGN (__sdh_stack_observers_end__, 0x4)
 
-.nrf_queue      0x000000000000416c        0x0
-                0x000000000000416c                __nrf_queue_start__ = .
-                0x000000000000416c                __start_nrf_queue = __nrf_queue_start__
+.nrf_queue      0x00000000000041e4        0x0
+                0x00000000000041e4                __nrf_queue_start__ = .
+                0x00000000000041e4                __start_nrf_queue = __nrf_queue_start__
  *(.nrf_queue*)
-                0x000000000000416c                __nrf_queue_end__ = (__nrf_queue_start__ + SIZEOF (.nrf_queue))
+                0x00000000000041e4                __nrf_queue_end__ = (__nrf_queue_start__ + SIZEOF (.nrf_queue))
                 0x0000000000000000                __nrf_queue_size__ = SIZEOF (.nrf_queue)
-                0x000000000000416c                __stop_nrf_queue = __nrf_queue_end__
-                0x000000000000416c                __nrf_queue_load_end__ = __nrf_queue_end__
+                0x00000000000041e4                __stop_nrf_queue = __nrf_queue_end__
+                0x00000000000041e4                __nrf_queue_load_end__ = __nrf_queue_end__
                 0x0000000000000001                . = ASSERT (((__nrf_queue_start__ == __nrf_queue_end__) || ((__nrf_queue_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .nrf_queue is too large to fit in FLASH memory segment)
-                0x000000000000416c                __nrf_balloc_load_start__ = ALIGN (__nrf_queue_end__, 0x4)
+                0x00000000000041e4                __nrf_balloc_load_start__ = ALIGN (__nrf_queue_end__, 0x4)
 
-.nrf_balloc     0x000000000000416c        0x0
-                0x000000000000416c                __nrf_balloc_start__ = .
-                0x000000000000416c                __start_nrf_balloc = __nrf_balloc_start__
+.nrf_balloc     0x00000000000041e4        0x0
+                0x00000000000041e4                __nrf_balloc_start__ = .
+                0x00000000000041e4                __start_nrf_balloc = __nrf_balloc_start__
  *(.nrf_balloc*)
-                0x000000000000416c                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
+                0x00000000000041e4                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
                 0x0000000000000000                __nrf_balloc_size__ = SIZEOF (.nrf_balloc)
-                0x000000000000416c                __stop_nrf_balloc = __nrf_balloc_end__
-                0x000000000000416c                __nrf_balloc_load_end__ = __nrf_balloc_end__
+                0x00000000000041e4                __stop_nrf_balloc = __nrf_balloc_end__
+                0x00000000000041e4                __nrf_balloc_load_end__ = __nrf_balloc_end__
                 0x0000000000000001                . = ASSERT (((__nrf_balloc_start__ == __nrf_balloc_end__) || ((__nrf_balloc_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .nrf_balloc is too large to fit in FLASH memory segment)
-                0x000000000000416c                __cli_command_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
+                0x00000000000041e4                __cli_command_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
 
-.cli_command    0x000000000000416c        0x0
-                0x000000000000416c                __cli_command_start__ = .
-                0x000000000000416c                __start_cli_command = __cli_command_start__
+.cli_command    0x00000000000041e4        0x0
+                0x00000000000041e4                __cli_command_start__ = .
+                0x00000000000041e4                __start_cli_command = __cli_command_start__
  *(.cli_command*)
-                0x000000000000416c                __cli_command_end__ = (__cli_command_start__ + SIZEOF (.cli_command))
+                0x00000000000041e4                __cli_command_end__ = (__cli_command_start__ + SIZEOF (.cli_command))
                 0x0000000000000000                __cli_command_size__ = SIZEOF (.cli_command)
-                0x000000000000416c                __stop_cli_command = __cli_command_end__
-                0x000000000000416c                __cli_command_load_end__ = __cli_command_end__
+                0x00000000000041e4                __stop_cli_command = __cli_command_end__
+                0x00000000000041e4                __cli_command_load_end__ = __cli_command_end__
                 0x0000000000000001                . = ASSERT (((__cli_command_start__ == __cli_command_end__) || ((__cli_command_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .cli_command is too large to fit in FLASH memory segment)
-                0x000000000000416c                __crypto_data_load_start__ = ALIGN (__cli_command_end__, 0x4)
+                0x00000000000041e4                __crypto_data_load_start__ = ALIGN (__cli_command_end__, 0x4)
 
-.crypto_data    0x000000000000416c        0x0
-                0x000000000000416c                __crypto_data_start__ = .
-                0x000000000000416c                __start_crypto_data = __crypto_data_start__
+.crypto_data    0x00000000000041e4        0x0
+                0x00000000000041e4                __crypto_data_start__ = .
+                0x00000000000041e4                __start_crypto_data = __crypto_data_start__
  *(SORT_BY_NAME(.crypto_data*))
-                0x000000000000416c                __crypto_data_end__ = (__crypto_data_start__ + SIZEOF (.crypto_data))
+                0x00000000000041e4                __crypto_data_end__ = (__crypto_data_start__ + SIZEOF (.crypto_data))
                 0x0000000000000000                __crypto_data_size__ = SIZEOF (.crypto_data)
-                0x000000000000416c                __stop_crypto_data = __crypto_data_end__
-                0x000000000000416c                __crypto_data_load_end__ = __crypto_data_end__
+                0x00000000000041e4                __stop_crypto_data = __crypto_data_end__
+                0x00000000000041e4                __crypto_data_load_end__ = __crypto_data_end__
                 0x0000000000000001                . = ASSERT (((__crypto_data_start__ == __crypto_data_end__) || ((__crypto_data_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .crypto_data is too large to fit in FLASH memory segment)
-                0x000000000000416c                __log_const_data_load_start__ = ALIGN (__crypto_data_end__, 0x4)
+                0x00000000000041e4                __log_const_data_load_start__ = ALIGN (__crypto_data_end__, 0x4)
 
 .log_const_data
-                0x000000000000416c        0x0
-                0x000000000000416c                __log_const_data_start__ = .
-                0x000000000000416c                __start_log_const_data = __log_const_data_start__
+                0x00000000000041e4        0x0
+                0x00000000000041e4                __log_const_data_start__ = .
+                0x00000000000041e4                __start_log_const_data = __log_const_data_start__
  *(SORT_BY_NAME(.log_const_data*))
-                0x000000000000416c                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
+                0x00000000000041e4                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
                 0x0000000000000000                __log_const_data_size__ = SIZEOF (.log_const_data)
-                0x000000000000416c                __stop_log_const_data = __log_const_data_end__
-                0x000000000000416c                __log_const_data_load_end__ = __log_const_data_end__
+                0x00000000000041e4                __stop_log_const_data = __log_const_data_end__
+                0x00000000000041e4                __log_const_data_load_end__ = __log_const_data_end__
                 0x0000000000000001                . = ASSERT (((__log_const_data_start__ == __log_const_data_end__) || ((__log_const_data_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_const_data is too large to fit in FLASH memory segment)
-                0x000000000000416c                __log_backends_load_start__ = ALIGN (__log_const_data_end__, 0x4)
+                0x00000000000041e4                __log_backends_load_start__ = ALIGN (__log_const_data_end__, 0x4)
 
-.log_backends   0x000000000000416c        0x0
-                0x000000000000416c                __log_backends_start__ = .
-                0x000000000000416c                __start_log_backends = __log_backends_start__
+.log_backends   0x00000000000041e4        0x0
+                0x00000000000041e4                __log_backends_start__ = .
+                0x00000000000041e4                __start_log_backends = __log_backends_start__
  *(SORT_BY_NAME(.log_backends*))
-                0x000000000000416c                __log_backends_end__ = (__log_backends_start__ + SIZEOF (.log_backends))
+                0x00000000000041e4                __log_backends_end__ = (__log_backends_start__ + SIZEOF (.log_backends))
                 0x0000000000000000                __log_backends_size__ = SIZEOF (.log_backends)
-                0x000000000000416c                __stop_log_backends = __log_backends_end__
-                0x000000000000416c                __log_backends_load_end__ = __log_backends_end__
+                0x00000000000041e4                __stop_log_backends = __log_backends_end__
+                0x00000000000041e4                __log_backends_load_end__ = __log_backends_end__
                 0x0000000000000001                . = ASSERT (((__log_backends_start__ == __log_backends_end__) || ((__log_backends_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_backends is too large to fit in FLASH memory segment)
-                0x000000000000416c                __nrf_sections_load_start__ = ALIGN (__log_backends_end__, 0x4)
+                0x00000000000041e4                __nrf_sections_load_start__ = ALIGN (__log_backends_end__, 0x4)
 
-.nrf_sections   0x000000000000416c        0x0
-                0x000000000000416c                __nrf_sections_start__ = .
-                0x000000000000416c                __start_nrf_sections = __nrf_sections_start__
+.nrf_sections   0x00000000000041e4        0x0
+                0x00000000000041e4                __nrf_sections_start__ = .
+                0x00000000000041e4                __start_nrf_sections = __nrf_sections_start__
  *(.nrf_sections .nrf_sections.*)
-                0x000000000000416c                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
+                0x00000000000041e4                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
                 0x0000000000000000                __nrf_sections_size__ = SIZEOF (.nrf_sections)
-                0x000000000000416c                __nrf_sections_load_end__ = __nrf_sections_end__
+                0x00000000000041e4                __nrf_sections_load_end__ = __nrf_sections_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_start__ == __nrf_sections_end__) || ((__nrf_sections_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .nrf_sections is too large to fit in FLASH memory segment)
-                0x000000000000416c                __cli_sorted_cmd_ptrs_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
+                0x00000000000041e4                __cli_sorted_cmd_ptrs_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
 
 .cli_sorted_cmd_ptrs
-                0x0000000020000000        0x0 load address 0x000000000000416c
+                0x0000000020000000        0x0 load address 0x00000000000041e4
                 0x0000000020000000                __cli_sorted_cmd_ptrs_start__ = .
  *(.cli_sorted_cmd_ptrs*)
                 0x0000000020000000                __cli_sorted_cmd_ptrs_end__ = (__cli_sorted_cmd_ptrs_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
                 0x0000000000000000                __cli_sorted_cmd_ptrs_size__ = SIZEOF (.cli_sorted_cmd_ptrs)
-                0x000000000000416c                __cli_sorted_cmd_ptrs_load_end__ = (__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
+                0x00000000000041e4                __cli_sorted_cmd_ptrs_load_end__ = (__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
                 0x0000000000000001                . = ASSERT (((__cli_sorted_cmd_ptrs_load_start__ == __cli_sorted_cmd_ptrs_load_end__) || ((__cli_sorted_cmd_ptrs_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .cli_sorted_cmd_ptrs is too large to fit in FLASH memory segment)
 
 .cli_sorted_cmd_ptrs_run
@@ -3707,16 +3710,16 @@ Linker script and memory map
                 0x0000000020000000                __stop_cli_sorted_cmd_ptrs = __cli_sorted_cmd_ptrs_run_end__
                 0x0000000020000000                __cli_sorted_cmd_ptrs_run_load_end__ = __cli_sorted_cmd_ptrs_run_end__
                 0x0000000000000001                . = ASSERT (((__cli_sorted_cmd_ptrs_run_start__ == __cli_sorted_cmd_ptrs_run_end__) || ((__cli_sorted_cmd_ptrs_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .cli_sorted_cmd_ptrs_run is too large to fit in RAM1 memory segment)
-                0x000000000000416c                __fs_data_load_start__ = ALIGN ((__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs)), 0x4)
+                0x00000000000041e4                __fs_data_load_start__ = ALIGN ((__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs)), 0x4)
 
-.fs_data        0x0000000020000000       0x14 load address 0x000000000000416c
+.fs_data        0x0000000020000000       0x14 load address 0x00000000000041e4
                 0x0000000020000000                __fs_data_start__ = .
  *(.fs_data*)
  .fs_data       0x0000000020000000       0x14 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
                 0x0000000020000000                m_fs
                 0x0000000020000014                __fs_data_end__ = (__fs_data_start__ + SIZEOF (.fs_data))
                 0x0000000000000014                __fs_data_size__ = SIZEOF (.fs_data)
-                0x0000000000004180                __fs_data_load_end__ = (__fs_data_load_start__ + SIZEOF (.fs_data))
+                0x00000000000041f8                __fs_data_load_end__ = (__fs_data_load_start__ + SIZEOF (.fs_data))
                 0x0000000000000001                . = ASSERT (((__fs_data_load_start__ == __fs_data_load_end__) || ((__fs_data_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .fs_data is too large to fit in FLASH memory segment)
 
 .fs_data_run    0x0000000020000000        0x0
@@ -3727,15 +3730,15 @@ Linker script and memory map
                 0x0000000020000014                __stop_fs_data = __fs_data_run_end__
                 0x0000000020000014                __fs_data_run_load_end__ = __fs_data_run_end__
                 0x0000000000000001                . = ASSERT (((__fs_data_run_start__ == __fs_data_run_end__) || ((__fs_data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .fs_data_run is too large to fit in RAM1 memory segment)
-                0x0000000000004180                __log_dynamic_data_load_start__ = ALIGN ((__fs_data_load_start__ + SIZEOF (.fs_data)), 0x4)
+                0x00000000000041f8                __log_dynamic_data_load_start__ = ALIGN ((__fs_data_load_start__ + SIZEOF (.fs_data)), 0x4)
 
 .log_dynamic_data
-                0x0000000020000014        0x0 load address 0x0000000000004180
+                0x0000000020000014        0x0 load address 0x00000000000041f8
                 0x0000000020000014                __log_dynamic_data_start__ = .
  *(SORT_BY_NAME(.log_dynamic_data*))
                 0x0000000020000014                __log_dynamic_data_end__ = (__log_dynamic_data_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000000                __log_dynamic_data_size__ = SIZEOF (.log_dynamic_data)
-                0x0000000000004180                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
+                0x00000000000041f8                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_load_start__ == __log_dynamic_data_load_end__) || ((__log_dynamic_data_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_dynamic_data is too large to fit in FLASH memory segment)
 
 .log_dynamic_data_run
@@ -3747,15 +3750,15 @@ Linker script and memory map
                 0x0000000020000014                __stop_log_dynamic_data = __log_dynamic_data_run_end__
                 0x0000000020000014                __log_dynamic_data_run_load_end__ = __log_dynamic_data_run_end__
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_run_start__ == __log_dynamic_data_run_end__) || ((__log_dynamic_data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .log_dynamic_data_run is too large to fit in RAM1 memory segment)
-                0x0000000000004180                __log_filter_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
+                0x00000000000041f8                __log_filter_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
 
 .log_filter_data
-                0x0000000020000014        0x0 load address 0x0000000000004180
+                0x0000000020000014        0x0 load address 0x00000000000041f8
                 0x0000000020000014                __log_filter_data_start__ = .
  *(SORT_BY_NAME(.log_filter_data*))
                 0x0000000020000014                __log_filter_data_end__ = (__log_filter_data_start__ + SIZEOF (.log_filter_data))
                 0x0000000000000000                __log_filter_data_size__ = SIZEOF (.log_filter_data)
-                0x0000000000004180                __log_filter_data_load_end__ = (__log_filter_data_load_start__ + SIZEOF (.log_filter_data))
+                0x00000000000041f8                __log_filter_data_load_end__ = (__log_filter_data_load_start__ + SIZEOF (.log_filter_data))
                 0x0000000000000001                . = ASSERT (((__log_filter_data_load_start__ == __log_filter_data_load_end__) || ((__log_filter_data_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .log_filter_data is too large to fit in FLASH memory segment)
 
 .log_filter_data_run
@@ -3778,89 +3781,94 @@ Linker script and memory map
                 0x0000000000000000                __nrf_sections_run_end_size__ = SIZEOF (.nrf_sections_run_end)
                 0x0000000020000014                __nrf_sections_run_end_load_end__ = __nrf_sections_run_end_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_run_end_start__ == __nrf_sections_run_end_end__) || ((__nrf_sections_run_end_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .nrf_sections_run_end is too large to fit in RAM1 memory segment)
-                0x0000000000004180                __dtors_load_start__ = ALIGN ((__log_filter_data_load_start__ + SIZEOF (.log_filter_data)), 0x4)
+                0x00000000000041f8                __dtors_load_start__ = ALIGN ((__log_filter_data_load_start__ + SIZEOF (.log_filter_data)), 0x4)
 
-.dtors          0x0000000000004180        0x0
-                0x0000000000004180                __dtors_start__ = .
+.dtors          0x00000000000041f8        0x0
+                0x00000000000041f8                __dtors_start__ = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x0000000000004180                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x00000000000041f8                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x0000000000004180                __dtors_load_end__ = __dtors_end__
+                0x00000000000041f8                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .dtors is too large to fit in FLASH memory segment)
-                0x0000000000004180                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x00000000000041f8                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x0000000000004180        0x0
-                0x0000000000004180                __ctors_start__ = .
+.ctors          0x00000000000041f8        0x0
+                0x00000000000041f8                __ctors_start__ = .
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT_BY_NAME(.init_array.*))
-                0x0000000000004180                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x00000000000041f8                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x0000000000004180                __ctors_load_end__ = __ctors_end__
+                0x00000000000041f8                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ctors is too large to fit in FLASH memory segment)
-                0x0000000000004180                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x00000000000041f8                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x0000000000004180       0xcc
-                0x0000000000004180                __rodata_start__ = .
+.rodata         0x00000000000041f8       0xe8
+                0x00000000000041f8                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.m_app_timer_sortlist
-                0x0000000000004180        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
- .rodata        0x000000000000418c        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
- .rodata        0x0000000000004190       0x20 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_uart_fifo.o
+                0x00000000000041f8        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
+ .rodata        0x0000000000004204        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_timer2.o
+ .rodata        0x0000000000004208       0x20 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_uart_fifo.o
+ *fill*         0x0000000000004228        0x8 
  .rodata.delay_machine_code.0
-                0x00000000000041b0        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/drv_rtc.o
- *fill*         0x00000000000041b6        0x2 
+                0x0000000000004230        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/drv_rtc.o
+ *fill*         0x0000000000004236        0x2 
  .rodata.dirty_header.1
-                0x00000000000041b8        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
+                0x0000000000004238        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
  .rodata.page_tag_data.4
-                0x00000000000041bc        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
+                0x000000000000423c        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
  .rodata.page_tag_swap.5
-                0x00000000000041c4        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
+                0x0000000000004244        0x8 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds.o
  .rodata.nrf_fstorage_nvmc
-                0x00000000000041cc       0x20 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage_nvmc.o
-                0x00000000000041cc                nrf_fstorage_nvmc
+                0x000000000000424c       0x20 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage_nvmc.o
+                0x000000000000424c                nrf_fstorage_nvmc
  .rodata.m_flash_info
-                0x00000000000041ec        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage_nvmc.o
+                0x000000000000426c        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_fstorage_nvmc.o
  .rodata.m_dummy_record
-                0x00000000000041f8        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
- *fill*         0x0000000000004204        0xc 
+                0x0000000000004278        0xc Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o
+ *fill*         0x0000000000004284        0xc 
  .rodata.delay_machine_code.0
-                0x0000000000004210        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
- *fill*         0x0000000000004216        0x2 
+                0x0000000000004290        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+ *fill*         0x0000000000004296        0x2 
  .rodata.m_report_timer_id
-                0x0000000000004218        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
- .rodata        0x000000000000421c       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
- .rodata        0x0000000000004234       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
-                0x000000000000424c                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x00000000000000cc                __rodata_size__ = SIZEOF (.rodata)
-                0x000000000000424c                __rodata_load_end__ = __rodata_end__
+                0x0000000000004298        0x4 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o
+ .rodata        0x000000000000429c       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_esb_recv.o
+ *fill*         0x00000000000042b4        0xc 
+ .rodata.delay_machine_code.3
+                0x00000000000042c0        0x6 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
+ *fill*         0x00000000000042c6        0x2 
+ .rodata        0x00000000000042c8       0x18 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o
+                0x00000000000042e0                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x00000000000000e8                __rodata_size__ = SIZEOF (.rodata)
+                0x00000000000042e0                __rodata_load_end__ = __rodata_end__
 
-.rel.dyn        0x000000000000424c        0x0
- .rel.iplt      0x000000000000424c        0x0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
+.rel.dyn        0x00000000000042e0        0x0
+ .rel.iplt      0x00000000000042e0        0x0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
                 0x0000000000000001                . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .rodata is too large to fit in FLASH memory segment)
-                0x000000000000424c                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x00000000000042e0                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x000000000000424c        0x0
-                0x000000000000424c                __ARM.exidx_start__ = .
-                0x000000000000424c                __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x00000000000042e0        0x0
+                0x00000000000042e0                __ARM.exidx_start__ = .
+                0x00000000000042e0                __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x000000000000424c                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x00000000000042e0                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x0000000000000000                __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x000000000000424c                __exidx_end = __ARM.exidx_end__
-                0x000000000000424c                __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x00000000000042e0                __exidx_end = __ARM.exidx_end__
+                0x00000000000042e0                __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x0000000000000001                . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .ARM.exidx is too large to fit in FLASH memory segment)
-                0x000000000000424c                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x00000000000042e0                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x0000000020000014        0x0 load address 0x000000000000424c
+.fast           0x0000000020000014        0x0 load address 0x00000000000042e0
                 0x0000000020000014                __fast_start__ = .
  *(.fast .fast.*)
                 0x0000000020000014                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x0000000000000000                __fast_size__ = SIZEOF (.fast)
-                0x000000000000424c                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x00000000000042e0                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x0000000000000001                . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .fast is too large to fit in FLASH memory segment)
 
 .fast_run       0x0000000020000014        0x0
@@ -3869,9 +3877,9 @@ Linker script and memory map
                 0x0000000000000000                __fast_run_size__ = (__fast_run_end__ - __fast_run_start__)
                 0x0000000020000014                __fast_run_load_end__ = __fast_run_end__
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .fast_run is too large to fit in RAM1 memory segment)
-                0x000000000000424c                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x00000000000042e0                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x0000000020000014       0x76 load address 0x000000000000424c
+.data           0x0000000020000014       0x76 load address 0x00000000000042e0
                 0x0000000020000014                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.SystemCoreClock
@@ -3897,7 +3905,7 @@ Linker script and memory map
                 0x0000000020000081                cmd_lens
                 0x000000002000008a                __data_end__ = (__data_start__ + SIZEOF (.data))
                 0x0000000000000076                __data_size__ = SIZEOF (.data)
-                0x00000000000042c2                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x0000000000004356                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o
@@ -3909,16 +3917,16 @@ Linker script and memory map
                 0x0000000000000076                __data_run_size__ = (__data_run_end__ - __data_run_start__)
                 0x000000002000008a                __data_run_load_end__ = __data_run_end__
                 0x0000000000000001                . = ASSERT (((__data_run_start__ == __data_run_end__) || ((__data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .data_run is too large to fit in RAM1 memory segment)
-                0x00000000000042c4                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x0000000000004358                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x000000002000008c        0x0 load address 0x00000000000042c4
+.tdata          0x000000002000008c        0x0 load address 0x0000000000004358
                 0x000000002000008c                __tdata_start__ = .
  *(.tdata .tdata.*)
                 0x000000002000008c                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x00000000000042c4                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x00000000000042c4                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x00000000000042c4                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
+                0x0000000000004358                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x0000000000004358                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x0000000000004358                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ - __FLASH_segment_start__) <= __FLASH_segment_size__)), error: .tdata is too large to fit in FLASH memory segment)
 
 .tdata_run      0x000000002000008c        0x0

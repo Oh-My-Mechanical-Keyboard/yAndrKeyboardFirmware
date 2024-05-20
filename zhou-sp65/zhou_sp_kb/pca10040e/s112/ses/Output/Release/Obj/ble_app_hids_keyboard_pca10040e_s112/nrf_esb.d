@@ -1,12 +1,13 @@
 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_esb.o: \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\proprietary_rf\esb\nrf_esb.c \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\proprietary_rf\esb\nrf_esb.c \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\proprietary_rf\esb\nrf_esb.h \
- D:/PrgEnv/sesarm/include/stdbool.h D:/PrgEnv/sesarm/include/stdint.h \
- D:/PrgEnv/sesarm/include/__SEGGER_RTL.h \
- D:/PrgEnv/sesarm/include/__SEGGER_RTL_ConfDefaults.h \
- D:/PrgEnv/sesarm/include/__SEGGER_RTL_Conf.h \
- D:/PrgEnv/sesarm/include/__SEGGER_RTL_Arm_Conf.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\proprietary_rf\esb\nrf_esb.h \
+ D:/software/segger/ses/include/stdbool.h \
+ D:/software/segger/ses/include/stdint.h \
+ D:/software/segger/ses/include/__SEGGER_RTL.h \
+ D:/software/segger/ses/include/__SEGGER_RTL_ConfDefaults.h \
+ D:/software/segger/ses/include/__SEGGER_RTL_Conf.h \
+ D:/software/segger/ses/include/__SEGGER_RTL_Arm_Conf.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52810.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
@@ -21,10 +22,10 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_esb.o: \
  ../../../../../../modules/nrfx/mdk/nrf52810_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/app_util.h \
- D:/PrgEnv/sesarm/include/stddef.h \
+ D:/software/segger/ses/include/stddef.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/nordic_common.h \
- D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\proprietary_rf\esb\nrf_esb_error_codes.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\proprietary_rf\esb\nrf_esb_error_codes.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
@@ -40,7 +41,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_esb.o: \
  ../../../../../../components/libraries/util/app_util_platform.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/util/app_error.h \
- D:/PrgEnv/sesarm/include/stdio.h \
+ D:/software/segger/ses/include/stdio.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/app_error_weak.h \
  ../../../../../../modules/nrfx/soc/nrfx_coredep.h \
@@ -49,7 +50,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_esb.o: \
  ../../../../../../components/libraries/util/sdk_resources.h \
  ../../../../../../components/proprietary_rf/esb/nrf_esb_resources.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
- D:/PrgEnv/sesarm/include/string.h \
+ D:/software/segger/ses/include/string.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  ../../../../../../components/libraries/util/sdk_os.h \
  ../../../../../../components/libraries/util/app_util.h \

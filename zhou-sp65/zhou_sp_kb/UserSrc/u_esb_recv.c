@@ -15,10 +15,6 @@ static void nrf_esb_event_handler_rx(nrf_esb_evt_t const *p_event);
 //extern nrf_esb_payload_t tx_payload;
 static nrf_esb_payload_t rx_payload;
 
-void process_esb_data(uint8_t *esb_data) {
-
-}
-
 static void nrf_esb_event_handler_tx(nrf_esb_evt_t const *p_event) {
     uint32_t err_code;
     switch (p_event->evt_id) {

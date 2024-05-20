@@ -1,6 +1,7 @@
 #include "common_cfg.h"
 #include "fds_my.h"
 #include "sp_matrix.h"
+#include "u_esb_recv.h"
 
 #include "uart_distributor.h"
 #include "app_fifo.h"
@@ -25,6 +26,20 @@ volatile uint8_t rx_pkg_s;
 volatile uint8_t rx_pkg_i;
 volatile uint8_t rx_pkg_len;
 volatile uint8_t cmd_i;
+
+
+void esb_reinit(void) {
+  uint32_t err_code;
+  err_code = nrf_esb_disable();
+  NVIC_DisableIRQ(RADIO_IRQn);
+  NVIC_DisableIRQ(TIMER2_IRQn);
+  NVIC_DisableIRQ(SWI0_IRQn);
+  NVIC_ClearPendingIRQ(RADIO_IRQn);
+  NVIC_ClearPendingIRQ(TIMER2_IRQn);
+  NVIC_ClearPendingIRQ(SWI0_IRQn);
+  nrf_delay_ms(10);
+  esb_init_tx();
+}
 
 /*
 cmd_i  name               cmd_len
@@ -82,6 +97,7 @@ static void set_add0_from_ch552(void) {
     }
     if (need_update_fds) {
         fds_update_esb_data();
+        esb_reinit();
     }
 
     app_uart_put(0xff);  // head
@@ -122,6 +138,7 @@ static void set_add1_from_ch552(void) {
     }
     if (need_update_fds) {
         fds_update_esb_data();
+        esb_reinit();
     }
 
     app_uart_put(0xff);  // head
@@ -166,6 +183,7 @@ static void set_perfix_from_ch552(void) {
     }
     if (need_update_fds) {
         fds_update_esb_data();
+        esb_reinit();
     }
 
     app_uart_put(0xff);  // head
@@ -205,6 +223,7 @@ static void set_channel_from_ch552(void) {
     }
     if (need_update_fds) {
         fds_update_esb_data();
+        esb_reinit();
     }
 
     app_uart_put(0xff);  // head

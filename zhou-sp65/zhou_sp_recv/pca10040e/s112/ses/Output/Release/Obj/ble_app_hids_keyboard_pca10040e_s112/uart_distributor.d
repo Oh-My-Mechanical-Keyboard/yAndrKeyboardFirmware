@@ -25,7 +25,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/uart_distributor.o: \
  D:/software/segger/ses/include/stddef.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/nordic_common.h \
- ../../../User/uart_distributor.h \
+ ../../../User/u_esb_recv.h ../../../User/uart_distributor.h \
  ../../../../../../components/libraries/fifo/app_fifo.h \
  D:/software/segger/ses/include/stdlib.h \
  ../../../../../../components/libraries/uart/app_uart.h \

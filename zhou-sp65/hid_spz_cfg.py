@@ -84,20 +84,37 @@ print("")
 
 
 
-print('================SET INFO=====================')
-dev.write(tobytes([0xff, 0x01, 4, 3, 2, 1, 0xfe]))
+# print('================SET INFO=====================')
+# print('>>>SET Base Addr0')
+# dev.write(tobytes([0xff, 0x01, 4, 3, 2, 1, 0xfe]))
+# time.sleep(0.1)
+# rx_res = dev.read(64, 10)
+# print("dev.read(64, 10) :",rx_res)
+
+# dev.write(tobytes([0xff, 0x00, 0xfe]))
+# time.sleep(0.1)
+# rx_res = dev.read(64, 10)
+# print("dev.read(64, 10) :",rx_res)
+# base_add0 = []
+# if len(rx_res)>0:
+#     base_add0 = [rx_res[1], rx_res[2], rx_res[3], rx_res[4]]
+
+
+print('>>>SET Channel')
+dev.write(tobytes([0xff, 0x07, 0x22, 0xfe]))
 time.sleep(0.1)
 rx_res = dev.read(64, 10)
 print("dev.read(64, 10) :",rx_res)
 
-dev.write(tobytes([0xff, 0x00, 0xfe]))
+dev.write(tobytes([0xff, 0x06, 0xfe]))
 time.sleep(0.1)
 rx_res = dev.read(64, 10)
 print("dev.read(64, 10) :",rx_res)
-base_add0 = []
 if len(rx_res)>0:
-    base_add0 = [rx_res[1], rx_res[2], rx_res[3], rx_res[4]]
+    print("Set new Channel: {}".format(rx_res[1]))
+else:
+    print("Set Channel  Fail")
 
-print('================SET INFO=====================')
+# print('================SET INFO=====================')
 
 
