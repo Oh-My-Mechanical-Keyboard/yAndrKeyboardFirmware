@@ -39,6 +39,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o: \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/util/nordic_common.h \
+ ../../../../../../components/libraries/strerror/nrf_strerror.h \
  ../../../../../../components/libraries/log/src/nrf_log_internal.h \
  ../../../../../../components/libraries/util/app_util.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
@@ -47,4 +48,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/fds_my.o: \
  ../../../../../../components/libraries/log/nrf_log_ctrl.h \
  ../../../../../../components/libraries/log/src/nrf_log_ctrl_internal.h \
  ../../../../../../components/libraries/log/nrf_log_backend_interface.h \
+ ../../../../../../components/libraries/memobj/nrf_memobj.h \
+ D:/software/segger/ses/include/stdlib.h \
+ ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../../../../../../components/libraries/log/nrf_log_default_backends.h

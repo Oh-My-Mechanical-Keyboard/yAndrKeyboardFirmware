@@ -68,4 +68,4 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o: \
  ../../../../../../components/libraries/log/nrf_log_types.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_gpiote.h \
  ../../../../../../modules/nrfx/hal/nrf_gpiote.h \
- ../../../../../../modules/nrfx/hal/nrf_gpio.h
+ ../../../../../../modules/nrfx/hal/nrf_gpio.h ../../../User/u_adc.h

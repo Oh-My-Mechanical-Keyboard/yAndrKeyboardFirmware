@@ -6,6 +6,7 @@
 #include "nrf_log.h"
 #include "app_error.h"
 #include "nrfx_gpiote.h"
+#include "u_adc.h"
 
 APP_TIMER_DEF(m_scan_timer_id); /**< Scan timer. */
 APP_TIMER_DEF(m_keep_timer_id); /**< Keep timer. */
@@ -21,12 +22,12 @@ static uint8_t data_payload[TX_PAYLOAD_LENGTH];                ///< Payload to s
 static uint8_t ack_payload[ESB_MAX_PAYLOAD_LENGTH]; ///< Placeholder for received ACK payloads from Host.
 
 // Key buffers
-static uint8_t keys_buffer[COLUMNS];
+static uint8_t keys_buffer[COLUMNS+2];
 static uint32_t activity_ticks;
 
 static void send_mx_data(void) {
-    tx_payload.length = COLUMNS;
-    memcpy(tx_payload.data, keys_buffer, COLUMNS);
+    tx_payload.length = COLUMNS+2;
+    memcpy(tx_payload.data, keys_buffer, COLUMNS+2);
     nrf_esb_write_payload(&tx_payload);
 }
 
@@ -143,19 +144,21 @@ static void sp_matrix_scan_task(void) {
         activity_ticks++;
         if (activity_ticks > ACTIVITY) {
             activity_ticks = 0;
-            // 休眠
-             app_timer_stop(m_scan_timer_id);
-             app_timer_stop(m_keep_timer_id);
-            // 和二极管方向有关，配置输出引脚，用来进行触发唤醒
-            select_all_col();
-            nrfx_gpiote_in_config_t in_config = NRFX_GPIOTE_CONFIG_IN_SENSE_LOTOHI(false);
-            in_config.pull = NRF_GPIO_PIN_PULLDOWN;
-            for (uint8_t i = 0; i < ROWS; ++i) {
-                 nrfx_gpiote_in_uninit(ROW_PINS[i]);
-                 ret_code_t err_code = nrfx_gpiote_in_init(ROW_PINS[i], &in_config, in_pin_handler);
-                 NRF_LOG_INFO("nrfx_gpiote_in_init ROW_PINS[%d]:%d\n", i, err_code);
-                 // APP_ERROR_CHECK(err_code);
-                nrfx_gpiote_in_event_enable(ROW_PINS[i], true);
+            if (nrf_gpio_pin_read(VBUS_READ) != 1) {
+              // 休眠
+               app_timer_stop(m_scan_timer_id);
+               app_timer_stop(m_keep_timer_id);
+              // 和二极管方向有关，配置输出引脚，用来进行触发唤醒
+              select_all_col();
+              nrfx_gpiote_in_config_t in_config = NRFX_GPIOTE_CONFIG_IN_SENSE_LOTOHI(false);
+              in_config.pull = NRF_GPIO_PIN_PULLDOWN;
+              for (uint8_t i = 0; i < ROWS; ++i) {
+                   nrfx_gpiote_in_uninit(ROW_PINS[i]);
+                   ret_code_t err_code = nrfx_gpiote_in_init(ROW_PINS[i], &in_config, in_pin_handler);
+                   NRF_LOG_INFO("nrfx_gpiote_in_init ROW_PINS[%d]:%d\n", i, err_code);
+                   // APP_ERROR_CHECK(err_code);
+                  nrfx_gpiote_in_event_enable(ROW_PINS[i], true);
+              }            
             }
         }
     } else {
@@ -164,6 +167,10 @@ static void sp_matrix_scan_task(void) {
 }
 
 static void sp_matrix_keep_task(void) {
+    uint16_t bat_v = bat_percent();
+    NRF_LOG_INFO("bat_percent: %d\n", bat_v);
+    keys_buffer[COLUMNS] = (uint8_t)(bat_v >> 8);
+    keys_buffer[COLUMNS+1] = (uint8_t)(bat_v & 0xff);
     send_mx_data();
 }
 
@@ -181,6 +188,8 @@ static void keyboard_keep_timeout_handler(void *p_context) {
 }
 
 void sp_matrix_init(void) {
+    // init vbus
+    nrf_gpio_cfg_input(VBUS_READ, NRF_GPIO_PIN_PULLDOWN);
     // init row
     for (uint8_t i = 0; i < ROWS; ++i) {
         nrf_gpio_cfg_input(ROW_PINS[i], NRF_GPIO_PIN_PULLDOWN);

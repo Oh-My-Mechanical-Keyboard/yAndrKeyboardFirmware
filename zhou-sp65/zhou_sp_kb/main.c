@@ -79,6 +79,7 @@
 #include "fds_my.h"
 #include "uart_distributor.h"
 #include "sp_matrix.h"
+#include "u_adc.h"
 
 /**@brief Function for initializing the nrf log module.
  */
@@ -125,7 +126,7 @@ static void timers_init(void) {
 }
 
 // readback disable
-// const uint32_t UICR_0x208 __attribute__((section(".UICR_0x208"))) = 0xFFFFFF00;
+const uint32_t UICR_0x208 __attribute__((section(".UICR_0x208"))) = 0xFFFFFF00;
 
 /**@brief Function for application main entry.
  */
@@ -147,6 +148,8 @@ int main(void) {
     esb_init_tx();
     NRF_LOG_INFO("Enhanced ShockBurst Transmitter INIT.\n");
 
+    my_adc_init();
+    NRF_LOG_INFO("ADC INIT.\n");
 
     sp_matrix_init();
     NRF_LOG_INFO("Split Matrix INIT.\n");

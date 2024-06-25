@@ -39,6 +39,8 @@ void esb_reinit(void) {
   nrf_delay_ms(10);
   esb_init_rx();
   esb_enable();
+
+  NVIC_SystemReset();
 }
 
 /*

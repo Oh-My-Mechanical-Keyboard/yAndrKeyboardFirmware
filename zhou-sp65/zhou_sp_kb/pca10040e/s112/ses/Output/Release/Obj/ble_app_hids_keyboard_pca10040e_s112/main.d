@@ -84,4 +84,5 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/main.o: \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h ../../../User/u_esb_recv.h \
  ../../../User/fds_my.h ../../../User/uart_distributor.h \
  ../../../User/sp_matrix.h \
- ../../../../../../components/proprietary_rf/esb/nrf_esb.h
+ ../../../../../../components/proprietary_rf/esb/nrf_esb.h \
+ ../../../User/u_adc.h

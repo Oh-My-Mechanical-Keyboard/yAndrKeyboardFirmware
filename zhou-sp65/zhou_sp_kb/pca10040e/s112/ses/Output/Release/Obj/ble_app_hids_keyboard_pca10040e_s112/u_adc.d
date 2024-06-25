@@ -1,12 +1,12 @@
-Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o: \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\examples\proprietary_rf\zhou_sp_recv\UserSrc\sp_matrix.c \
- ../../../User/sp_matrix.h D:/software/segger/ses/include/stdint.h \
+Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/u_adc.o: \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\examples\proprietary_rf\zhou_sp_kb\UserSrc\u_adc.c \
+ ../../../User/u_adc.h D:/software/segger/ses/include/stdint.h \
  D:/software/segger/ses/include/__SEGGER_RTL.h \
  D:/software/segger/ses/include/__SEGGER_RTL_ConfDefaults.h \
  D:/software/segger/ses/include/__SEGGER_RTL_Conf.h \
  D:/software/segger/ses/include/__SEGGER_RTL_Arm_Conf.h \
+ D:/software/segger/ses/include/stdbool.h ../../../User/sp_matrix.h \
  ../../../../../../components/proprietary_rf/esb/nrf_esb.h \
- D:/software/segger/ses/include/stdbool.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52810.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
@@ -44,7 +44,8 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o: \
  ../../../../../../components/libraries/util/app_error.h \
  D:/software/segger/ses/include/stdio.h \
  ../../../../../../components/libraries/util/app_error_weak.h \
- ../../../../../../components/libraries/delay/nrf_delay.h \
+ ../../../../../../integration/nrfx/legacy/nrf_drv_saadc.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_saadc.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
@@ -62,9 +63,4 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/sp_matrix.o: \
  ../../../../../../components/libraries/util/sdk_resources.h \
  ../../../../../../components/proprietary_rf/esb/nrf_esb_resources.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
- ../../../../../../components/libraries/timer/app_timer.h \
- ../../../../../../components/libraries/sortlist/nrf_sortlist.h \
- ../../../../../../components/libraries/fifo/app_fifo.h \
- D:/software/segger/ses/include/stdlib.h \
- ../../../../../../components/libraries/uart/app_uart.h \
- ../../../../../../modules/nrfx/hal/nrf_uart.h
+ ../../../../../../modules/nrfx/hal/nrf_saadc.h

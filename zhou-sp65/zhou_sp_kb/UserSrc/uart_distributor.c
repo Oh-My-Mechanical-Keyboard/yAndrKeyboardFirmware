@@ -39,6 +39,7 @@ void esb_reinit(void) {
   NVIC_ClearPendingIRQ(SWI0_IRQn);
   nrf_delay_ms(10);
   esb_init_tx();
+  NVIC_SystemReset();
 }
 
 /*
@@ -292,7 +293,7 @@ static void uart_event_handle_by_header_buffer(app_uart_evt_t *p_event) {
                             set_channel_from_ch552();
                             break;
                         case 8:
-                        break;
+                            break;
                     }
                 }
                 rx_pkg_s = 0;

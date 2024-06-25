@@ -1,8 +1,5 @@
-Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_drv_clock.o: \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_clock.c \
- ../../../../../../components/libraries/util/nordic_common.h \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_clock.h \
- ../../../../../../modules/nrfx/drivers/include/nrfx_clock.h \
+Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrfx_saadc.o: \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\nrfx_saadc.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
@@ -36,6 +33,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_drv_clock.o: \
  ../../../../../../components/libraries/util/app_util.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/nordic_common.h \
+ ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/util/app_error.h \
@@ -49,9 +47,9 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_drv_clock.o: \
  ../../../../../../components/libraries/util/sdk_resources.h \
  ../../../../../../components/proprietary_rf/esb/nrf_esb_resources.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
- ../../../../../../modules/nrfx/hal/nrf_clock.h \
- ../../../../../../modules/nrfx/drivers/include/nrfx_power_clock.h \
- ../../../../../../modules/nrfx/hal/nrf_wdt.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_saadc.h \
+ ../../../../../../modules/nrfx/hal/nrf_saadc.h \
+ ../../../../../../integration/nrfx/nrfx_log.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  D:/software/segger/ses/include/string.h \

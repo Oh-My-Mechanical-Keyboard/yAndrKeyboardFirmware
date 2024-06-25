@@ -29,4 +29,26 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_log_backend_serial.o
  ../../../../../../modules/nrfx/mdk/nrf52810_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
- ../../../../../../components/libraries/util/nrf_assert.h
+ ../../../../../../components/libraries/util/nrf_assert.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\log\src\nrf_log_backend_serial.h \
+ ../../../../../../components/libraries/log/nrf_log_backend_interface.h \
+ ../../../../../../components/libraries/memobj/nrf_memobj.h \
+ D:/software/segger/ses/include/stdlib.h \
+ ../../../../../../components/libraries/util/sdk_errors.h \
+ ../../../../../../components/libraries/balloc/nrf_balloc.h \
+ ../../../../../../components/libraries/util/app_util_platform.h \
+ ../../../../../../components/libraries/util/app_error.h \
+ D:/software/segger/ses/include/stdio.h \
+ ../../../../../../components/libraries/util/app_error_weak.h \
+ ../../../../../../components/libraries/util/app_util.h \
+ ../../../../../../components/libraries/log/nrf_log_instance.h \
+ ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
+ ../../../../../../components/libraries/util/nordic_common.h \
+ ../../../../../../components/libraries/log/nrf_log_types.h \
+ ../../../../../../external/fprintf/nrf_fprintf.h \
+ ../../../../../../components/libraries/log/nrf_log_str_formatter.h \
+ ../../../../../../components/libraries/log/nrf_log_ctrl.h \
+ ../../../../../../components/libraries/log/src/nrf_log_ctrl_internal.h \
+ ../../../../../../components/libraries/log/nrf_log_backend_interface.h \
+ D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\log\src\nrf_log_internal.h \
+ ../../../../../../components/libraries/log/nrf_log_types.h

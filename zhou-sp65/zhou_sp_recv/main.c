@@ -125,7 +125,7 @@ static void timers_init(void) {
 }
 
 // readback disable
-// const uint32_t UICR_0x208 __attribute__((section(".UICR_0x208"))) = 0xFFFFFF00;
+const uint32_t UICR_0x208 __attribute__((section(".UICR_0x208"))) = 0xFFFFFF00;
 
 /**@brief Function for application main entry.
  */

@@ -17,14 +17,14 @@ static uint8_t data_payload_left[ESB_MAX_PAYLOAD_LENGTH];  ///< Placeholder for 
 static uint8_t data_payload_right[ESB_MAX_PAYLOAD_LENGTH];  ///< Placeholder for data payload received from host.
 static uint8_t ack_payload[TX_PAYLOAD_LENGTH];                   ///< Payload to attach to ACK sent to device.
 // 发送给qmk芯片列的数据
-static uint8_t data_buffer[DOBCOLUMNS];
+static uint8_t data_buffer[DOBCOLUMNS+4];
 // 状态记录
 static bool qmk_poll_ok, packet_received_left, packet_received_right;
 uint32_t left_active = 0;
 uint32_t right_active = 0;
 
 void process_esb_matirx_data(nrf_esb_payload_t rxd) {
-    //NRF_LOG_INFO("RXD: len=%d, pipe=%d, rssi=%d, noack=%d, pid=%d", rxd.length, rxd.pipe, rxd.rssi, rxd.noack, rxd.pid);
+    NRF_LOG_INFO("RXD: len=%d, pipe=%d, rssi=%d, noack=%d, pid=%d", rxd.length, rxd.pipe, rxd.rssi, rxd.noack, rxd.pid);
     switch (rxd.pipe) {
         case 0:
             packet_received_left = true;
@@ -44,13 +44,15 @@ void process_esb_matirx_data(nrf_esb_payload_t rxd) {
 void send_mx_data(void) {
     app_uart_flush();
     app_uart_put(0xff);  // head
-    app_uart_put(DOBCOLUMNS+1);  // len
+    app_uart_put(DOBCOLUMNS+4+1);  // len
 
     app_uart_put(0x08);             // cmd:8
     // 把列数据发送出去
-    for (uint8_t i = 0; i < DOBCOLUMNS; ++i) {
+    for (uint8_t i = 0; i < DOBCOLUMNS+4; ++i) {
         app_uart_put(data_buffer[i]); // data:i
     }
+    NRF_LOG_INFO("LADC: %d\n", data_buffer[COLUMNS]<<8|data_buffer[COLUMNS+1]);
+    NRF_LOG_INFO("RADC: %d\n", data_buffer[DOBCOLUMNS+2]<<8|data_buffer[DOBCOLUMNS+3]);
     app_uart_put(0xfe);  // tail
 }
 
@@ -60,7 +62,7 @@ void sp_matrix_task(void) {
     if (packet_received_left)
     {
         packet_received_left = false;
-        for (uint8_t i = 0; i < COLUMNS; ++i) {
+        for (uint8_t i = 0; i < COLUMNS+2; ++i) {
             data_buffer[i] = data_payload_left[i];
         }
     }
@@ -68,8 +70,8 @@ void sp_matrix_task(void) {
     if (packet_received_right)
     {
         packet_received_right = false;
-        for (uint8_t i = 0; i < COLUMNS; ++i) {
-            data_buffer[i+COLUMNS] = data_payload_right[i];
+        for (uint8_t i = 0; i < COLUMNS+2; ++i) {
+            data_buffer[i+COLUMNS+2] = data_payload_right[i];
         }
     }
 

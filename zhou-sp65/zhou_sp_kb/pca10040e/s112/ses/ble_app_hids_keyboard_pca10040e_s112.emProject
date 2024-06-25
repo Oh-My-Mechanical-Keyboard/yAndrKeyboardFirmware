@@ -58,6 +58,27 @@
       <file file_name="../../../../../../modules/nrfx/mdk/ses_startup_nrf_common.s" />
       <file file_name="../../../../../../modules/nrfx/mdk/system_nrf52810.c" />
     </folder>
+    <folder Name="Segger Startup Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+    </folder>
+    <folder Name="UTF8/UTF16 converter">
+      <file file_name="../../../../../../external/utf_converter/utf.c" />
+    </folder>
+    <folder Name="User">
+      <file file_name="../../../User/common_cfg.h" />
+      <file file_name="../../../User/fds_my.h" />
+      <file file_name="../../../User/sp_matrix.h" />
+      <file file_name="../../../User/u_adc.h" />
+      <file file_name="../../../User/u_esb_recv.h" />
+      <file file_name="../../../User/uart_distributor.h" />
+    </folder>
+    <folder Name="UserSrc">
+      <file file_name="../../../UserSrc/fds_my.c" />
+      <file file_name="../../../UserSrc/sp_matrix.c" />
+      <file file_name="../../../UserSrc/u_adc.c" />
+      <file file_name="../../../UserSrc/u_esb_recv.c" />
+      <file file_name="../../../UserSrc/uart_distributor.c" />
+    </folder>
     <folder Name="nRF_Drivers">
       <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_clock.c" />
       <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_uart.c" />
@@ -66,6 +87,7 @@
       <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_clock.c" />
       <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_gpiote.c" />
       <file file_name="../../../../../../modules/nrfx/drivers/src/prs/nrfx_prs.c" />
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_saadc.c" />
       <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_uart.c" />
       <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_uarte.c" />
     </folder>
@@ -113,25 +135,6 @@
     <folder Name="nRF_Segger_RTT">
       <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT.c" />
       <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT_printf.c" />
-    </folder>
-    <folder Name="Segger Startup Files">
-      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
-    </folder>
-    <folder Name="User">
-      <file file_name="../../../User/common_cfg.h" />
-      <file file_name="../../../User/fds_my.h" />
-      <file file_name="../../../User/sp_matrix.h" />
-      <file file_name="../../../User/u_esb_recv.h" />
-      <file file_name="../../../User/uart_distributor.h" />
-    </folder>
-    <folder Name="UserSrc">
-      <file file_name="../../../UserSrc/fds_my.c" />
-      <file file_name="../../../UserSrc/sp_matrix.c" />
-      <file file_name="../../../UserSrc/u_esb_recv.c" />
-      <file file_name="../../../UserSrc/uart_distributor.c" />
-    </folder>
-    <folder Name="UTF8/UTF16 converter">
-      <file file_name="../../../../../../external/utf_converter/utf.c" />
     </folder>
   </project>
 </solution>
