@@ -93,7 +93,7 @@ static void key_scan_once(void) {
     for (uint8_t i = 0; i < COLUMNS; ++i) {
         keys_buffer[i] = 0; // 每列的buffer
         select_col(i);
-        nrf_delay_us(20); // 实际测试1us也行，防止特别垃圾的轴有问题
+        nrf_delay_us(30); // 实际测试1us也行，防止特别垃圾的轴有问题
         for (uint8_t j = 0; j < ROWS; ++j) {
             if (nrf_gpio_pin_read(ROW_PINS[j]) == 1) {
                 keys_buffer[i] = keys_buffer[i] | (1<<j);
@@ -102,7 +102,6 @@ static void key_scan_once(void) {
             }
         }
         unselect_col(i);
-        nrf_delay_us(30); // 实际测试1us也行，防止特别垃圾的轴有问题
     }
 }
 
@@ -126,7 +125,7 @@ void in_pin_handler(nrfx_gpiote_pin_t pin, nrf_gpiote_polarity_t action)
     }
     ////enable rtc interupt triggers
     app_timer_start(m_scan_timer_id, KEYBOARD_SCAN_INTERVAL, NULL);
-    app_timer_start(m_keep_timer_id, KEYBOARD_KEEP_INTERVAL, NULL);
+    //app_timer_start(m_keep_timer_id, KEYBOARD_KEEP_INTERVAL, NULL);
 
     //// 和二极管方向有关，配置唤醒后的输出状态
     for (uint8_t i = 0; i < ROWS; ++i) {
@@ -151,7 +150,7 @@ static void sp_matrix_scan_task(void) {
             if (nrf_gpio_pin_read(VBUS_READ) != 1) {
               // 休眠
                app_timer_stop(m_scan_timer_id);
-               app_timer_stop(m_keep_timer_id);
+               //app_timer_stop(m_keep_timer_id);
               // 和二极管方向有关，配置输出引脚，用来进行触发唤醒
               select_all_col();
               nrfx_gpiote_in_config_t in_config = NRFX_GPIOTE_CONFIG_IN_SENSE_LOTOHI(false);
@@ -222,8 +221,8 @@ void sp_matrix_init(void) {
     //// init keep timer
     err_code = app_timer_create(&m_keep_timer_id, APP_TIMER_MODE_REPEATED, keyboard_keep_timeout_handler);
     APP_ERROR_CHECK(err_code);
-    err_code = app_timer_start(m_keep_timer_id, KEYBOARD_KEEP_INTERVAL, NULL);
-    APP_ERROR_CHECK(err_code);
+    //err_code = app_timer_start(m_keep_timer_id, KEYBOARD_KEEP_INTERVAL, NULL);
+    //APP_ERROR_CHECK(err_code);
 
     // init int
     err_code = nrfx_gpiote_init();
