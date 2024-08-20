@@ -334,7 +334,7 @@ void uart_init(void) {
         UART_RX_BUF_SIZE,
         UART_TX_BUF_SIZE,
         uart_event_handle_by_header_buffer,
-        APP_IRQ_PRIORITY_LOWEST,
+        APP_IRQ_PRIORITY_LOW_MID,
         err_code);
     nrf_gpio_cfg_input(SPZ_RX_PIN, NRF_GPIO_PIN_PULLUP);
     nrf_gpio_cfg_input(SPZ_TX_PIN, NRF_GPIO_PIN_PULLUP);
