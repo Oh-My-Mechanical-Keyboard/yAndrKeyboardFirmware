@@ -1,13 +1,11 @@
 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_error_weak.o: \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error_weak.c \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdint.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL_ConfDefaults.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL_Conf.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL_Arm_Conf.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdio.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdbool.h \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\util\app_error_weak.c \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\util\app_error.h \
+ D:/PrgEnv/ses/include/stdint.h D:/PrgEnv/ses/include/__SEGGER_RTL.h \
+ D:/PrgEnv/ses/include/__SEGGER_RTL_ConfDefaults.h \
+ D:/PrgEnv/ses/include/__SEGGER_RTL_Conf.h \
+ D:/PrgEnv/ses/include/__SEGGER_RTL_Arm_Conf.h \
+ D:/PrgEnv/ses/include/stdio.h D:/PrgEnv/ses/include/stdbool.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52810.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
@@ -21,20 +19,19 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_error_weak.o: \
  ../../../../../../modules/nrfx/mdk/nrf52_to_nrf52810.h \
  ../../../../../../modules/nrfx/mdk/nrf52810_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\util\sdk_errors.h \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\util\sdk_errors.h \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\util\nordic_common.h \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error_weak.h \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\util\nordic_common.h \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\util\app_error_weak.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/string.h \
- ../config/sdk_config.h \
+ D:/PrgEnv/ses/include/string.h ../config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_os.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/app_util.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stddef.h \
+ D:/PrgEnv/ses/include/stddef.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
@@ -50,8 +47,8 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/app_error_weak.o: \
  ../../../../../../components/libraries/log/src/nrf_log_ctrl_internal.h \
  ../../../../../../components/libraries/log/nrf_log_backend_interface.h \
  ../../../../../../components/libraries/memobj/nrf_memobj.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdlib.h \
+ D:/PrgEnv/ses/include/stdlib.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  ../../../../../../components/libraries/util/app_error.h \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_util_platform.h
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\util\app_util_platform.h

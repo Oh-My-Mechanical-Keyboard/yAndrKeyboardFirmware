@@ -463,7 +463,7 @@ SECTIONS
   .rodata ALIGN(__ctors_end__ , 4) : AT(ALIGN(__ctors_end__ , 4))
   {
     __rodata_start__ = .;
-    *(.rodata .rodata.* .gnu.linkonce.r.* .data.rel.ro .data.rel.ro.*)
+    *(.rodata .rodata.* .gnu.linkonce.r.*)
   }
   __rodata_end__ = __rodata_start__ + SIZEOF(.rodata);
   __rodata_size__ = SIZEOF(.rodata);

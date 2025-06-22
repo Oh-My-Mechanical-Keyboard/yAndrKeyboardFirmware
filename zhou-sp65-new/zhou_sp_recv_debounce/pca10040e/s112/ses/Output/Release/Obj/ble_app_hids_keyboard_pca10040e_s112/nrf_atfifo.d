@@ -1,14 +1,12 @@
 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_atfifo.o: \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo.c \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/string.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL_ConfDefaults.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL_Conf.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL_Arm_Conf.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdint.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdbool.h \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo.c \
+ D:/PrgEnv/ses/include/string.h D:/PrgEnv/ses/include/__SEGGER_RTL.h \
+ D:/PrgEnv/ses/include/__SEGGER_RTL_ConfDefaults.h \
+ D:/PrgEnv/ses/include/__SEGGER_RTL_Conf.h \
+ D:/PrgEnv/ses/include/__SEGGER_RTL_Arm_Conf.h \
+ D:/PrgEnv/ses/include/stdint.h D:/PrgEnv/ses/include/stdbool.h \
  ../../../../../../components/libraries/util/app_util.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stddef.h \
+ D:/PrgEnv/ses/include/stddef.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
@@ -24,7 +22,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_atfifo.o: \
  ../../../../../../modules/nrfx/mdk/nrf52_to_nrf52810.h \
  ../../../../../../modules/nrfx/mdk/nrf52810_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo.h \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo.h \
  ../config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
@@ -33,7 +31,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_atfifo.o: \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo_internal.h \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo_internal.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  ../../../../../../components/libraries/util/sdk_os.h \

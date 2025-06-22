@@ -132,7 +132,7 @@ static void timers_init(void) {
  */
 
 int main(void) {
-    uint32_t err_code;
+    uint32_t err_code = 0;
 
     // Initialize.
     timers_init();
@@ -141,18 +141,24 @@ int main(void) {
 
     uart_init();
     NRF_LOG_INFO("UART INIT\n");
+    NRF_LOG_FLUSH();
 
     fds_init_my();
     NRF_LOG_INFO("FDS INIT\n");
+    NRF_LOG_FLUSH();
 
     esb_init_tx();
     NRF_LOG_INFO("Enhanced ShockBurst Transmitter INIT.\n");
+    NRF_LOG_FLUSH();
 
     my_adc_init();
     NRF_LOG_INFO("ADC INIT.\n");
+    NRF_LOG_FLUSH();
+
 
     sp_matrix_init();
     NRF_LOG_INFO("Split Matrix INIT.\n");
+    NRF_LOG_FLUSH();
     
     // Enter main loop.
     for (;;) {

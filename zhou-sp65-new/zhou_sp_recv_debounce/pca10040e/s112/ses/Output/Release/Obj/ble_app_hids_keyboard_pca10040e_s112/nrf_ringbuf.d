@@ -1,15 +1,13 @@
 Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_ringbuf.o: \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\ringbuf\nrf_ringbuf.c \
- D:\PRJ\KB\dev\nRF5_SDK_17.1.0_ddde560\nRF5_SDK_17.1.0_ddde560\components\libraries\ringbuf\nrf_ringbuf.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdint.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL_ConfDefaults.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL_Conf.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/__SEGGER_RTL_Arm_Conf.h \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\ringbuf\nrf_ringbuf.c \
+ D:\PRJ\KBs\DEV\nrf5_sdk_17.1.0_ddde560\components\libraries\ringbuf\nrf_ringbuf.h \
+ D:/PrgEnv/ses/include/stdint.h D:/PrgEnv/ses/include/__SEGGER_RTL.h \
+ D:/PrgEnv/ses/include/__SEGGER_RTL_ConfDefaults.h \
+ D:/PrgEnv/ses/include/__SEGGER_RTL_Conf.h \
+ D:/PrgEnv/ses/include/__SEGGER_RTL_Arm_Conf.h \
  ../../../../../../components/libraries/atomic/nrf_atomic.h \
  ../../../../../../components/libraries/util/sdk_common.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdbool.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/string.h \
+ D:/PrgEnv/ses/include/stdbool.h D:/PrgEnv/ses/include/string.h \
  ../config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
@@ -17,8 +15,7 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_ringbuf.o: \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
  ../../../../../../components/libraries/util/app_util.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stddef.h \
- ../../../../../../modules/nrfx/mdk/nrf.h \
+ D:/PrgEnv/ses/include/stddef.h ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52810.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
  ../../../../../../components/toolchain/cmsis/include/cmsis_version.h \
@@ -36,6 +33,6 @@ Output/Release/Obj/ble_app_hids_keyboard_pca10040e_s112/nrf_ringbuf.o: \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  ../../../../../../components/libraries/util/app_error.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ 8.24/include/stdio.h \
+ D:/PrgEnv/ses/include/stdio.h \
  ../../../../../../components/libraries/util/app_error_weak.h \
  ../../../../../../components/libraries/util/nrf_assert.h
